@@ -28,10 +28,11 @@ twitter_username:
 github_username:  eugene-ruby
 
 # Build settings
-theme: bulma-clean-theme
+remote_theme: chrisrhymes/bulma-clean-theme
 plugins:
   - jekyll-feed
   - jekyll-toc
+  - jekyll-remote-theme
 
 
 # Exclude from processing.
