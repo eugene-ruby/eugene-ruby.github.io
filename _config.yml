@@ -28,9 +28,10 @@ twitter_username:
 github_username:  eugene-ruby
 
 # Build settings
-theme: minima
+theme: bulma-clean-theme
 plugins:
   - jekyll-feed
+  - jekyll-toc
 
 
 # Exclude from processing.
