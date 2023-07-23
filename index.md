@@ -1,5 +1,5 @@
 ---
-title: Как дед кодил на Ruby
+title: Дед старый и забывает пить таблетки, а хуже того забывает как программировать.
 subtitle: 
 layout: page
 show_sidebar: true
