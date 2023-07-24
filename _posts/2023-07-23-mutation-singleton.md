@@ -5,11 +5,12 @@ date:   2023-07-23 14:52:48 +0300
 categories: singleton
 toc: true
 menubar_toc: true
+hero_image: /images/rubu-back.jpeg
+hero_darken: true
 ---
 
-Использование конструкции `define_singleton_method` в Ruby:
-
-## Конструкция define_singleton_method
+<img alt="ded" src="/images/define_singleton.jpeg" width="40%"/>
+# Ruby метод `define_singleton_method`
 
 В Ruby, `define_singleton_method` - это метод, который позволяет динамически определить методы для отдельного объекта. Он позволяет добавлять методы только для этого объекта, не затрагивая другие экземпляры того же класса.
 

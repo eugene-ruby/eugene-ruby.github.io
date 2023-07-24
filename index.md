@@ -3,11 +3,14 @@ title: Дед старый и забывает пить таблетки, а х�
 subtitle: 
 layout: page
 show_sidebar: true
-hero_image: /images/back.jpeg
+hero_image: /images/rubu-back.jpeg
 hero_darken: true
+show_sidebar: true
+menubar: main_menu
 ---
 
-![ded](/images/ded.jpeg)
+
+<img alt="ded" src="/images/ded_scripts.jpeg" width="100%"/>
 
 
 -- Внучек, возьми скрипты. 
