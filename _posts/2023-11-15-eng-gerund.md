@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Дед учит Английский (часть II: Герундий)"
-date:  2023-07-23 14:52:48 +0300
+date:  2023-11-15 17:55:34 +0300
 categories: english
 toc: true
 menubar_toc: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Дед учит Английский (часть III: Существительное и причастие)"
-date:  2023-07-23 14:52:48 +0300
+date:  2023-11-19 22:32:03 +0300
 categories: english
 toc: true
 menubar_toc: true
