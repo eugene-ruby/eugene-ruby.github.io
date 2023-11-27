@@ -5,8 +5,6 @@ layout: page
 show_sidebar: true
 hero_image: /images/rubu-back.jpeg
 hero_darken: true
-show_sidebar: true
-menubar: main_menu
 ---
 
 

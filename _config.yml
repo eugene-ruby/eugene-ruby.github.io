@@ -28,6 +28,7 @@ twitter_username:
 github_username:  eugene-ruby
 fixed_navbar: top
 
+
 # Build settings
 remote_theme: chrisrhymes/bulma-clean-theme
 plugins:
