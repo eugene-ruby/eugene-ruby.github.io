@@ -36,6 +36,11 @@ plugins:
   - jekyll-toc
   - jekyll-remote-theme
 
+toc:
+  min_level: 2
+  max_level: 6
+  no_toc_section_class: "no_toc"
+  list_type: "ul"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

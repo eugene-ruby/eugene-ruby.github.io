@@ -2,7 +2,8 @@
 layout: post
 title:  "Меням класс через паттерн singleton"
 date:   2023-07-23 14:52:48 +0300
-categories: singleton
+categories:
+  - ruby
 toc: true
 menubar_toc: true
 hero_image: /images/rubu-back.jpeg
