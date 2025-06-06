@@ -33,7 +33,6 @@ permalink: /posts/:title:output_ext
 # Build settings
 remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
 plugins:
-  - jekyll-feed
   - jekyll-toc
   - jekyll-remote-theme
 
