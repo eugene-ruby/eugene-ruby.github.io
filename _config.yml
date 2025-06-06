@@ -18,42 +18,57 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Заметки деда
-email: sodium229897@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Блог для заметок по Ruby и Ruby on Rails
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username:
-github_username:  eugene-ruby
+title: "Заметки деда"
+email: "sodium229897@gmail.com"
+description: "Блог для заметок по Ruby, Rails и PostgreSQL. С болью, с шутками, с продом и 🔥."
+baseurl: ""  # не указывай, если размещаешь в корне GitHub Pages (eugene-ruby.github.io)
+url: "https://eugene-ruby.github.io"
+
+# SEO и социальные ссылки
+twitter_username: ""
+github_username: "eugene-ruby"
+
+# Навигация
 fixed_navbar: top
 
+# Постоянные ссылки
 permalink: /posts/:title:output_ext
 
 # Build settings
-remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
+remote_theme: "chrisrhymes/bulma-clean-theme@v0.14.0"
 plugins:
   - jekyll-toc
   - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-feed     # RSS для подписки
+  - jekyll-seo-tag  # мета-теги SEO (title, og:image и др.)
 
+# UI настройки темы Bulma Clean
 hide_share_buttons: true
+footer_text: "© 2025 Заметки деда. Все боли защищены."
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Автогенерация оглавления
+toc:
+  min_level: 2
+  max_level: 3
+
+# Sitemap config (опционально, но можно)
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      changefreq: "weekly"
+      priority: "0.7"
+
+# Exclude ненужное
+exclude:
+  - drafts/*.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+
+# Future-proof
+future: true
