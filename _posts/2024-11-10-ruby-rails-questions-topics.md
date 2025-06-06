@@ -3,8 +3,7 @@ layout: post
 title:  "Острые темы по Ruby и Rails, которые спрашивают на техническом интервью Middle/Senior"
 date:   2024-11-10 09:00:00 +0300
 categories:
-  - ruby
-  - rails
+  - architecture
 toc: true
 menubar_toc: true
 hero_image: /images/rails.jpeg
@@ -54,9 +53,8 @@ hero_darken: true
 * [Arel — магия или ад?](/posts/rails-arel-secret-power.html)
 
 ## 🏗 Архитектура
-
 * [CQRS, Event sourcing и DDD в микросервисах на Rails](/posts/architecture-cqrs-ddd.html)
-* [Service Object, Interactor и Command-подход](/posts/service-objects.html)
-* [Почему нельзя просто взять current\_user](/posts/current-user-context.html)
-* [Как мы переехали на event-driven](/posts/event-driven-transition.html)
-* [Почему default\_scope = боль](/posts/scopes-merge-unscope.html)
+* [Service Object, Interactor и Command-подход](/posts/service-object-interactor-command.html)
+* [Почему нельзя просто взять current\_user](/posts/why-not-current-user.html)
+* [Как мы переехали на event-driven](/posts/moving-to-event-driven.html)
+* [Почему default\_scope = боль](/posts/default-scope-pain.html)
