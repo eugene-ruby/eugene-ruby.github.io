@@ -3,8 +3,8 @@ layout: post
 title: "Сколько соединений держать в Puma, Sidekiq и Webhooks?"
 date: 2025-02-16 12:00:00 +0300
 categories:
-  - database
   - postgres
+  - database
   - rails
 toc: true
 menubar_toc: true

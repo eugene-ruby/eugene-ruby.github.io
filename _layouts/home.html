@@ -16,6 +16,24 @@
         lang="{{ site.lang | default: 'en' }}"
         class="{% if site.fixed_navbar %} has-navbar-fixed-{{ site.fixed_navbar }} {% endif %} {% if site.force_theme %} theme-{{ site.force_theme }} {% endif %}"
 >
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(102474546, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/102474546" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 {% include head.html %}
 <body>
 {% if site.cookie_policy %}
@@ -26,50 +44,39 @@
 {% include hero.html %}
 {% endunless %}
 {% include callouts.html %}
+
 <section class="section">
     <div class="container">
-        <h2>Категории</h2>
-        <ul>
-            {% for category in site.categories %}
-            <li>
-                <strong>{{ category[0] }}</strong> ({{ category[1].size }})
-                <ul>
-                    {% for post in category[1] %}
-                    <ol>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                    </ol>
-                    {% endfor %}
-                </ul>
-            </li>
-            {% endfor %}
-        </ul>
-        <hr/>
-        <div class="columns is-multiline">
-            {% if page.menubar_toc %}
-            <div class="column is-4-desktop is-4-tablet">
-                {% assign contentsTitle = page.toc_title | default: 'Contents' %}
-                {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
+        <h2 class="title is-3">📚 Категории</h2>
+
+        {% for category in site.categories %}
+        <div class="mb-6">
+            <h3 class="title is-4">{{ category[0] }}</h3>
+            <div class="columns is-multiline">
+                {% for post in category[1] %}
+                {% if post.categories.first == category[0] %}
+                <div class="column is-4">
+                    <div class="box">
+                        <h4 class="title is-5">
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </h4>
+                        {% if post.excerpt %}
+                        <p class="content">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+                        {% endif %}
+                        <p class="is-size-7 has-text-grey">
+                            {{ post.date | date: "%Y-%m-%d" }}
+                        </p>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
             </div>
-            {% elsif page.menubar %}
-            <div class="column is-4-desktop is-4-tablet">
-                {% include menubar.html %}
-            </div>
-            {% endif %}
-            <div class="column {{ content_width }}">
-                {% include tabs.html %}
-                {% include showcase.html %}
-                {% include sponsors.html %}
-                {% include gallery.html %}
-                {{ content }}
-            </div>
-            {% if site.posts and page.show_sidebar %}
-            <div class="column is-4-desktop is-4-tablet">
-                {% include latest-posts.html %}
-            </div>
-            {% endif %}
         </div>
+        {% endfor %}
     </div>
 </section>
+
+
 {% unless page.hide_footer %}
 {% include footer.html %}
 {% endunless %}

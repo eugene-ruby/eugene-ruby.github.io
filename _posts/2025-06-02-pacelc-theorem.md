@@ -3,8 +3,8 @@ layout: post
 title: "PACELC — CAP с дополнением: а что, если сети нет?"
 date: 2025-06-02 10:00:00 +0300
 categories:
-  - architecture
   - database
+  - architecture
 toc: true
 menubar_toc: true
 hero_image: /images/architecture.jpeg

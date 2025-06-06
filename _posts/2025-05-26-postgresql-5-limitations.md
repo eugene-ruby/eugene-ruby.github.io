@@ -3,8 +3,8 @@ layout: post
 title: "5 ограничений PostgreSQL, о которых стоит помнить"
 date: 2025-05-26 10:00:00 +0300
 categories:
-  - database
   - postgres
+  - database
 toc: true
 menubar_toc: true
 hero_image: /images/architecture.jpeg

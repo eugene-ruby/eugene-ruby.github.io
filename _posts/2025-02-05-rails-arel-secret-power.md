@@ -3,8 +3,8 @@ layout: post
 title:  "Rails ORM и этот странный Arel"
 date:   2025-02-05 10:30:00 +0300
 categories:
-  - rails
   - orm
+  - rails
 toc: true
 menubar_toc: true
 hero_image: /images/rails.jpeg
