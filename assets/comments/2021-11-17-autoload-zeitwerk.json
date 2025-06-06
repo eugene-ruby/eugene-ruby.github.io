@@ -1,0 +1,4 @@
+[
+  { "author": "RubyEnthusiast", "text": "Отличная статья! Очень хорошо объясняется механизм загрузки классов в Ruby. Мне особенно понравилось объяснение о Unterschied zwischen `require` und `require_relative`." },
+  { "author": "CodeWizard", "text": "Замечательное объяснение Zeitwerk и const_missing. Важно помнить об автозагрузке в Rails и правилах именования файлов и классов. Спасибо за статью!" }
+]
