@@ -61,7 +61,7 @@
                             <a href="{{ post.url }}">{{ post.title }}</a>
                         </h4>
                         {% if post.excerpt %}
-                        <p class="content">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+                        <p class="content">{{ post.excerpt | strip_html | truncate: 500 }}</p>
                         {% endif %}
                         <p class="is-size-7 has-text-grey">
                             {{ post.date | date: "%Y-%m-%d" }}

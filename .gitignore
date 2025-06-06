@@ -6,3 +6,5 @@ _site
 vendor
 tmp
 .aider*
+comments.rb
+comments.txt

@@ -9,6 +9,7 @@ menubar_toc: true
 hero_image: /images/ruby.jpeg
 hero_darken: true
 ---
+Ruby предлагает мощные механизмы для загрузки классов и констант, от классического `require` до гибкого `const_missing` и современного `Zeitwerk` в Rails. В этой статье разберёмся, как Ruby ищет классы, чем отличается `autoload` от `require`, и почему Zeitwerk стал стандартом в Rails-приложениях, упрощая жизнь разработчикам.
 
 "Почему Ruby не находит мой класс?"  
 "Надо писать `require` или нет?"  
