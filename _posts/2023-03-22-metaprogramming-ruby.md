@@ -2,6 +2,9 @@
 layout: post
 title:  "Ruby: method_missing, define_method и метапрограммирование без нервов"
 date:   2023-03-22 16:00:00 +0300
+rate: 4
+tags: Ruby,метапрограммирование,method_missing,define_method,eval,Rails
+version: A49X3
 categories:
   - ruby
 toc: true
@@ -10,8 +13,6 @@ hero_image: /images/ruby.jpeg
 hero_darken: true
 ---
 Ruby — это не просто язык, а целый набор инструментов для метапрограммирования, позволяющий коду создавать код. В этой статье разберём ключевые методы вроде `method_missing`, `define_method` и `eval`, а также их безопасные альтернативы в Rails и других фреймворках.
-
-Метапрограммирование в Ruby — это когда код пишет код. Очень гибко, очень опасно, и очень собеседуемо. Давай разберём, как не упасть лицом в `method_missing`.
 
 ---
 

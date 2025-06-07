@@ -2,6 +2,9 @@
 layout: post
 title:  "Ruby: переменные @, @@ и $ — боль, память и просветление"
 date:   2023-03-14 13:00:00 +0300
+rate: 3
+tags: Ruby,переменные,область видимости,экземпляр,класс,глобальные
+version: A49X3
 categories:
   - ruby
 toc: true

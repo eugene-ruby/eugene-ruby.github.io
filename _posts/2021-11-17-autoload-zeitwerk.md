@@ -2,6 +2,9 @@
 layout: post
 title:  "Ruby: const_missing, autoload, Zeitwerk и просветление в require"
 date:   2021-11-17 10:00:00 +0300
+tags: Ruby,автозагрузка,require,load,Rails,Zeitwerk
+version: A49X3
+rate: 3
 categories:
   - ruby
 toc: true
@@ -9,12 +12,8 @@ menubar_toc: true
 hero_image: /images/ruby.jpeg
 hero_darken: true
 ---
-Ruby предлагает мощные механизмы для загрузки классов и констант, от классического `require` до гибкого `const_missing` и современного `Zeitwerk` в Rails. В этой статье разберёмся, как Ruby ищет классы, чем отличается `autoload` от `require`, и почему Zeitwerk стал стандартом в Rails-приложениях, упрощая жизнь разработчикам.
 
-"Почему Ruby не находит мой класс?"  
-"Надо писать `require` или нет?"  
-"Что делает `Zeitwerk` и кто такой `const_missing`?"  
-Эта статья — шпаргалка по загрузке и обнаружению классов в Ruby и Rails.
+Разбираетесь, как Ruby загружает классы и модули? В этой статье мы детально разберём механизмы автозагрузки в Ruby — от базовых `require` и `load` до продвинутых техник вроде `const_missing` и современного `autoload_paths` в Rails. Вы узнаете, почему `require_relative` может быть опасен, как работает ленивая загрузка через `autoload`, и почему Zeitwerk стал золотым стандартом в Rails-приложениях. Мы ответим на частые вопросы разработчиков: «Почему Ruby не видит мой класс?», «Нужно ли писать require в Rails?» и «Как правильно организовать автозагрузку в больших проектах?» — с примерами кода и лучшими практиками.
 
 ---
 

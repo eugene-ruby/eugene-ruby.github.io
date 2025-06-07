@@ -2,6 +2,9 @@
 layout: post
 title:  "Service Object в Ruby: когда `.call` уже не справляется"
 date:   2024-09-17 12:00:00 +0300
+rate: 4
+tags: Ruby on Rails,Service Object,бизнес-логика,PostgreSQL,DevOps,масштабируемость
+version: A49X3
 categories:
   - pattern
   - ruby
@@ -12,6 +15,7 @@ menubar_toc: true
 ---
 Service Object в Ruby on Rails — это мощный инструмент для вынесения сложной бизнес-логики из контроллеров и моделей, помогающий соблюдать принцип единой ответственности. В статье разберём, как правильно проектировать сервисные объекты, избегая типичных ошибок, и покажем их интеграцию с PostgreSQL и DevOps-практиками для масштабируемых приложений.
 
+---
 Итак, у нас есть `CreateUser.call(params)`…  
 А потом: `create_wallet`, `send_email`, `notify_crm`, `log_event`, `raise_if_duplicate`.  
 И всё это — в одном `Command`. Что ж, значит пришло время для **Service Object**.
