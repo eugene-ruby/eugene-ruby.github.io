@@ -11,36 +11,36 @@ layout: default
     {{ content }}
 </div>
 
+{%- assign raw_tags = page.tags | join: "," -%}
+{%- assign cleaned_tags = raw_tags | replace: ",", " " | split: " " | uniq -%}
+
 <div class="tags my-4">
-    {% for tag in page.tags %}
+    {% for tag in cleaned_tags %}
     {% include tag.html tag=tag %}
     {% endfor %}
 </div>
 
-<div id="comments"></div>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const commentsUrl = "/assets/comments/{{ page.slug }}.json" ;
-        const container = document.getElementById("comments");
+{%- assign raw_tags = page.tags | join: "," -%}
+{%- assign cleaned_tags = raw_tags | replace: ",", " " | split: " " | uniq -%}
 
-        fetch(commentsUrl)
-            .then((res) => {
-                if (!res.ok) throw new Error("No comments file");
-                return res.json();
-            })
-            .then((data) => {
-                if (!data || data.length === 0) return;
-                let html = "<h3>💬 Comments</h3>";
-                html += data.map(c =>
-                    `<div class="box">
-            <p><strong>${c.author}</strong></p>
-            <p>${c.text}</p>
-          </div>`
-                ).join("");
-                container.innerHTML = html;
-            })
-            .catch((err) => {
-                // silence if file not found
-            });
-    });
-</script>
+{% assign related = site.posts | where_exp: "post", "post.url != page.url" %}
+{% assign matches = "" | split: "" %}
+
+{% for post in related %}
+{% assign intersect = post.tags | intersect: cleaned_tags %}
+{% if intersect.size >= 2 %}
+{% assign matches = matches | push: post %}
+{% endif %}
+{% endfor %}
+
+{% assign shuffled = matches | sample: 3 %}
+{% if shuffled.size > 0 %}
+<div class="related my-6">
+    <h3>🔗 Интересные статьи</h3>
+    <div class="columns is-multiline">
+        {% for post in shuffled %}
+        {% include post_card.html post=post %}
+        {% endfor %}
+    </div>
+</div>
+{% endif %}

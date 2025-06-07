@@ -17,23 +17,6 @@
         class="{% if site.fixed_navbar %} has-navbar-fixed-{{ site.fixed_navbar }} {% endif %} {% if site.force_theme %} theme-{{ site.force_theme }} {% endif %}"
 >
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-    ym(102474546, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-    });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/102474546" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
 {% include head.html %}
 <body>
 {% if site.cookie_policy %}
@@ -55,37 +38,7 @@
             <div class="columns is-multiline">
                 {% for post in category[1] %}
                 {% if post.categories.first == category[0] %}
-                <div class="column is-4">
-                    <div class="excerpt-container box">
-                        <h4 class="title is-5">
-                            <a href="{{ post.url }}">{{ post.title }}</a>
-                        </h4>
-
-                        <div class="excerpt-text">
-                            <p class="content">
-                                {{ post.excerpt | strip_newlines | strip_html }}
-                            </p>
-                            <div class="excerpt-blur"></div>
-                        </div>
-
-                        {% assign minutes = post.content | size | divided_by: 1000 | plus: 1 %}
-                        {% assign difficulty = "" %}
-                        {% case post.rate %}
-                        {% when 1 %}{% assign difficulty = "🐣" %}
-                        {% when 2 %}{% assign difficulty = "🐣🧑‍💻" %}
-                        {% when 3 %}{% assign difficulty = "🐣🧑‍💻🔧" %}
-                        {% when 4 %}{% assign difficulty = "🐣🧑‍💻🔧🧠" %}
-                        {% when 5 %}{% assign difficulty = "🐣🧑‍💻🔧🧠🧙‍♂️" %}
-                        {% endcase %}
-
-                        <p class="is-size-7 has-text-grey">
-                            🗓 {{ post.date | date: "%Y-%m-%d" }} ·
-                            {{ difficulty }} ·
-                            ⏱ ~{{ minutes }} мин. чтения
-                        </p>
-
-                    </div>
-                </div>
+                {% include post_card.html post=post %}
                 {% endif %}
                 {% endfor %}
             </div>
@@ -93,47 +46,6 @@
         {% endfor %}
     </div>
 </section>
-
-
-<style>
-    .excerpt-container {
-        position: relative;
-        transition: box-shadow 0.3s ease;
-    }
-
-    .excerpt-text {
-        position: relative;
-        max-height: 7.5em; /* ограничим на ~5 строк */
-        overflow: hidden;
-        transition: max-height 0.6s ease;
-    }
-
-    /* Раскрытие при наведении */
-    .excerpt-container:hover .excerpt-text {
-        max-height: 1000px;
-    }
-
-    /* Блюр-подложка */
-    .excerpt-blur {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 6em;
-        background: linear-gradient(to bottom, rgba(255,255,255,0), white 80%);
-        pointer-events: none;
-        transition: opacity 0.8s ease;
-        z-index: 1;
-    }
-
-    /* Прячем блюр при наведении */
-    .excerpt-container:hover .excerpt-blur {
-        opacity: 0;
-    }
-
-</style>
-
 
 
 {% unless page.hide_footer %}

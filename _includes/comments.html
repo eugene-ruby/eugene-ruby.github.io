@@ -1,0 +1,27 @@
+<div id="comments"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const commentsUrl = "/assets/comments/{{ page.slug }}.json" ;
+        const container = document.getElementById("comments");
+
+        fetch(commentsUrl)
+            .then((res) => {
+                if (!res.ok) throw new Error("No comments file");
+                return res.json();
+            })
+            .then((data) => {
+                if (!data || data.length === 0) return;
+                let html = "<h3>💬 Comments</h3>";
+                html += data.map(c =>
+                    `<div class="box">
+            <p><strong>${c.author}</strong></p>
+            <p>${c.text}</p>
+          </div>`
+                ).join("");
+                container.innerHTML = html;
+            })
+            .catch((err) => {
+                // silence if file not found
+            });
+    });
+</script>

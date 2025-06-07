@@ -1,0 +1,30 @@
+<div class="column is-4">
+    <div class="excerpt-container box">
+        <h4 class="title is-5">
+            <a href="{{ include.post.url }}">{{ include.post.title }}</a>
+        </h4>
+
+        <div class="excerpt-text">
+            <p class="content">
+                {{ include.post.excerpt | strip_newlines | strip_html }}
+            </p>
+            <div class="excerpt-blur"></div>
+        </div>
+
+        {% assign minutes = include.post.content | size | divided_by: 1000 | plus: 1 %}
+        {% assign difficulty = "" %}
+        {% case include.post.rate %}
+        {% when 1 %}{% assign difficulty = "🐣" %}
+        {% when 2 %}{% assign difficulty = "🐣🧑‍💻" %}
+        {% when 3 %}{% assign difficulty = "🐣🧑‍💻🔧" %}
+        {% when 4 %}{% assign difficulty = "🐣🧑‍💻🔧🧠" %}
+        {% when 5 %}{% assign difficulty = "🐣🧑‍💻🔧🧠🧙‍♂️" %}
+        {% endcase %}
+
+        <p class="is-size-7 has-text-grey">
+            🗓 {{ include.post.date | date: "%Y-%m-%d" }} ·
+            {{ difficulty }} ·
+            ⏱ ~{{ minutes }} мин. чтения
+        </p>
+    </div>
+</div>

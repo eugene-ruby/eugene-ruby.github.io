@@ -1,0 +1,12 @@
+# Разрешаем индексировать весь контент блога
+User-agent: *
+
+# Запрещаем системные директории
+Disallow: /assets/
+Disallow: /404.html
+
+# Разрешаем всё остальное
+Allow: /
+
+# Указываем на карту сайта (если добавите)
+Sitemap: https://eugene-ruby.github.io/sitemap.xml
