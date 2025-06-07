@@ -9,7 +9,7 @@ categories:
   - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/ruby.jpeg
+hero_image: /images/ruby.jpg
 hero_darken: true
 ---
 Ruby продолжает развиваться, предлагая разработчикам новые инструменты для оптимизации производительности и параллельной работы. В этой статье разберём ключевые термины — от GVL и YJIT до Ractors и Fiber Scheduler, — которые помогут глубже понять внутреннее устройство языка и его экосистему.

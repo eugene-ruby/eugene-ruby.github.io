@@ -10,7 +10,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/architecture.jpeg
+hero_image: /images/architecture.jpg
 hero_darken: true
 ---
 При работе с Ruby on Rails и PostgreSQL важно учитывать особенности взаимодействия при использовании PgBouncer в режиме transaction, чтобы избежать ошибок вроде PG::ProtocolViolation. В этой статье разберём, почему возникают проблемы с prepared statements, как их избежать и какие альтернативы существуют для баланса между производительностью и стабильностью.

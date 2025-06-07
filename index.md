@@ -3,10 +3,6 @@ title: Блог деда программиста SELECT * FROM USSR, дед в�
 subtitle: 
 layout: home
 show_sidebar: false
-hero_image: /images/ruby.jpeg
+hero_image: /images/ruby.jpg
 hero_darken: true
 ---
-
-<p style="text-align: center">
-<img alt="ded" src="/images/ded_scripts.jpg" width="40%"/>
-</p>

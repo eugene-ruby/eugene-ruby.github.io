@@ -10,7 +10,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpeg
+hero_image: /images/rails.jpg
 hero_darken: true
 ---
 Работа с JSONB в PostgreSQL открывает новые возможности для хранения и обработки сложных структур данных прямо в базе. В этой статье разберём ключевые операторы JSONB, особенности индексации и практические примеры использования в Rails-приложениях — от простых фильтраций до работы с вложенными объектами.

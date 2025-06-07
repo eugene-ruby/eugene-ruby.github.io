@@ -10,7 +10,7 @@ categories:
   - architecture
 toc: true
 menubar_toc: true
-hero_image: /images/architecture.jpeg
+hero_image: /images/architecture.jpg
 hero_darken: true
 ---
 PostgreSQL — мощная СУБД, но в распределённых системах она сталкивается с теми же вызовами, что и NoSQL-решения: CAP-теорема диктует выбор между доступностью и консистентностью, а PACELC уточняет компромиссы при работе в штатном режиме. Понимание этих принципов критично для проектирования отказоустойчивых кластеров и репликации в Rails-приложениях.

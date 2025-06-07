@@ -9,7 +9,7 @@ categories:
   - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/ruby.jpeg
+hero_image: /images/ruby.jpg
 hero_darken: true
 ---
 

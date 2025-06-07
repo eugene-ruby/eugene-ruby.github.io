@@ -10,7 +10,7 @@ categories:
   - architecture
 toc: true
 menubar_toc: true
-hero_image: /images/architecture.jpeg
+hero_image: /images/architecture.jpg
 hero_darken: true
 ---
 PostgreSQL предлагает три мощных механизма репликации, каждый из которых решает свои задачи: асинхронная для скорости, синхронная для надёжности и логическая для гибкости. Разберём их особенности, trade-offs и лучшие сценарии применения в production-средах.

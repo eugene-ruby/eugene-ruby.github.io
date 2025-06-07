@@ -1,25 +1,46 @@
 ---
 permalink: /404.html
 layout: default
+hero_image: /images/Directed_by_Robert_B.Weide.png
+hero_darken: true
+title: <pre>raise PageNotFoundError, "страница не найдена"</pre>
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<section class="section">
+    <div class="container has-text-centered">
+        <pre class="terminal-simulated mb-4" id="terminal-output"></pre>
+    </div>
+</section>
 
-<div class="container">
-  <h1>404</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<script>
+    const lines = [
+        "Started GET \"/articles/404\" for 127.0.0.1 at 2025-06-07 14:42:01 +0300",
+        "Processing by ArticlesController#show as HTML",
+        "  Parameters: {\"id\"=>\"то, чего нет\"}",
+        "  Article Load (0.3ms)  SELECT * FROM \"articles\" WHERE \"slug\" = 'то, чего нет' LIMIT 1",
+        "↯ ActiveRecord::RecordNotFound (Couldn't find Article with [slug] = то, чего нет)",
+        "",
+        "Rendering errors/404.html",
+        "Rendered errors/404.html (Duration: 34.6ms | Allocations: 1001)",
+        "Completed 404 Not Found in 42ms (Views: 37.3ms | ActiveRecord: 0.3ms)",
+        "",
+        "[INFO] Если вы это читаете, то значит дед опять забыл git push 🤦‍♂️",
+        ""
+    ];
+
+    const output = document.getElementById('terminal-output');
+    let i = 0;
+
+    function printLine() {
+        if (i < lines.length) {
+            output.innerHTML += lines[i] + '\n';
+            i++;
+            setTimeout(printLine, 180);
+        } else {
+            output.innerHTML += '$ cd <a href=\"/\">на главную</a> <span class="terminal-cursor">█</span>';
+        }
+    }
+
+    printLine();
+</script>

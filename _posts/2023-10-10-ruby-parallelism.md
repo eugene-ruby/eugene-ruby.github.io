@@ -10,7 +10,7 @@ categories:
   - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/ruby.jpeg
+hero_image: /images/ruby.jpg
 hero_darken: true
 ---
 Ruby предлагает несколько подходов для достижения параллельности, несмотря на ограничения GIL. В этой статье разберёмся, как использовать процессы через fork, асинхронные библиотеки и новые возможности вроде Ractor, а также когда стоит перейти на альтернативные реализации Ruby вроде JRuby.

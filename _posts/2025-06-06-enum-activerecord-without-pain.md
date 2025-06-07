@@ -8,7 +8,7 @@ version: A49X3
 categories:
   - pattern
   - rails
-hero_image: /images/ruby.jpeg
+hero_image: /images/ruby.jpg
 hero_darken: true
 toc: true
 menubar_toc: true

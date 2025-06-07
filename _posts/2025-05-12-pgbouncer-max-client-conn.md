@@ -10,7 +10,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpeg
+hero_image: /images/rails.jpg
 hero_darken: true
 ---
 PostgreSQL — мощная СУБД, но её архитектура с отдельными процессами на каждое соединение может стать узким местом в высоконагруженных Rails-приложениях. PgBouncer решает эту проблему, выступая в роли пулера соединений, однако его настройка требует понимания ключевых параметров вроде max_client_conn и pool_size, особенно в DevOps-среде с ограниченными ресурсами.

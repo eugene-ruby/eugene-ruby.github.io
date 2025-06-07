@@ -10,7 +10,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpeg
+hero_image: /images/rails.jpg
 hero_darken: true
 ---
 ActiveRecord в Rails — мощный инструмент для работы с PostgreSQL, но даже опытные разработчики сталкиваются с неочевидными ошибками при использовании group, having и merge. В этой статье разберём типичные подводные камни при построении сложных SQL-запросов через ActiveRecord и способы их избежать.

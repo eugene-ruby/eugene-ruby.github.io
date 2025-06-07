@@ -10,7 +10,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpeg
+hero_image: /images/rails.jpg
 hero_darken: true
 ---
 ActiveRecord в Ruby on Rails — это мощный ORM, но даже опытные разработчики часто допускают ошибки, которые убивают производительность. В этой статье разберём 10 типичных проблем с запросами к PostgreSQL и покажем, как их исправлять — от N+1 до неожиданного поведения scope.

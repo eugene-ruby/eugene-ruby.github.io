@@ -8,7 +8,7 @@ date:   2024-09-18 14:00:00 +0300
 categories:
   - tools
   - ruby
-hero_image: /images/ruby.jpeg
+hero_image: /images/ruby.jpg
 hero_darken: true
 toc: true
 menubar_toc: true

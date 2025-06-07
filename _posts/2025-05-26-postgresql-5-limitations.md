@@ -10,7 +10,7 @@ categories:
   - database
 toc: true
 menubar_toc: true
-hero_image: /images/architecture.jpeg
+hero_image: /images/architecture.jpg
 hero_darken: true
 ---
 PostgreSQL — мощная и надежная СУБД, но даже у неё есть нюансы, которые важно учитывать при разработке на Ruby on Rails. В этой статье разберём ключевые ограничения PostgreSQL, влияющие на производительность и масштабируемость приложений, а также подскажем, как их обойти с помощью DevOps-практик и правильной настройки.

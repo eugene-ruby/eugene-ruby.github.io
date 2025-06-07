@@ -33,3 +33,62 @@
 .excerpt-container:hover .excerpt-blur {
     opacity: 0;
 }
+
+
+/* Применяем блюр к фону секции */
+section.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Создаём псевдоэлемент поверх background, который блюрит */
+section.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    filter: blur(4px) brightness(0.9);
+    transform: scale(1.05); /* чуть больше, чтобы не было пустых краёв */
+    z-index: 0;
+}
+
+/* Поднимаем содержимое над блюром */
+section.hero .hero-body {
+    position: relative;
+    z-index: 1;
+}
+
+/* Делаем h1 ярким с тенью */
+section.hero h1.title {
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.terminal-simulated {
+    display: block;
+    background-color: #1e1e1e;
+    color: #00ff88;
+    padding: 1.2rem 1.5rem;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 1rem;
+    box-shadow: 0 0 0 2px #111, 0 0 20px rgba(0, 255, 136, 0.3);
+    white-space: pre-wrap;
+    overflow-x: auto;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.terminal-cursor {
+    display: inline-block;
+    width: 0.6em;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    0%, 50% { background-color: #00ff88; }
+    51%, 100% { background-color: transparent; }
+}

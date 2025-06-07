@@ -9,7 +9,7 @@ categories:
   - postgres
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpeg
+hero_image: /images/rails.jpg
 hero_darken: true
 ---
 PostgreSQL — мощная СУБД, но без понимания планов выполнения запросов даже опытные разработчики сталкиваются с неожиданными тормозами. В этой статье разберём основные типы JOIN-операций (Nested Loop, Hash Join, Merge Join) и методы доступа к данным (Index Scan, Seq Scan, Bitmap Scan), которые влияют на производительность Rails-приложений. Узнаем, как читать вывод EXPLAIN ANALYZE и оптимизировать запросы с учётом статистики, индексов и настроек work_mem.

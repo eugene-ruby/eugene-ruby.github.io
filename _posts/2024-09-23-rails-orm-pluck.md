@@ -9,7 +9,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpeg
+hero_image: /images/rails.jpg
 hero_darken: true
 ---
 Оптимизация запросов в Rails — ключевой навык для разработчиков, работающих с PostgreSQL. В этой статье разберём тонкости использования `pluck`, `select` и `ids` в ActiveRecord, чтобы избежать проблем с производительностью и нагрузкой на базу данных. Узнаем, как правильно фильтровать данные на стороне SQL, а не в Ruby, и когда каждый из методов может быть полезен.

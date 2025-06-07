@@ -9,7 +9,7 @@ categories:
   - postgres
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpeg
+hero_image: /images/rails.jpg
 hero_darken: true
 ---
 PostgreSQL — мощная СУБД, но даже опытные разработчики сталкиваются с медленными запросами. В этой статье разбираем, как анализировать план выполнения через `EXPLAIN ANALYZE`, находить узкие места и применять конкретные оптимизации — от индексов до пересмотра JOIN'ов. Практические примеры и чеклист помогут ускорить ваши SQL-запросы в Rails-приложениях.

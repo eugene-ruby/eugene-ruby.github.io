@@ -10,7 +10,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/architecture.jpeg
+hero_image: /images/architecture.jpg
 hero_darken: true
 ---
 Сервисные объекты в Ruby on Rails помогают вынести бизнес-логику из контроллеров, делая код чище и тестируемее. В статье разбираем три популярных подхода — Service Object, Interactor и Command — с примерами реализации и рекомендациями по выбору для разных сценариев. Узнайте, как правильно организовать сервисный слой в вашем Rails-приложении, чтобы упростить поддержку и масштабирование.

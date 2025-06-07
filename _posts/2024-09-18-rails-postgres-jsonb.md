@@ -8,7 +8,7 @@ version: A49X3
 categories:
   - postgres
   - rails
-hero_image: /images/rails.jpeg
+hero_image: /images/rails.jpg
 hero_darken: true
 toc: true
 menubar_toc: true

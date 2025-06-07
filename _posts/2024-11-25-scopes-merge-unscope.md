@@ -10,7 +10,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpeg
+hero_image: /images/rails.jpg
 hero_darken: true
 ---
 Scopes в Rails — это мощный инструмент для структурирования запросов к базе данных, позволяющий избежать дублирования кода и повысить читаемость. Однако при неправильном использовании merge, default_scope или unscope можно столкнуться с неожиданным поведением SQL-запросов, особенно при работе с PostgreSQL и сложными ассоциациями. В этой статье разберём ключевые особенности scopes и подводные камни, которые важно учитывать в DevOps-среде.

@@ -9,7 +9,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpeg
+hero_image: /images/rails.jpg
 hero_darken: true
 ---
 Rails 7.2 продолжает укреплять позиции фреймворка, предлагая разработчикам улучшенную производительность благодаря YJIT, стабильность Hotwire и оптимизации Active Record. Этот релиз делает работу с Ruby on Rails ещё удобнее, сохраняя при этом совместимость с современными версиями Ruby и инструментами DevOps.

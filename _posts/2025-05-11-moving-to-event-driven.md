@@ -10,7 +10,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/architecture.jpeg
+hero_image: /images/architecture.jpg
 hero_darken: true
 ---
 Событийная архитектура в Ruby-приложениях позволяет эффективно разделять бизнес-логику и упрощает масштабирование кода. Используя механизмы pub/sub с помощью инструментов вроде Wisper или RailsEventStore, разработчики могут создавать гибкие и отказоустойчивые системы. Такой подход особенно полезен при переходе к микросервисам и работе с PostgreSQL в контексте DevOps.

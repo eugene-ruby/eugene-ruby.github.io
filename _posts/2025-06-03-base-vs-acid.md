@@ -10,7 +10,7 @@ categories:
   - architecture
 toc: true
 menubar_toc: true
-hero_image: /images/architecture.jpeg
+hero_image: /images/architecture.jpg
 hero_darken: true
 ---
 При работе с базами данных разработчики часто сталкиваются с выбором между строгими гарантиями ACID в PostgreSQL и гибкостью подхода BASE в NoSQL-решениях. В этой статье разберём ключевые различия между транзакционными и распределёнными системами, их сильные стороны и типичные сценарии применения в Rails-приложениях и DevOps-практиках.

@@ -10,7 +10,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/architecture.jpeg
+hero_image: /images/architecture.jpg
 hero_darken: true
 ---
 Ruby on Rails предлагает мощные инструменты для работы с данными, но некоторые из них, например default_scope, могут принести больше проблем, чем пользы. В этой статье разберём подводные камни автоматического применения условий к запросам и альтернативные подходы, которые помогут избежать неожиданного поведения при работе с PostgreSQL и сложных SQL-запросах.

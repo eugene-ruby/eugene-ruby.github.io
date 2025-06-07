@@ -10,7 +10,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/architecture.jpeg
+hero_image: /images/architecture.jpg
 hero_darken: true
 ---
 PgBouncer — это мощный инструмент для оптимизации работы PostgreSQL, особенно в высоконагруженных Rails-приложениях. Он эффективно управляет соединениями, снижая нагрузку на базу данных и предотвращая её перегрузку. Разберёмся, как правильно настроить PgBouncer, какие режимы работы выбрать и как избежать типичных ошибок при интеграции с Rails и другими компонентами.

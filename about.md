@@ -2,7 +2,7 @@
 layout: page
 title: Кто такой этот дед?
 permalink: /about/
-hero_image: /images/ruby.jpeg
+hero_image: /images/ruby.jpg
 hero_darken: true
 ---
 

@@ -9,7 +9,7 @@ categories:
   - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/ruby.jpeg
+hero_image: /images/ruby.jpg
 hero_darken: true
 ---
 Ruby предлагает мощные инструменты для расширения функциональности через модули — от классических `include` и `extend` до гибкого `prepend` и локальных патчей с `refine`. В этой статье разберёмся, как правильно использовать эти механизмы в Rails-приложениях, избегая типичных ошибок и подводных камней при работе с цепочкой наследования.
