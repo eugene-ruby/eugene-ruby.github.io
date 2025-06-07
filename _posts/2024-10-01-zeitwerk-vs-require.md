@@ -6,8 +6,8 @@ tags: Ruby,Zeitwerk,автозагрузка,require,классы,архитек
 version: A49X3
 date:   2024-09-18 10:00:00 +0300
 categories:
+  - gems
   - ruby
-  - architecture
 hero_image: /images/ruby.jpeg
 hero_darken: true
 toc: true

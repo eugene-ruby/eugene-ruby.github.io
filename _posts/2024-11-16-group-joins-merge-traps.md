@@ -6,6 +6,7 @@ rate: 5
 tags: ActiveRecord,PostgreSQL,SQL,Rails,group,having
 version: A49X3
 categories:
+  - orm
   - rails
 toc: true
 menubar_toc: true

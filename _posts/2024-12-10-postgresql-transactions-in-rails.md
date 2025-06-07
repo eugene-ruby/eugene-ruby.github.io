@@ -6,6 +6,7 @@ rate: 3
 tags: PostgreSQL,Rails,транзакции,ActiveRecord,savepoints,целостность данных
 version: A49X3
 categories:
+  - orm
   - rails
   - postgres
 toc: true

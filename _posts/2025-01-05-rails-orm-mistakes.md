@@ -6,6 +6,7 @@ rate: 3
 tags: ActiveRecord,Ruby on Rails,ORM,PostgreSQL,N+1,scope
 version: A49X3
 categories:
+  - orm
   - rails
 toc: true
 menubar_toc: true

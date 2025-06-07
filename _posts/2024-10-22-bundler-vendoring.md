@@ -6,8 +6,8 @@ tags: Ruby,gems,vendoring,CI,dependencies,network errors
 version: A49X3
 date:   2024-09-18 12:00:00 +0300
 categories:
-  - ruby
   - devops
+  - ruby
 hero_image: /images/ruby.jpeg
 hero_darken: true
 toc: true

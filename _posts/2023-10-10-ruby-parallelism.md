@@ -6,6 +6,7 @@ rate: 3
 tags: Ruby,параллельность,GIL,процессы,асинхронность,Ractor
 version: A49X3
 categories:
+  - performance
   - ruby
 toc: true
 menubar_toc: true

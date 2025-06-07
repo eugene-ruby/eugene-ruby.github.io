@@ -6,8 +6,9 @@ rate: 4
 tags: PostgreSQL,индексы,Rails,миграции,CONCURRENTLY,блокировки
 version: A49X3
 categories:
-  - rails
+  - migration
   - postgres
+  - rails
 toc: true
 menubar_toc: true
 hero_image: /images/rails.jpeg

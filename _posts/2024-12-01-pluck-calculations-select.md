@@ -6,6 +6,7 @@ rate: 3
 tags: Ruby,Rails,PostgreSQL,pluck,count,select
 version: A49X3
 categories:
+  - orm
   - rails
 toc: true
 menubar_toc: true

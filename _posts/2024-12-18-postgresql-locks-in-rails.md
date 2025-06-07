@@ -6,6 +6,7 @@ rate: 4
 tags: PostgreSQL,Ruby on Rails,блокировки,race condition,Sidekiq,конкурентный доступ
 version: A49X3
 categories:
+  - orm
   - rails
   - postgres
 toc: true

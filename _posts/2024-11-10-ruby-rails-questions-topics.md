@@ -2,10 +2,11 @@
 layout: post
 title:  "Острые темы по Ruby и Rails, которые спрашивают на техническом интервью Middle/Senior"
 date:   2024-11-10 09:00:00 +0300
-rate: -
+rate: 5
 tags: Ruby,PostgreSQL,Rails,ORM,метапрограммирование,оптимизация запросов
 version: A49X3
 categories:
+  - rails
   - architecture
 toc: true
 menubar_toc: true

@@ -6,6 +6,7 @@ rate: 3
 tags: Ruby,потоки,GIL,MRI,многопоточность,параллелизм
 version: A49X3
 categories:
+  - performance
   - ruby
 toc: true
 menubar_toc: true

@@ -6,6 +6,7 @@ rate: 3
 tags: Ruby,Rails,PostgreSQL,DevOps,Ractor,Pattern Matching
 version: A49X3
 categories:
+  - performance
   - ruby
 toc: true
 menubar_toc: true

@@ -6,8 +6,8 @@ tags: Ruby, bundle update, Gemfile.lock, зависимости, ошибки, R
 version: A49X3
 date:   2024-09-18 12:00:00 +0300
 categories:
+  - gems
   - ruby
-  - dependency-hell
 hero_image: /images/ruby.jpeg
 hero_darken: true
 toc: true

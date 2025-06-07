@@ -6,6 +6,7 @@ rate: 3
 tags: Ruby on Rails,PostgreSQL,блокировки,оптимистичная блокировка,пессимистичная блокировка,DevOps
 version: A49X3
 categories:
+  - orm
   - rails
   - postgres
 toc: true
