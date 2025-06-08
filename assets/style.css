@@ -103,16 +103,20 @@ section.hero h1.title {
     box-shadow: 0 0 0 2px #111, 0 0 20px rgba(0, 255, 136, 0.3);
     white-space: pre-wrap;
     line-height: 1.4;
-    height: 12em;
+    height: 18em;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
+.terminal-window.err404{
+    height: 20em;
+}
+
 .terminal-links {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 0.2rem 1.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
