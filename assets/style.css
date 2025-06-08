@@ -116,10 +116,9 @@ section.hero h1.title {
 
 .terminal-links {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 0.2rem 1.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    grid-template-columns: 1fr 1fr;         /* всегда 2 столбца */
+    gap: 2px 12px;                          /* фиксированный отступ: 2px по вертикали, 12px между колонками */
+    padding: 4px 0;                         /* чуть меньше "воздуха" */
     white-space: normal;
 }
 
@@ -128,15 +127,14 @@ section.hero h1.title {
     text-decoration: underline;
     cursor: pointer;
     font-family: monospace;
+    font-size: 15px;
     transition: color 0.2s ease;
-    display: grid;
-    grid-template-columns: 2fr; /* по умолчанию 1 колонка */
-    gap: 0.2rem 1.2rem;
-    padding: 0.5rem 0;
-    white-space: normal;
+    display: block;
+    margin: 1px 0;                          /* плотность */
+    line-height: 1.3;
 }
 
 .terminal-link:hover {
     color: #ffffff !important;
-    text-decoration: dotted;
+    text-decoration: underline dotted;
 }
