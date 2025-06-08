@@ -1,0 +1,46 @@
+<script>
+
+    const lines = [
+        "$ login: eugene",
+        "Password:",
+        "a password is required",
+        "Password:",
+        "",
+        "$ cd /home/eugene-ruby.github.io/",
+        "$ ls",
+        `<div class="terminal-links">
+  {% assign sorted_categories = site.categories | sort %}
+  {% for category in sorted_categories %}
+    <a href="/categories/{{ category[0] | slugify }}" class="terminal-link">{{ category[0] }}</a>
+  {% endfor %}
+</div>`,
+
+    ];
+
+    const output = document.getElementById('terminal-content');
+    const buffer = [];
+    const maxLines = 20;
+    let i = 0;
+
+    function printLine() {
+        if (i < lines.length) {
+            buffer.push(lines[i]);
+            if (buffer.length > maxLines) buffer.shift();
+            renderBuffer();
+            i++;
+            setTimeout(printLine, 120);
+        } else {
+            renderBuffer(true); // рисуем prompt с курсором
+        }
+    }
+
+    function renderBuffer(withPrompt = false) {
+        let content = buffer.slice(); // копия
+        if (withPrompt) {
+            content.push('$ cd <span class="terminal-cursor">█</span>');
+        }
+        output.innerHTML = content.join("\n");
+    }
+
+    printLine();
+</script>

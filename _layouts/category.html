@@ -2,12 +2,18 @@
 layout: default
 ---
 
-<h1>Posts in {{ page.category }}</h1>
-<ul>
-    {% for post in site.categories[page.category] %}
-    <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <small>{{ post.date | date: "%B %d, %Y" }}</small>
-    </li>
-    {% endfor %}
-</ul>
+{% include category_terminal.html %}
+
+<section class="section">
+    <div class="container categories">
+        <h1 class="title is-3">📂 Категория: {{ page.category }}</h1>
+
+        <div class="columns is-multiline">
+            {% assign category_name = page.category %}
+            {% assign posts = site.categories[category_name] %}
+            {% for post in posts %}
+            {% include post_card.html post=post %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

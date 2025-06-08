@@ -1,3 +1,12 @@
+.categories .title a {;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;      /* ограничение в 2 строки */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
 .excerpt-container {
     position: relative;
     transition: box-shadow 0.3s ease;
@@ -13,6 +22,9 @@
 /* Раскрытие при наведении */
 .excerpt-container:hover .excerpt-text {
     max-height: 1000px;
+}
+.excerpt-container:hover a {
+    -webkit-line-clamp: 10;
 }
 
 /* Блюр-подложка */
@@ -34,6 +46,7 @@
     opacity: 0;
 }
 
+/* шапка болюр к подложке */
 
 /* Применяем блюр к фону секции */
 section.hero {
@@ -67,20 +80,7 @@ section.hero h1.title {
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
-.terminal-simulated {
-    display: block;
-    background-color: #1e1e1e;
-    color: #00ff88;
-    padding: 1.2rem 1.5rem;
-    border-radius: 6px;
-    font-family: monospace;
-    font-size: 1rem;
-    box-shadow: 0 0 0 2px #111, 0 0 20px rgba(0, 255, 136, 0.3);
-    white-space: pre-wrap;
-    overflow-x: auto;
-    line-height: 1.4;
-    text-align: left;
-}
+/* terminal */
 
 .terminal-cursor {
     display: inline-block;
@@ -91,4 +91,43 @@ section.hero h1.title {
 @keyframes blink {
     0%, 50% { background-color: #00ff88; }
     51%, 100% { background-color: transparent; }
+}
+
+.terminal-window {
+    background-color: #1e1e1e;
+    color: #00ff88;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 1.05rem;
+    box-shadow: 0 0 0 2px #111, 0 0 20px rgba(0, 255, 136, 0.3);
+    white-space: pre-wrap;
+    line-height: 1.4;
+    height: 12em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.terminal-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.2rem 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    white-space: normal;
+}
+
+.terminal-link {
+    color: #00ccff !important;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: monospace;
+    transition: color 0.2s ease;
+}
+
+.terminal-link:hover {
+    color: #ffffff !important;
+    text-decoration: underline dotted;
 }

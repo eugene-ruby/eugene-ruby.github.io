@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Заметки деда"
+title: "Eugene Ruby Ded"
 email: "sodium229897@gmail.com"
 description: "Блог для заметок по Ruby, Rails и PostgreSQL. С болью, с шутками, с продом и 🔥."
 baseurl: ""  # не указывай, если размещаешь в корне GitHub Pages (eugene-ruby.github.io)
@@ -61,6 +61,12 @@ defaults:
       changefreq: "weekly"
       priority: "0.7"
 
+collections:
+  products:
+    output: true
+    permalink: /categories/:name/
+
+
 # Exclude ненужное
 exclude:
   - drafts/*.md
@@ -69,6 +75,8 @@ exclude:
   - Gemfile.lock
   - vendor
   - node_modules
+  - _tools
+  - tmp
 
 # Future-proof
 future: true

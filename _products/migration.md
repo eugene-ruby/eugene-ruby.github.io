@@ -1,8 +1,6 @@
 ---
+layout: category
 title: <pre class="terminal-window"><code id="terminal-content"></code></pre>
-subtitle: 
-layout: home
-show_sidebar: false
+category: migration
 hero_image: /images/ruby.jpg
-hero_darken: true
 ---

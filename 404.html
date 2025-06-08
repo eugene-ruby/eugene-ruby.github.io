@@ -7,11 +7,8 @@ title: <pre>raise PageNotFoundError, "страница не найдена"</pre
 ---
 
 <section class="section">
-    <div class="container has-text-centered">
-        <pre class="terminal-simulated mb-4" id="terminal-output"></pre>
-    </div>
+    <pre class="terminal-window"><code id="terminal-content"></code></pre>
 </section>
-
 
 <script>
     const lines = [
@@ -26,20 +23,38 @@ title: <pre>raise PageNotFoundError, "страница не найдена"</pre
         "Completed 404 Not Found in 42ms (Views: 37.3ms | ActiveRecord: 0.3ms)",
         "",
         "[INFO] Если вы это читаете, то значит дед опять забыл git push 🤦‍♂️",
-        ""
+        "$ ls ../",
+        `<div class="terminal-links">
+  {% assign sorted_categories = site.categories | sort %}
+  {% for category in sorted_categories %}
+    <a href="/categories/{{ category[0] | slugify }}" class="terminal-link">{{ category[0] }}</a>
+  {% endfor %}
+</div>`
     ];
 
-    const output = document.getElementById('terminal-output');
+    const output = document.getElementById('terminal-content');
+    const buffer = [];
+    const maxLines = 20;
     let i = 0;
 
     function printLine() {
         if (i < lines.length) {
-            output.innerHTML += lines[i] + '\n';
+            buffer.push(lines[i]);
+            if (buffer.length > maxLines) buffer.shift();
+            renderBuffer();
             i++;
-            setTimeout(printLine, 180);
+            setTimeout(printLine, 120);
         } else {
-            output.innerHTML += '$ cd <a href=\"/\">на главную</a> <span class="terminal-cursor">█</span>';
+            renderBuffer(true); // рисуем prompt с курсором
         }
+    }
+
+    function renderBuffer(withPrompt = false) {
+        let content = buffer.slice(); // копия
+        if (withPrompt) {
+            content.push('$ cd <span class="terminal-cursor">█</span>');
+        }
+        output.innerHTML = content.join("\n");
     }
 
     printLine();

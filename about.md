@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Кто такой этот дед?
+title: Кто такой этот "Eugene Ruby Ded"?
 permalink: /about/
 hero_image: /images/ruby.jpg
 hero_darken: true

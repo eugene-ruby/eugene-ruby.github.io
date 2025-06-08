@@ -28,18 +28,28 @@
 {% endunless %}
 {% include callouts.html %}
 
+{% include home_terminal.html %}
+
+{% if site.cookie_policy %}
+{% endif %}
 <section class="section">
-    <div class="container">
+    <div class="container categories">
         <h2 class="title is-3">📚 Категории</h2>
 
-        {% for category in site.categories %}
+        {% assign sorted_categories = site.categories | sort %}
+        {% for category in sorted_categories %}
         <div class="mb-6">
-            <h3 class="title is-4">{{ category[0] }}</h3>
+            <h3 class="title is-4">
+                <a class="is-size-6 has-text-link" href="/categories/{{ category[0] | slugify }}/">
+                    Все статьи категории {{ category[0] }} →
+                </a>
+            </h3>
+
             <div class="columns is-multiline">
-                {% for post in category[1] %}
-                {% if post.categories.first == category[0] %}
+                {% assign posts = category[1] | sort: 'date' | reverse %}
+                {% assign top_posts = posts | slice: 0, 3 %}
+                {% for post in top_posts %}
                 {% include post_card.html post=post %}
-                {% endif %}
                 {% endfor %}
             </div>
         </div>
