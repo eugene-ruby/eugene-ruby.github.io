@@ -1,8 +1,7 @@
 <script>
 
     const lines = [
-        "$ cd about_me",
-        "$ cat profile.md",
+        "$ cat about/profile.md",
         "# Кто такой этот \"Eugene Ruby Ded\"?",
         "## Родом из эпохи дискет и ковров на стенах",
         "Родился в СССР, в XX веке, в Москве — когда Google не существовал,",
@@ -21,7 +20,7 @@
         "",
         "## Первый компьютер — как первая любовь",
         "Intel 80486DX с 8192 КБ ОЗУ. Не гигабайт, не мегабайт — именно килобайт.",
-        "Он был медленным, шумным и горячим... как чугунный радиатор мс-140.",
+        "Он был медленным, шумным и ЭЛТ монитор горячим... как чугунный радиатор мс-140.",
         "Но тогда казался окном в цифровую вечность.",
         "Ни один MacBook не вызывает такой ностальгии.",
         "",
@@ -29,7 +28,6 @@
         "press <kkb id='sa34'>any key</kkb> to send a message to Eugene Ruby Ded...",
     ];
 
-    // "<a href=\"https://t.me/your_bot\" target=\"_blank\" rel=\"noopener\">send_message</a>",
     const output = document.getElementById('terminal-content');
     const buffer = [];
     const maxLines = 200;
@@ -41,31 +39,36 @@
             if (buffer.length > maxLines) buffer.shift();
             renderBuffer();
             i++;
-            setTimeout(printLine, 10);
+            setTimeout(printLine, 286);
         } else {
-            renderBuffer(true); // рисуем prompt с курсором
+            renderBuffer(true); // добавляем курсор в конце
         }
     }
 
     function renderBuffer(withPrompt = false) {
-        let content = buffer.slice(); // копия
+        const content = buffer.slice(); // копия буфера
         if (withPrompt) {
             content.push('$ <span class="terminal-cursor">█</span>');
         }
+
         output.innerHTML = content.join("\n");
-        // После отрисовки терминала
+
+        // Всегда скроллим вниз к последнему элементу
         setTimeout(() => {
-
-            document.getElementById("sa34").addEventListener("click", function () {
-                window.open("https://t.me/EugeneRubyBot", "_blank");
-            });
-
-            const cursor = document.querySelector(".terminal-cursor");
-            if (cursor) {
-                cursor.scrollIntoView({ behavior: "smooth", block: "end" });
+            const terminal = document.querySelector('.terminal-window');
+            if (terminal) {
+                terminal.scrollTop = terminal.scrollHeight;
             }
-        }, 100); // небольшая задержка, чтобы DOM обновился
+
+            const botLink = document.getElementById("sa34");
+            if (botLink) {
+                botLink.addEventListener("click", function () {
+                    window.open("https://t.me/EugeneRubyBot", "_blank");
+                });
+            }
+        }, 50);
     }
 
     printLine();
+
 </script>

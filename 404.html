@@ -43,25 +43,34 @@ title: <pre>raise PageNotFoundError, "страница не найдена"</pre
             if (buffer.length > maxLines) buffer.shift();
             renderBuffer();
             i++;
-            setTimeout(printLine, 300);
+            setTimeout(printLine, 286);
         } else {
-            renderBuffer(true); // рисуем prompt с курсором
+            renderBuffer(true); // добавляем курсор в конце
         }
     }
 
     function renderBuffer(withPrompt = false) {
-        let content = buffer.slice(); // копия
+        const content = buffer.slice(); // копия буфера
         if (withPrompt) {
             content.push('$ cd <span class="terminal-cursor">█</span>');
         }
+
         output.innerHTML = content.join("\n");
-        // После отрисовки терминала
+
+        // Всегда скроллим вниз к последнему элементу
         setTimeout(() => {
-            const cursor = document.querySelector(".terminal-cursor");
-            if (cursor) {
-                cursor.scrollIntoView({ behavior: "smooth", block: "end" });
+            const terminal = document.querySelector('.terminal-window');
+            if (terminal) {
+                terminal.scrollTop = terminal.scrollHeight;
             }
-        }, 100); // небольшая задержка, чтобы DOM обновился
+
+            const botLink = document.getElementById("sa34");
+            if (botLink) {
+                botLink.addEventListener("click", function () {
+                    window.open("https://t.me/EugeneRubyBot", "_blank");
+                });
+            }
+        }, 50);
     }
 
     printLine();
