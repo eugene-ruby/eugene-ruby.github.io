@@ -129,9 +129,14 @@ section.hero h1.title {
     cursor: pointer;
     font-family: monospace;
     transition: color 0.2s ease;
+    display: grid;
+    grid-template-columns: 2fr; /* по умолчанию 1 колонка */
+    gap: 0.2rem 1.2rem;
+    padding: 0.5rem 0;
+    white-space: normal;
 }
 
 .terminal-link:hover {
     color: #ffffff !important;
-    text-decoration: underline dotted;
+    text-decoration: dotted;
 }
