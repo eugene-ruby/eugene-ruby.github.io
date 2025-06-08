@@ -94,24 +94,29 @@ section.hero h1.title {
 }
 
 .terminal-window {
+    display: block;
     background-color: #1e1e1e;
     color: #00ff88;
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    border-radius: 6px;
     font-family: monospace;
-    font-size: 1.05rem;
+    font-size: 1rem;
     box-shadow: 0 0 0 2px #111, 0 0 20px rgba(0, 255, 136, 0.3);
     white-space: pre-wrap;
+    overflow-x: auto;
+    overflow-y: auto;              /* 👈 Включаем вертикальную прокрутку */
+    max-height: 420px;             /* 👈 Ограничиваем высоту */
+    min-height: 20em;
     line-height: 1.4;
-    height: 18em;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    text-align: left;
 }
 
-.terminal-window.err404{
-    height: 20em;
+.terminal-window.err404 {
+    min-height: 20em;
+}
+
+.terminal-window.about{
+    min-height: 20em;
 }
 
 .terminal-links {
@@ -137,4 +142,25 @@ section.hero h1.title {
 .terminal-link:hover {
     color: #ffffff !important;
     text-decoration: underline dotted;
+}
+
+footer a {
+    color: #00ccff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: dotted;
+}
+
+#sa34 {
+    background-color: #222;
+    color: #0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.95em;
+    border: 1px solid #0f0;
+    cursor: pointer;
 }

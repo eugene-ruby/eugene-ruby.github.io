@@ -1,0 +1,71 @@
+<script>
+
+    const lines = [
+        "$ cd about_me",
+        "$ cat profile.md",
+        "# Кто такой этот \"Eugene Ruby Ded\"?",
+        "## Родом из эпохи дискет и ковров на стенах",
+        "Родился в СССР, в XX веке, в Москве — когда Google не существовал,",
+        "а Интернет звучал как фантастика из журнала «Наука и жизнь».",
+        "",
+        "## Программист с детства (буквально)",
+        "В 10 лет уже писал первые программы на QBasic, искренне веря,",
+        "что GOTO — это путь к счастью. Устанавливал Windows 3.11 с 13 дискет,",
+        "тренируя терпение, ловкость рук и философское отношение",
+        "к ошибке 'disk 7 corrupted'.",
+        "",
+        "## MS-DOS — первый хардкор",
+        "Работал в основном под MS-DOS, где даже мышь приходилось \"дозагружать\".",
+        "Команды знал наизусть, а батники писал, чтобы автоматизировать запуск игр",
+        "и казаться взрослым.",
+        "",
+        "## Первый компьютер — как первая любовь",
+        "Intel 80486DX с 8192 КБ ОЗУ. Не гигабайт, не мегабайт — именно килобайт.",
+        "Он был медленным, шумным и горячим... как чугунный радиатор мс-140.",
+        "Но тогда казался окном в цифровую вечность.",
+        "Ни один MacBook не вызывает такой ностальгии.",
+        "",
+        "",
+        "press <kkb id='sa34'>any key</kkb> to send a message to Eugene Ruby Ded...",
+    ];
+
+    // "<a href=\"https://t.me/your_bot\" target=\"_blank\" rel=\"noopener\">send_message</a>",
+    const output = document.getElementById('terminal-content');
+    const buffer = [];
+    const maxLines = 200;
+    let i = 0;
+
+    function printLine() {
+        if (i < lines.length) {
+            buffer.push(lines[i]);
+            if (buffer.length > maxLines) buffer.shift();
+            renderBuffer();
+            i++;
+            setTimeout(printLine, 10);
+        } else {
+            renderBuffer(true); // рисуем prompt с курсором
+        }
+    }
+
+    function renderBuffer(withPrompt = false) {
+        let content = buffer.slice(); // копия
+        if (withPrompt) {
+            content.push('$ <span class="terminal-cursor">█</span>');
+        }
+        output.innerHTML = content.join("\n");
+        // После отрисовки терминала
+        setTimeout(() => {
+
+            document.getElementById("sa34").addEventListener("click", function () {
+                window.open("https://t.me/EugeneRubyBot", "_blank");
+            });
+
+            const cursor = document.querySelector(".terminal-cursor");
+            if (cursor) {
+                cursor.scrollIntoView({ behavior: "smooth", block: "end" });
+            }
+        }, 100); // небольшая задержка, чтобы DOM обновился
+    }
+
+    printLine();
+</script>

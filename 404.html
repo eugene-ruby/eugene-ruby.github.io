@@ -34,7 +34,7 @@ title: <pre>raise PageNotFoundError, "страница не найдена"</pre
 
     const output = document.getElementById('terminal-content');
     const buffer = [];
-    const maxLines = 20;
+    const maxLines = 200;
     let i = 0;
 
     function printLine() {
@@ -55,6 +55,13 @@ title: <pre>raise PageNotFoundError, "страница не найдена"</pre
             content.push('$ cd <span class="terminal-cursor">█</span>');
         }
         output.innerHTML = content.join("\n");
+        // После отрисовки терминала
+        setTimeout(() => {
+            const cursor = document.querySelector(".terminal-cursor");
+            if (cursor) {
+                cursor.scrollIntoView({ behavior: "smooth", block: "end" });
+            }
+        }, 100); // небольшая задержка, чтобы DOM обновился
     }
 
     printLine();
