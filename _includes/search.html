@@ -52,8 +52,8 @@
         const output = document.getElementById('search-output');
         let postsData = [];
 
-        fetch('/search.json')
-            .then(res => res.json())
+        fetch('/search.json?rand={{ site.time | date: "%s" }}')
+                .then(res => res.json())
             .then(data => postsData = data);
         // обработка ввода
         fakeInput.addEventListener('keydown', (e) => {
