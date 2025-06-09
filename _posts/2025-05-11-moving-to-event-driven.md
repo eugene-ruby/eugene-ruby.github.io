@@ -5,7 +5,7 @@ title:  "Как мы переехали на event-driven (и не пожале�
 date:   2025-05-11 12:00:00 +0300
 rate: 5
 tags: Ruby,событийная архитектура,pub/sub,Wisper,RailsEventStore,PostgreSQL
-version: A49X3
+version: A9X
 categories:
   - architecture
   - rails

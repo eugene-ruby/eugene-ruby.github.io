@@ -4,7 +4,7 @@ subtitle: <div id="terminal"></div>
 title:  "rbenv, RVM или chruby? Менеджеры Ruby под микроскопом"
 rate: 3
 tags: Ruby,RVM,rbenv,chruby,менеджеры версий,Ubuntu
-version: A49X3
+version: A9X
 date:   2024-09-18 14:00:00 +0300
 categories:
   - tools

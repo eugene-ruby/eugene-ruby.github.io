@@ -5,7 +5,7 @@ title:  "Ruby: method_missing и respond_to_missing? — друг или вра�
 date:   2023-03-01 12:00:00 +0300
 rate: 4
 tags: метапрограммирование Ruby, метод method_missing, динамические методы, DSL в Ruby, respond_to_missing, магические методы Ruby
-version: A49X3
+version: A9X
 categories:
   - ruby
 toc: true

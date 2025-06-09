@@ -5,7 +5,7 @@ title:  "Ruby 3.0 → 3.4: что добавили, что убрали, что 
 date:   2025-03-10 11:30:00 +0300
 rate: 3
 tags: Ruby,Rails,PostgreSQL,DevOps,Ractor,Pattern Matching
-version: A49X3
+version: A9X
 categories:
   - performance
   - ruby

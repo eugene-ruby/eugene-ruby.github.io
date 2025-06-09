@@ -1,5 +1,5 @@
 <script>
-
+    document.addEventListener('DOMContentLoaded', () => {
     const lines = [
         "$ cat about/profile.md",
         "# Кто такой этот \"Eugene Ruby Ded\"?",
@@ -59,16 +59,16 @@
             if (terminal) {
                 terminal.scrollTop = terminal.scrollHeight;
             }
-
-            const botLink = document.getElementById("sa34");
-            if (botLink) {
-                const encoded = "aHR0cHM6Ly90Lm1lL0V1Z2VuZVJ1YnlCb3Q=";
-                const url = atob(encoded);
-                botLink.addEventListener("click", () => window.open(url, "_blank"));
-            }
         }, 50);
     }
 
     printLine();
 
+    const botLink = document.getElementById("sa34");
+    if (botLink) {
+        const encoded = "aHR0cHM6Ly90Lm1lL0V1Z2VuZVJ1YnlCb3Q=";
+        const url = atob(encoded);
+        botLink.addEventListener("click", () => window.open(url, "_blank"));
+    }
+    });
 </script>

@@ -5,7 +5,7 @@ title:  "Почему staging должен быть почти как прод. 
 date:   2025-01-28 12:00:00 +0300
 rate: 3
 tags: Ruby,PostgreSQL,ActiveRecord,SQL,тестирование,N+1
-version: A49X3
+version: A9X
 categories:
   - postgres
 toc: true

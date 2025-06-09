@@ -5,7 +5,7 @@ title:  "Docker и его друзья: Compose, Swarm, K8s"
 date:   2024-09-18 12:00:00 +0300
 rate: 3
 tags: Docker,DevOps,Ruby on Rails,PostgreSQL,масштабируемость
-version: A49X3
+version: A9X
 categories:
   - devops
   - architecture

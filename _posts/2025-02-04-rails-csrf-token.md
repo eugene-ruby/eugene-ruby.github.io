@@ -5,7 +5,7 @@ title:  "CSRF в Rails: зачем этот authenticity_token вообще ну
 date:   2024-09-18 12:00:00 +0300
 rate: 2
 tags: Ruby on Rails,безопасность,CSRF,веб-разработка
-version: A49X3
+version: A9X
 categories:
   - security
   - rails

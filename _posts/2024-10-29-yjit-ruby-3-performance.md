@@ -4,7 +4,7 @@ subtitle: <div id="terminal"></div>
 title:  "YJIT и производительность Ruby 3+: стоит ли того?"
 rate: 3
 tags: Ruby,YJIT,оптимизация,производительность,JIT-компиляция,продакшен
-version: A49X3
+version: A9X
 date:   2024-09-20 12:00:00 +0300
 categories:
   - performance

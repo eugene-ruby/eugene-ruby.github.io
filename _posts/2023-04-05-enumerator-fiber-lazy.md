@@ -5,7 +5,7 @@ title:  "Ruby: Enumerator, Lazy, Fiber — искусство не делать 
 date:   2023-04-05 13:00:00 +0300
 rate: 5
 tags: Ruby,итераторы,Enumerator,Lazy,Fiber,ленивые вычисления
-version: A49X3
+version: A9X
 categories:
   - ruby
 toc: true

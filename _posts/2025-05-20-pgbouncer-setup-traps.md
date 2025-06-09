@@ -5,7 +5,7 @@ title: "PgBouncer: настройка, проблемы и ловушки"
 date: 2025-05-20 14:00:00 +0300
 rate: 3
 tags: PgBouncer,PostgreSQL,Rails,оптимизация,настройка,база данных
-version: A49X3
+version: A9X
 categories:
   - postgres
   - rails

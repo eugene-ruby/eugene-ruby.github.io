@@ -5,7 +5,7 @@ title:  "Ruby: GIL, MRI, MJIT, YJIT — глоссарий рубистовск�
 date:   2025-01-30 10:00:00 +0300
 rate: 3
 tags: Ruby,GVL,YJIT,Ractors,Fiber Scheduler,CRuby
-version: A49X3
+version: A9X
 categories:
   - ruby
 toc: true

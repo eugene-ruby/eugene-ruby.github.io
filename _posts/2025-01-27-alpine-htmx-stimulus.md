@@ -5,7 +5,7 @@ title: "Alpine.js, htmx, Stimulus и другие: лёгкий JS без React-
 date:   2025-01-27 12:00:00 +0300
 rate: 2
 tags: Ruby on Rails, JavaScript, Frontend, Alpine.js, htmx, Stimulus, javascript, JS
-version: A49X3
+version: A9X
 categories:
   - frontend
   - rails

@@ -5,7 +5,7 @@ title: "CAP и PACELC глазами PostgreSQL-разработчика"
 date: 2025-06-04 12:00:00 +0300
 rate: 4
 tags: PostgreSQL,CAP-теорема,PACELC,NoSQL,репликация,кластер
-version: A49X3
+version: A9X
 categories:
   - database
   - architecture

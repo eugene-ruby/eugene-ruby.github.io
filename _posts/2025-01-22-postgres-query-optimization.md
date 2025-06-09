@@ -5,7 +5,7 @@ title:  "Сделал EXPLAIN — и что дальше? Как оптимиз�
 date:   2025-01-22 11:00:00 +0300
 rate: 4
 tags: PostgreSQL,SQL,оптимизация запросов,EXPLAIN ANALYZE,индексы,JOIN
-version: A49X3
+version: A9X
 categories:
   - postgres
 toc: true

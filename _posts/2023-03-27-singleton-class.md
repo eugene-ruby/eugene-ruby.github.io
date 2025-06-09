@@ -5,7 +5,7 @@ title:  "Ruby: class << self и singleton-классы — что это за м
 date:   2023-03-27 15:00:00 +0300
 rate: 4
 tags: Ruby,Singleton-классы,метапрограммирование,class methods,extend,объекты
-version: A49X3
+version: A9X
 categories:
   - ruby
 toc: true

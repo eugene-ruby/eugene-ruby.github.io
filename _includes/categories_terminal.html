@@ -38,6 +38,14 @@
             content.push('$ <span class="terminal-cursor">█</span>');
         }
         output.innerHTML = content.join("\n");
+
+        // Всегда скроллим вниз к последнему элементу
+        setTimeout(() => {
+            const terminal = document.querySelector('.terminal-window');
+            if (terminal) {
+                terminal.scrollTop = terminal.scrollHeight;
+            }
+        }, 50);
     }
 
     printLine();

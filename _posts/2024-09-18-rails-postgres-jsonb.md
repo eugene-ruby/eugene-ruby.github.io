@@ -5,7 +5,7 @@ title:  "ActiveRecord и PostgreSQL JSONB: когда обычных табли�
 date:   2024-09-18 12:00:00 +0300
 rate: 3
 tags: Ruby,PostgreSQL,JSONB,Rails,базы данных,миграции
-version: A49X3
+version: A9X
 categories:
   - postgres
   - rails

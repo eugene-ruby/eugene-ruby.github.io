@@ -5,7 +5,7 @@ title:  "Паттерн Command в Ruby: `self.call`, чистые руки и �
 date:   2024-05-06 15:00:00 +0300
 rate: 4
 tags: Ruby,Rails,PostgreSQL,DevOps,CI/CD,репликация
-version: A49X3
+version: A9X
 categories:
   - pattern
   - ruby

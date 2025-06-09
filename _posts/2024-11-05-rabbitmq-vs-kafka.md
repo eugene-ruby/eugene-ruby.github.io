@@ -5,7 +5,7 @@ title: "Очередь или поток? Kafka vs RabbitMQ с практиче�
 date:   2024-09-20 12:00:00 +0300
 rate: 3
 tags: Ruby on Rails,Kafka,RabbitMQ,архитектура,PostgreSQL,брокеры сообщений
-version: A49X3
+version: A9X
 categories:
   - architecture
   - rails

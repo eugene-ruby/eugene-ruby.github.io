@@ -5,7 +5,7 @@ title: "SQL-инъекции в Rails: не доверяй params как себ�
 date: 2024-09-18 12:00:00 +0300
 rate: 2
 tags: Ruby on Rails, PostgreSQL, Security, SQL Injection, Web Development
-version: A49X3
+version: A9X
 categories:
   - security
   - rails

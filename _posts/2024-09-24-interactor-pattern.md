@@ -5,7 +5,7 @@ title:  "Interactor в Ruby: `.call!`, контекст и грязные рук
 date:   2024-09-24 12:00:00 +0300
 rate: 3
 tags: Interactor,Ruby,Rails,бизнес-логика,Service-объекты,ошибки
-version: A49X3
+version: A9X
 categories:
   - pattern
   - ruby

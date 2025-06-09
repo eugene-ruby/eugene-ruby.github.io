@@ -4,7 +4,7 @@ subtitle: <div id="terminal"></div>
 title:  "Ruby: const_missing, autoload, Zeitwerk и просветление в require"
 date:   2021-11-17 10:00:00 +0300
 tags: Ruby,автозагрузка,require,load,Rails,Zeitwerk
-version: A49X3
+version: A9X
 rate: 3
 categories:
   - ruby

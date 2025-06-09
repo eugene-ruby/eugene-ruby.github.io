@@ -5,7 +5,7 @@ title:  "Ruby: define_method против define_singleton_method — метап
 date:   2023-03-09 11:00:00 +0300
 rate: 3
 tags: Ruby,метапрограммирование,define_method,define_singleton_method,DRY,Rails
-version: A49X3
+version: A9X
 categories:
   - ruby
 toc: true

@@ -5,7 +5,7 @@ title:  "Оптимистичные и пессимистичные блокир
 date:   2024-12-26 10:30:00 +0300
 rate: 3
 tags: Ruby on Rails,PostgreSQL,блокировки,оптимистичная блокировка,пессимистичная блокировка,DevOps
-version: A49X3
+version: A9X
 categories:
   - orm
   - rails

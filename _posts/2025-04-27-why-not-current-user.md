@@ -5,7 +5,7 @@ title:  "Почему нельзя просто взять current_user"
 date:   2025-04-27 12:00:00 +0300
 rate: 3
 tags: Ruby on Rails,current_user,фоновые задачи,сериализация,PostgreSQL,DevOps
-version: A49X3
+version: A9X
 categories:
   - architecture
   - rails

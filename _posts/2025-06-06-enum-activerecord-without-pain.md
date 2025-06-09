@@ -5,7 +5,7 @@ title:  "Enum в ActiveRecord: как сделать красиво, а не ч�
 date:   2024-09-18 12:00:00 +0300
 rate: 3
 tags: Ruby,Rails,Enum,PostgreSQL,ActiveRecord,Бизнес-логика
-version: A49X3
+version: A9X
 categories:
   - pattern
   - rails

@@ -5,7 +5,7 @@ title:  "Ruby: include, extend, prepend и refine — кто ты из моду�
 date:   2023-03-18 12:30:00 +0300
 rate: 3
 tags: Ruby,модули,include,extend,prepend,refine
-version: A49X3
+version: A9X
 categories:
   - ruby
 toc: true

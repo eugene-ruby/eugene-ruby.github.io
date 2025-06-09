@@ -5,7 +5,7 @@ title:  "Транзакции в Rails + PostgreSQL: коммит или отк�
 date:   2024-12-10 14:00:00 +0300
 rate: 3
 tags: PostgreSQL,Rails,транзакции,ActiveRecord,savepoints,целостность данных
-version: A49X3
+version: A9X
 categories:
   - orm
   - rails

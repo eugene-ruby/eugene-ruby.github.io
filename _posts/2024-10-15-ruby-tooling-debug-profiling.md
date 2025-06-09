@@ -4,7 +4,7 @@ subtitle: <div id="terminal"></div>
 title:  "Debug, Benchmark, StackProf — как Ruby помогает себе сам"
 rate: 3
 tags: Ruby,Debug,Benchmark,StackProf,отладка,производительность
-version: A49X3
+version: A9X
 date:   2024-09-18 12:00:00 +0300
 categories:
   - performance

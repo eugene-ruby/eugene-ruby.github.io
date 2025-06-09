@@ -5,7 +5,7 @@ title: "Hotwire, Turbo и Stimulus: frontend без JS-фреймворков (�
 date:   2024-09-20 12:00:00 +0300
 rate: 2
 tags: Ruby on Rails, Hotwire, Turbo, Stimulus, архитектура, JS, frontend, javascript
-version: A49X3
+version: A9X
 categories:
   - frontend
   - rails

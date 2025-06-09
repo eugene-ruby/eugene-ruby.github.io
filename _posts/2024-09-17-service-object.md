@@ -5,7 +5,7 @@ title:  "Service Object в Ruby: когда `.call` уже не справляе
 date:   2024-09-17 12:00:00 +0300
 rate: 4
 tags: Ruby on Rails,Service Object,бизнес-логика,PostgreSQL,DevOps,масштабируемость
-version: A49X3
+version: A9X
 categories:
   - pattern
   - ruby

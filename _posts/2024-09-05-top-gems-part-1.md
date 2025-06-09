@@ -5,7 +5,7 @@ title:  "10 Ruby-гемов, с которых начинается путь к�
 date: 2024-09-05 10:00:00 +0300
 rate: 2
 tags: ruby gems bundler aws-sdk-core aws-sigv4 jmespath aws-partitions i18n activesupport rack aws-eventstream rake
-version: A49X3
+version: A9X
 categories:
   - gems
   - ruby

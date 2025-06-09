@@ -13,6 +13,8 @@ layout: default
     {{ content }}
 </div>
 
+<p>🗓 Дата публикации: {{ page.date | date: '%d.%m.%Y' }}, но это не точно...</p>
+
 {%- assign raw_tags = page.tags | join: "," -%}
 {%- assign cleaned_tags = raw_tags | replace: ",", " " | split: " " | uniq -%}
 
@@ -39,7 +41,7 @@ layout: default
 {% if shuffled.size > 0 %}
 <div class="container categories">
     <div class="related my-6">
-        <h3>🔗 Интересные статьи</h3>
+        <h5>🔗Если еще не прочитали, то сейчас самое время</h5>
         <div class="columns is-multiline">
             {% for post in shuffled %}
             {% include post_card.html post=post %}
@@ -49,7 +51,6 @@ layout: default
 </div>
 {% endif %}
 
-<p>🗓 Дата: {{ page.date | date: '%d.%m.%Y' }}, но это не точно</p>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {

@@ -5,7 +5,7 @@ title:  "10 типичных ошибок при работе с ORM в Rails"
 date:   2025-01-05 11:00:00 +0300
 rate: 3
 tags: ActiveRecord,Ruby on Rails,ORM,PostgreSQL,N+1,scope
-version: A49X3
+version: A9X
 categories:
   - orm
   - rails

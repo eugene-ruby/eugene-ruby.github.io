@@ -5,7 +5,7 @@ title:  "CQRS, Event Sourcing и DDD в микросервисах на Rails"
 date:   2024-12-01 10:00:00 +0300
 rate: 4
 tags: Ruby,PostgreSQL,Rails,DevOps,базы данных,оптимизация запросов
-version: A49X3
+version: A9X
 categories:
     - architecture
     - rails

@@ -5,7 +5,7 @@ title:  "Острые темы по Ruby и Rails, которые спрашив
 date:   2024-11-10 09:00:00 +0300
 rate: 5
 tags: Ruby,PostgreSQL,Rails,ORM,метапрограммирование,оптимизация запросов
-version: A49X3
+version: A9X
 categories:
   - rails
   - architecture
