@@ -5,7 +5,7 @@ layout: default
 {% include search.html %}
 {% include category_terminal.html %}
 
-<section class="section">
+<section id="posts" class="section">
     <div class="container categories">
         <h1 class="title is-3">📂 Категория: {{ page.category }}</h1>
 
@@ -18,3 +18,9 @@ layout: default
         </div>
     </div>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('posts')?.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>

@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
-
 {% include terminal.html %}
 {% include search.html %}
 {% include post_terminal.html %}
 
-<div class="content">
+<div id="content" class="content">
     {% if page.series %}
     {% include series.html %}
     {% endif %}
@@ -51,3 +50,14 @@ layout: default
 {% endif %}
 
 <p>🗓 Дата: {{ page.date | date: '%d.%m.%Y' }}, но это не точно</p>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+            const el = document.getElementById('content');
+            if (el) {
+                const top = el.getBoundingClientRect().top + window.scrollY - 100;
+                window.scrollTo({ top, behavior: 'smooth' });
+            }
+        }, 100);
+    });
+</script>
