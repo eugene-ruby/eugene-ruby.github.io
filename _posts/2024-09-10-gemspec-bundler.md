@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Gemspec и Bundler: как устроены гемы"
 rate: 3
 tags: Ruby,гемы,Bundler,зависимости,gemspec,production

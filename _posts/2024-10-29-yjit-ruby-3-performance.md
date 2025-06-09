@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "YJIT и производительность Ruby 3+: стоит ли того?"
 rate: 3
 tags: Ruby,YJIT,оптимизация,производительность,JIT-компиляция,продакшен

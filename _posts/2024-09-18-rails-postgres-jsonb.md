@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "ActiveRecord и PostgreSQL JSONB: когда обычных таблиц уже недостаточно"
 date:   2024-09-18 12:00:00 +0300
 rate: 3

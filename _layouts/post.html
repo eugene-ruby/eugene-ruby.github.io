@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
-<div class="content">
-    <p>Published: {{ page.date | date: '%b %-d, %Y' }} by {{ page.author }}</p>
 
+{% include terminal.html %}
+{% include search.html %}
+{% include post_terminal.html %}
+
+<div class="content">
     {% if page.series %}
     {% include series.html %}
     {% endif %}
@@ -35,12 +38,16 @@ layout: default
 
 {% assign shuffled = matches | sample: 3 %}
 {% if shuffled.size > 0 %}
-<div class="related my-6">
-    <h3>🔗 Интересные статьи</h3>
-    <div class="columns is-multiline">
-        {% for post in shuffled %}
-        {% include post_card.html post=post %}
-        {% endfor %}
+<div class="container categories">
+    <div class="related my-6">
+        <h3>🔗 Интересные статьи</h3>
+        <div class="columns is-multiline">
+            {% for post in shuffled %}
+            {% include post_card.html post=post %}
+            {% endfor %}
+        </div>
     </div>
 </div>
 {% endif %}
+
+<p>🗓 Дата: {{ page.date | date: '%d.%m.%Y' }}, но это не точно</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Ruby: define_method против define_singleton_method — метапрограммируй, но не колдуй"
 date:   2023-03-09 11:00:00 +0300
 rate: 3

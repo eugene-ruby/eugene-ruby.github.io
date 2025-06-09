@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Гемы под капотом: 10 библиотек, которые двигают весь Ruby-мир вперёд. Часть II"
 date: 2024-09-05 10:00:00 +0300
 rate: 2

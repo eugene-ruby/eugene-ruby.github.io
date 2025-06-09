@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Архитектура, AWS и DSL: 10 Ruby-гемов для тех, кто вышел за пределы Hello World. Часть III"
 date: 2024-09-06 10:00:00 +0300
 rate: 2

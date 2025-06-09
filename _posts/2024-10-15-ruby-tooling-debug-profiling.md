@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Debug, Benchmark, StackProf — как Ruby помогает себе сам"
 rate: 3
 tags: Ruby,Debug,Benchmark,StackProf,отладка,производительность

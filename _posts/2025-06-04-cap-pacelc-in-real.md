@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title: "CAP и PACELC глазами PostgreSQL-разработчика"
 date: 2025-06-04 12:00:00 +0300
 rate: 4

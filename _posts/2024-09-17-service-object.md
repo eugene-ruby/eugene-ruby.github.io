@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Service Object в Ruby: когда `.call` уже не справляется"
 date:   2024-09-17 12:00:00 +0300
 rate: 4

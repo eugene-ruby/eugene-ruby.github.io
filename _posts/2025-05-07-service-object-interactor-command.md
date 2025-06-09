@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Service Object, Interactor и Command-подход: кто во что обернут"
 date:   2025-05-07 11:00:00 +0300
 rate: 4

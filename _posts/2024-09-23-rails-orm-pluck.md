@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "ActiveRecord: select, pluck и .ids — как не уронить базу"
 date:   2024-10-23 10:30:00 +0300
 rate: 3

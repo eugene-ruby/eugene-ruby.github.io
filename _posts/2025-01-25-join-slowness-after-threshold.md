@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Был JOIN — и всё было хорошо. Пока таблица не превысила 1000 строк..."
 date:   2025-01-25 14:00:00 +0300
 rate: 3

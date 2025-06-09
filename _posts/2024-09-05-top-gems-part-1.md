@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "10 Ruby-гемов, с которых начинается путь каждого разработчика. Часть I"
 date: 2024-09-05 10:00:00 +0300
 rate: 2

@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title: "Репликация в PostgreSQL: синхронная, асинхронная и логическая"
 date: 2025-06-04 12:30:00 +0300
 rate: 5

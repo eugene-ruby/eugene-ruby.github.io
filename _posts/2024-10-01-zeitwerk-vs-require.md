@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Zeitwerk против require: автоматическая загрузка без боли"
 rate: 3
 tags: Ruby,Zeitwerk,автозагрузка,require,классы,архитектура

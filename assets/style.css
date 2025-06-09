@@ -105,18 +105,9 @@ section.hero h1.title {
     white-space: pre-wrap;
     overflow-x: auto;
     overflow-y: auto;              /* 👈 Включаем вертикальную прокрутку */
-    max-height: 420px;             /* 👈 Ограничиваем высоту */
-    min-height: 20em;
+    height: 420px;             /* 👈 Ограничиваем высоту */
     line-height: 1.4;
     text-align: left;
-}
-
-.terminal-window.err404 {
-    min-height: 20em;
-}
-
-.terminal-window.about{
-    min-height: 20em;
 }
 
 .terminal-links {
@@ -143,6 +134,82 @@ section.hero h1.title {
     color: #ffffff !important;
     text-decoration: underline dotted;
 }
+
+.terminal-bottom {
+    display: block;
+    min-height: 1.2em;
+    background: #000000;
+    position: relative;
+}
+
+.terminal-input {
+    display: block;
+    min-height: 1.2em;
+    background: #000000;
+    color: #00ff88;
+    font-family: monospace;
+    font-size: 1rem;
+    white-space: pre;
+    caret-color: transparent; /* скрыть системный курсор */
+    outline: none;
+    position: relative;
+}
+
+/* добавим blinking-курсор прямо в текст */
+.terminal-input::after {
+    content: '█';
+    position: absolute;
+    animation: blink 1s steps(1) infinite;
+    color: #00ff88;
+    pointer-events: none;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* tabs */
+
+.terminal-tabs {
+    border: 1px solid #111;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.terminal-tab-buttons {
+    display: flex;
+    background: #111;
+    border-bottom: 1px solid #333;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 0.5rem;
+    background: #222;
+    color: #00ff88;
+    border: none;
+    font-family: monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.tab-btn.active {
+    background: #00ff88;
+    color: #000;
+    font-weight: bold;
+}
+
+.terminal-tab-content {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* other */
 
 footer a {
     color: #00ccff;

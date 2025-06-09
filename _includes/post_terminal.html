@@ -2,11 +2,9 @@
     document.querySelectorAll('.hero-body').forEach(el => {
         el.classList.add('hero-darken');
     });
-
-
     const lines = [
-        "",
-        "$ cd /home/eugene-ruby.github.io/{{ page.category }}",
+        "Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-49-generic x86_64)",
+        "$ cd /home/eugene-ruby.github.io/<a href=\"/\">{{ page.categories[0] }}</a>",
         "$ ls ../",
         `<div class="terminal-links">
   {% assign sorted_categories = site.categories | sort %}
@@ -14,7 +12,7 @@
     <a href="/categories/{{ category[0] | slugify }}" class="terminal-link">{{ category[0] }}</a>
   {% endfor %}
 </div>`,
-        "$ rm *.html",
+    "$ cat <a title=\"{{ page.title }}\" href=\"{{ page.url }}\">{{ page.slug }}.html</a> > <a href=\"/\">/dev/null</a>"
     ];
 
     const output = document.getElementById('terminal-content');
@@ -37,7 +35,7 @@
     function renderBuffer(withPrompt = false) {
         let content = buffer.slice(); // копия
         if (withPrompt) {
-            content.push('$ <span class="terminal-cursor">█</span>');
+            content.push('$ cd <span class="terminal-cursor">█</span>');
         }
         output.innerHTML = content.join("\n");
     }

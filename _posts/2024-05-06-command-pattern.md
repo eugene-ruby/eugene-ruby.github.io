@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Паттерн Command в Ruby: `self.call`, чистые руки и немного магии"
 date:   2024-05-06 15:00:00 +0300
 rate: 4

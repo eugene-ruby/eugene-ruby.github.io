@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Ruby: переменные @, @@ и $ — боль, память и просветление"
 date:   2023-03-14 13:00:00 +0300
 rate: 3

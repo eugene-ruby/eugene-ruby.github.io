@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Enum в ActiveRecord: как сделать красиво, а не через боль"
 date:   2024-09-18 12:00:00 +0300
 rate: 3

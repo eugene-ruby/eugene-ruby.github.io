@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Блокировки в PostgreSQL: SELECT FOR UPDATE и другие способы не словить race condition"
 date:   2024-12-18 11:30:00 +0300
 rate: 4

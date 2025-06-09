@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Почему нельзя просто взять current_user"
 date:   2025-04-27 12:00:00 +0300
 rate: 3

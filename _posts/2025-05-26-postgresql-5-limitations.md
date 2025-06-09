@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title: "5 ограничений PostgreSQL, о которых стоит помнить"
 date: 2025-05-26 10:00:00 +0300
 rate: 3

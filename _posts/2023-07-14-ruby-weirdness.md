@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Ruby: Странности, которые не объясняют в туториалах"
 date:   2023-07-14 14:00:00 +0300
 rate: 3

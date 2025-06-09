@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Ruby: GIL, MRI, MJIT, YJIT — глоссарий рубистовских страшилок"
 date:   2025-01-30 10:00:00 +0300
 rate: 3

@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Индексы в PostgreSQL: какие бывают и как они живут в Rails"
 date:   2025-02-02 10:30:00 +0300
 rate: 3  

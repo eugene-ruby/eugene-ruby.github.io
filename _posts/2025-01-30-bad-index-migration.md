@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Добавил индекс — и прод лёг. А на стейдже всё было хорошо!"
 date:   2025-01-30 10:00:00 +0300
 rate: 4

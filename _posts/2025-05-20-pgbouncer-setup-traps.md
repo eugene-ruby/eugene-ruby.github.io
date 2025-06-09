@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title: "PgBouncer: настройка, проблемы и ловушки"
 date: 2025-05-20 14:00:00 +0300
 rate: 3

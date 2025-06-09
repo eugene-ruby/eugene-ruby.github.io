@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title: "PgBouncer, Puma и Rails — как работают пулы соединений на самом деле"
 date: 2025-03-22 18:00:00 +0300
 rate: 4

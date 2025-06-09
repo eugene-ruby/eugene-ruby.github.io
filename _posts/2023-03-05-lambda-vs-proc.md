@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Ruby: lambda, proc и yield — три грани одного ужаса"
 date:   2023-03-05 14:00:00 +0300
 rate: 3  

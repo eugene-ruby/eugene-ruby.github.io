@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Острые темы по Ruby и Rails, которые спрашивают на техническом интервью Middle/Senior"
 date:   2024-11-10 09:00:00 +0300
 rate: 5

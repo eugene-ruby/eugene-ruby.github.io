@@ -1,0 +1,66 @@
+<script>
+    const terminal = document.getElementById('terminal');
+    const terminal_source = document.getElementById('terminal-source');
+
+    if (terminal && terminal_source) {
+        terminal.innerHTML = terminal_source.innerHTML;
+        terminal_source.remove(); // удалим оригинальный источник, если больше не нужен
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- Вкладки ---
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const tab = btn.dataset.tab;
+                document.querySelectorAll('.terminal-tab-content').forEach(c => c.classList.add('hidden'));
+                document.getElementById(tab + '-tab').classList.remove('hidden');
+
+                if (tab === 'search') {
+                    const fakeInput = document.getElementById('terminal-fake-input');
+                    if (fakeInput) fakeInput.focus();
+                }
+            });
+        });
+
+
+        // --- Поиск ---
+        const fakeInput = document.getElementById('terminal-fake-input');
+        const output = document.getElementById('search-output');
+        let postsData = [];
+
+        fetch('/search.json')
+            .then(res => res.json())
+            .then(data => postsData = data);
+        // обработка ввода
+        fakeInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                const query = fakeInput.innerText.trim();
+                output.innerHTML = `$ ${query}\n`;
+                fakeInput.innerText = '';
+
+                if (query.length < 3) {
+                    output.innerHTML += '→ для поиска введите больше 3 символа';
+                    return;
+                }
+
+                const matches = postsData.filter(p =>
+                    p.title.toLowerCase().includes(query.toLowerCase()) ||
+                    (p.tags || []).join(' ').toLowerCase().includes(query.toLowerCase())
+                );
+
+                if (matches.length === 0) {
+                    output.innerHTML += '→ ничего не найдено';
+                } else {
+                    output.innerHTML += matches.map(p =>
+                        `→ <a href="${p.url}" class="terminal-link">[${p.title}]</a>`
+                    ).join('\n');
+                }
+            }
+        });
+
+    });
+</script>

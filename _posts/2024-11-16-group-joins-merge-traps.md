@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "select, group, having, joins, merge — как сломать ActiveRecord (и выжить)"
 date:   2024-11-16 14:00:00 +0300
 rate: 5

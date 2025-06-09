@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Ruby 3.0 → 3.4: что добавили, что убрали, что изменилось"
 date:   2025-03-10 11:30:00 +0300
 rate: 3

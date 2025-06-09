@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Ruby: include, extend, prepend и refine — кто ты из модулей?"
 date:   2023-03-18 12:30:00 +0300
 rate: 3

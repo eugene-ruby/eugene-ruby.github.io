@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Ruby: private_class_method, public_send, freeze и прочие меры предосторожности"
 date:   2022-09-21 17:00:00 +0300
 rate: 3

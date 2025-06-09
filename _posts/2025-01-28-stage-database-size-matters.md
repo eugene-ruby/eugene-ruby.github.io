@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Почему staging должен быть почти как прод. Или жди беды 31 декабря в 23:50"
 date:   2025-01-28 12:00:00 +0300
 rate: 3

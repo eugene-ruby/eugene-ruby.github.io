@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title: "PgBouncer и Prepared Statements: медленная смерть Rails"
 date: 2025-04-01 16:00:00 +0300
 rate: 3

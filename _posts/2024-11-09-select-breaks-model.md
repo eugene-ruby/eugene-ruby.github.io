@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Почему select(\"...\") ломает методы модели в Rails"
 date:   2024-11-09 11:00:00 +0300
 rate: 3

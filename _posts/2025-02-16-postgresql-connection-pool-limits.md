@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title: "Сколько соединений держать в Puma, Sidekiq и Webhooks?"
 date: 2025-02-16 12:00:00 +0300
 rate: 5

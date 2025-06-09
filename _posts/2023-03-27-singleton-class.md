@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Ruby: class << self и singleton-классы — что это за магия?"
 date:   2023-03-27 15:00:00 +0300
 rate: 4

@@ -1,5 +1,5 @@
 ---
-title: <pre class="terminal-window"><code id="terminal-content"></code></pre>
+title: <div id="terminal"></div>
 subtitle: 
 layout: home
 show_sidebar: false

@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "scopes, merge, default_scope и unscope — порядок важен"
 date:   2024-11-25 10:30:00 +0300
 rate: 3

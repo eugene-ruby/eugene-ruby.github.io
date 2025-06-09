@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Ruby: Метапрограммирование — define_method, alias, const_get и send без сюрпризов"
 date:   2024-01-12 10:00:00 +0300
 rate: 4

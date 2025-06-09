@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Rails 7.2: главное за 5 минут"
 date:   2024-12-04 12:00:00 +0300
 rate: 4

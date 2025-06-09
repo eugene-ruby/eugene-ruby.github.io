@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title: "BASE vs ACID — философия данных под разными углами"
 date: 2025-06-03 11:00:00 +0300
 rate: 4

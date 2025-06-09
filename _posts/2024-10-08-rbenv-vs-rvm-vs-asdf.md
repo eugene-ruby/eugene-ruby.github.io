@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "rbenv, RVM или chruby? Менеджеры Ruby под микроскопом"
 rate: 3
 tags: Ruby,RVM,rbenv,chruby,менеджеры версий,Ubuntu

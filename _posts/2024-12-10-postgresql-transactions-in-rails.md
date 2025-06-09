@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Транзакции в Rails + PostgreSQL: коммит или откат?"
 date:   2024-12-10 14:00:00 +0300
 rate: 3

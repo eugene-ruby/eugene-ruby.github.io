@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Когда enum уже не справляется: State Machine как спасение"
 date:   2024-09-18 12:00:00 +0300
 rate: 3

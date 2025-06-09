@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title: "PgBouncer не спасёт, если вы не умеете закрывать соединения"
 date: 2025-03-13 15:00:00 +0300
 rate: 3

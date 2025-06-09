@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "PostgreSQL + JSONB: магия `@>` и запросы к вложенным данным"
 date:   2025-02-04 11:00:00 +0300
 rate: 3

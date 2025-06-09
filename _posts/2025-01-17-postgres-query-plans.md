@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "PostgreSQL Query Plan: что значат Nested Loop, Hash Join и прочие страшные слова"
 date:   2025-01-17 10:30:00 +0300
 rate: 5

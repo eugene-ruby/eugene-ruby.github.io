@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Почему default_scope = боль"
 date:   2025-03-09 10:30:00 +0300
 rate: 3

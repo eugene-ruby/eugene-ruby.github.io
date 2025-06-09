@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Оптимистичные и пессимистичные блокировки в Rails: когда, зачем и как"
 date:   2024-12-26 10:30:00 +0300
 rate: 3

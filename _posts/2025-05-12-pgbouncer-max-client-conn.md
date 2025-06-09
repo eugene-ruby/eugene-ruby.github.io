@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title: "PgBouncer и max_client_conn — почему лимит не спасает"
 date: 2025-05-12 16:30:00 +0300
 rate: 4

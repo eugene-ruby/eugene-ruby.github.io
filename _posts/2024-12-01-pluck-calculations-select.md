@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "pluck, calculations и кастомный select — быстро, но аккуратно"
 date:   2024-12-01 11:15:00 +0300
 rate: 3

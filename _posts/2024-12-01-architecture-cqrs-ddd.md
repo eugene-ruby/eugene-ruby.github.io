@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "CQRS, Event Sourcing и DDD в микросервисах на Rails"
 date:   2024-12-01 10:00:00 +0300
 rate: 4

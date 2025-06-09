@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Rails ORM и этот странный Arel"
 date:   2025-02-05 10:30:00 +0300
 rate: 3

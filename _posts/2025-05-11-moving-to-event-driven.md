@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Как мы переехали на event-driven (и не пожалели)"
 date:   2025-05-11 12:00:00 +0300
 rate: 5

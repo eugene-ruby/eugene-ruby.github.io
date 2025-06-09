@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Сделал EXPLAIN — и что дальше? Как оптимизировать SQL-запрос"
 date:   2025-01-22 11:00:00 +0300
 rate: 4

@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Ruby: Многопоточность, которой нет — потоки, GIL и Mutex"
 date:   2023-10-10 10:00:00 +0300
 rate: 3

@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Ruby: Yielder, BasicObject и прочие тайные элементы языка"
 date:   2022-02-02 11:00:00 +0300
 rate: 5

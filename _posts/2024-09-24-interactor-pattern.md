@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Interactor в Ruby: `.call!`, контекст и грязные руки"
 date:   2024-09-24 12:00:00 +0300
 rate: 3

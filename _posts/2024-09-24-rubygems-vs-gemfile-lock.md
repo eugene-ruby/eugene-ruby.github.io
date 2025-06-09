@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Rubygems, Gemfile.lock и версия, которая всё сломала"
 rate: 3
 tags: Ruby, bundle update, Gemfile.lock, зависимости, ошибки, Rubygems

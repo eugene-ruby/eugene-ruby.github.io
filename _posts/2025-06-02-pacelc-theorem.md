@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title: "PACELC — CAP с дополнением: а что, если сети нет?"
 date: 2025-06-02 10:00:00 +0300
 rate: 3

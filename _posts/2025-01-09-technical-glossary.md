@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: <div id="terminal"></div>
 title:  "Глоссарий сложных технических слов простыми словами"
 date:   2025-01-09 12:30:00 +0300
 rate: 3
