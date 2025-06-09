@@ -2,9 +2,10 @@
 
     const lines = [
         "Welcome to eugene-ruby.github.io (Ruby 3.4.0 / Jekyll 4.3.3 / x86_64)",
-        "",
+        "Post stack: {{ site.posts | size }} entries loaded into memory",
         " * Blog Posts:     <a href='/categories'>https://eugene-ruby.github.io/categories</a>",
         " * GitHub:         <a href='https://github.com/eugene-ruby'>https://github.com/eugene-ruby</a>",
+        "Last build: {{ site.time | date: '%a %b %e %H:%M:%S %Y' }} by Jekyll from localhost",
         "",
         "$ cd /home/eugene-ruby.github.io/",
         "$ ls",

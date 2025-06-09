@@ -1,4 +1,25 @@
 <script>
+    const charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
+
+    function emulateDevRandom(output) {
+
+        output.innerHTML += '→ cat /dev/random\n';
+
+        function printChunk(count) {
+            let chunk = '';
+            for (let i = 0; i < 80; i++) {
+                const randChar = charset[Math.floor(Math.random() * charset.length)];
+                chunk += randChar;
+            }
+
+            output.innerHTML += chunk + '\n';
+            output.scrollTop = output.scrollHeight;
+
+            if (count < 15) setTimeout(printChunk(count + 1), 50); // repeat every 50ms
+        }
+        printChunk(0);
+    }
+
     const terminal = document.getElementById('terminal');
     const terminal_source = document.getElementById('terminal-source');
 
@@ -39,11 +60,12 @@
             if (e.key === 'Enter') {
                 e.preventDefault();
                 const query = fakeInput.innerText.trim();
+
                 output.innerHTML = `$ ${query}\n`;
                 fakeInput.innerText = '';
 
-                if (query.length < 3) {
-                    output.innerHTML += '→ для поиска введите больше 3 символа';
+                if (query.length < 1) {
+                    emulateDevRandom(output);
                     return;
                 }
 

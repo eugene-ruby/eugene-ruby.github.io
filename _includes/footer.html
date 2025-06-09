@@ -1,3 +1,34 @@
 <footer class="footer has-text-centered is-size-7">
-
+    <p>
+    <p>All rights reserved. Press <kkb class="fbt" id="fsa34">any key</kkb> to send a message to Eugene Ruby</p>
+    <small id="cookie-note"
+           data-rus="🍪🍪🍪 На сайте используются cookie-файлы для анализа трафика через Яндекс.Метрику. Продолжая просмотр, вы соглашаетесь с этим 🍪🍪🍪">
+        🍪🍪🍪 Cookies are used for analytics (via Yandex.Metrica). By continuing, you accept this 🍪🍪🍪
+    </small>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const botLink = document.getElementById("fsa34");
+
+        if (botLink) {
+            const encoded = "aHR0cHM6Ly90Lm1lL0V1Z2VuZVJ1YnlCb3Q=";
+            const url = atob(encoded);
+            botLink.addEventListener("click", () => window.open(url, "_blank"));
+        }
+
+        const cookieNote = document.getElementById('cookie-note');
+
+        if (cookieNote) {
+            const originalText = cookieNote.textContent;
+            const altText = cookieNote.dataset.rus;
+
+            cookieNote.addEventListener('mouseenter', () => {
+                cookieNote.textContent = altText;
+            });
+
+            cookieNote.addEventListener('mouseleave', () => {
+                cookieNote.textContent = originalText;
+            });
+        }
+    });
+</script>
