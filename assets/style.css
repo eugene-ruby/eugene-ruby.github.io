@@ -63,7 +63,7 @@ section.hero::before {
     bottom: 0;
     left: 0;
     background: inherit;
-    filter: blur(4px) brightness(0.9);
+    filter: blur(2px) brightness(0.9);
     transform: scale(1.05); /* чуть больше, чтобы не было пустых краёв */
     z-index: 0;
 }
@@ -95,7 +95,7 @@ section.hero h1.title {
 
 .terminal-window {
     display: block;
-    background-color: #1e1e1e;
+    background-color: rgba(30, 30, 30, 0.75); /* 👈 Прозрачный фон */
     color: #00ff88;
     padding: 1.2rem 1.5rem;
     border-radius: 6px;
@@ -104,8 +104,8 @@ section.hero h1.title {
     box-shadow: 0 0 0 2px #111, 0 0 20px rgba(0, 255, 136, 0.3);
     white-space: pre-wrap;
     overflow-x: auto;
-    overflow-y: auto;              /* 👈 Включаем вертикальную прокрутку */
-    height: 420px;             /* 👈 Ограничиваем высоту */
+    overflow-y: auto;
+    height: 420px;
     line-height: 1.4;
     text-align: left;
 }
@@ -137,7 +137,7 @@ section.hero h1.title {
 
 .terminal-bottom {
     display: block;
-    min-height: 1.2em;
+    height: 0.47em;
     background: #000000;
     position: relative;
 }
@@ -168,6 +168,14 @@ section.hero h1.title {
     0%, 50% { opacity: 1; }
     51%, 100% { opacity: 0; }
 }
+
+.terminal-input[placeholder]:empty::before {
+    content: attr(placeholder);
+    color: #666;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
 
 /* tabs */
 
