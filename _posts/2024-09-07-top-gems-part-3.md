@@ -11,7 +11,7 @@ categories:
   - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/ruby.jpg
+hero_image: /images/posts/21.jpg
 hero_darken: true
 ---
 

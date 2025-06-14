@@ -9,7 +9,7 @@ version: A9X
 categories:
   - security
   - rails
-hero_image: /images/rails.jpg
+hero_image: /images/posts/73.jpg
 hero_darken: true
 toc: true
 menubar_toc: true

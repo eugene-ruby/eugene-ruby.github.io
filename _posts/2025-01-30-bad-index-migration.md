@@ -12,7 +12,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpg
+hero_image: /images/posts/69.jpg
 hero_darken: true
 ---
 Создание индексов в PostgreSQL — мощный инструмент для ускорения запросов, но бездумное их добавление может привести к блокировкам таблиц на проде. В статье разберём, как безопасно добавлять индексы в Rails-приложениях с помощью алгоритма CONCURRENTLY и избежать типичных ошибок, которые приводят к простоям.

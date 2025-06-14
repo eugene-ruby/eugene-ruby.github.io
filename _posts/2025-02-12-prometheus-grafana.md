@@ -9,7 +9,7 @@ version: A9X
 categories:
   - devops
   - performance
-hero_image: /images/ruby.jpg
+hero_image: /images/posts/75.jpg
 hero_darken: true
 toc: true
 menubar_toc: true

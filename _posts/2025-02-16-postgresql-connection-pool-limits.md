@@ -12,7 +12,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/architecture.jpg
+hero_image: /images/posts/76.jpg
 hero_darken: true
 ---
 PostgreSQL — мощная СУБД, но её соединения не безграничны, и превышение лимита может обрушить продакшен. В этой статье разберём, как правильно распределять подключения между Puma, Sidekiq и другими компонентами Ruby on Rails-приложения, чтобы избежать перегрузки базы. Узнаете, как считать активные соединения, настраивать пулы и использовать PgBouncer для эффективного управления ресурсами PostgreSQL в DevOps-среде.

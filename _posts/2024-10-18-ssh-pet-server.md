@@ -9,7 +9,7 @@ version: A9X
 categories:
   - pet
   - ruby
-hero_image: /images/posts/rsa-d25519.jpg
+hero_image: /images/posts/41.jpg
 hero_darken: true
 toc: true
 menubar_toc: true

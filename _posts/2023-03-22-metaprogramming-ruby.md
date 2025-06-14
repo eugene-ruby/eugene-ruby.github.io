@@ -10,7 +10,7 @@ categories:
   - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/ruby.jpg
+hero_image: /images/posts/8.jpg
 hero_darken: true
 ---
 Ruby — это не просто язык, а целый набор инструментов для метапрограммирования, позволяющий коду создавать код. В этой статье разберём ключевые методы вроде `method_missing`, `define_method` и `eval`, а также их безопасные альтернативы в Rails и других фреймворках.

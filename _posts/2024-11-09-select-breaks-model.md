@@ -10,7 +10,7 @@ categories:
   - rails
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpg
+hero_image: /images/posts/47.jpg
 hero_darken: true
 ---
 Ruby, PostgreSQL и Rails — мощный стек для разработки современных веб-приложений, а DevOps-практики помогают развертывать их быстро и надежно. В этой статье разберём ключевые аспекты работы с базами данных, оптимизацию запросов и автоматизацию процессов для Ruby on Rails проектов.

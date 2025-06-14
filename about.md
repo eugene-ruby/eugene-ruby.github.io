@@ -2,7 +2,7 @@
 layout: page
 title: <div id="terminal"></div>
 permalink: /about/
-hero_image: /images/ruby.jpg
+hero_image: /images/about.jpg
 hero_darken: true
 ---
 

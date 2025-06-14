@@ -8,7 +8,7 @@ tags: Docker, CI/CD, контейнеризация, pet
 version: A9X
 categories:
   - pet
-hero_image: /images/ruby.jpg
+hero_image: /images/posts/99.jpg
 hero_darken: true
 toc: true
 menubar_toc: true

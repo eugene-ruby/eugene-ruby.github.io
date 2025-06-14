@@ -9,7 +9,7 @@ version: A9X
 categories:
   - pet
   - devops
-hero_image: /images/ruby.jpg
+hero_image: /images/posts/30.jpg
 hero_darken: true
 toc: true
 menubar_toc: true

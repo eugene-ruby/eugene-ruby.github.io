@@ -12,7 +12,7 @@ categories:
   - postgres
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpg
+hero_image: /images/posts/56.jpg
 hero_darken: true
 ---
 Транзакции в PostgreSQL и Rails обеспечивают целостность данных, позволяя выполнять операции атомарно — либо все изменения применяются, либо ни одно. В этом материале разберём, как работают вложенные транзакции, когда использовать savepoints и какие подводные камни могут возникнуть при работе с ActiveRecord.

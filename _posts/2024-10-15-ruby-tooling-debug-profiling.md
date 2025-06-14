@@ -9,7 +9,7 @@ date:   2024-09-18 12:00:00 +0300
 categories:
   - performance
   - ruby
-hero_image: /images/ruby.jpg
+hero_image: /images/posts/40.jpg
 hero_darken: true
 toc: true
 menubar_toc: true

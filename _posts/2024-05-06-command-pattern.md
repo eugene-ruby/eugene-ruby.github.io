@@ -9,7 +9,7 @@ version: A9X
 categories:
   - pattern
   - ruby
-hero_image: /images/ruby.jpg
+hero_image: /images/posts/16.jpg
 hero_darken: true
 toc: true
 menubar_toc: true

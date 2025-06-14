@@ -9,7 +9,7 @@ version: A9X
 categories:
   - postgres
   - rails
-hero_image: /images/rails.jpg
+hero_image: /images/posts/27.jpg
 hero_darken: true
 toc: true
 menubar_toc: true

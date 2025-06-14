@@ -12,7 +12,7 @@ categories:
   - postgres
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpg
+hero_image: /images/posts/57.jpg
 hero_darken: true
 ---
 Блокировки в PostgreSQL — мощный инструмент для предотвращения race condition при конкурентном доступе к данным. В Ruby on Rails методы вроде `lock` и `SELECT FOR UPDATE` помогают безопасно обновлять записи, а advisory locks позволяют реализовать логические блокировки на уровне приложения.

@@ -11,7 +11,7 @@ categories:
   - architecture
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpg
+hero_image: /images/posts/48.jpg
 hero_darken: true
 ---
 Ruby, PostgreSQL и Rails — мощный стек для разработки, но даже опытные разработчики сталкиваются с тонкостями: от метапрограммирования в Ruby до оптимизации запросов в PostgreSQL. В этой статье собраны ключевые темы — от основ ORM до архитектурных решений и блокировок в базе данных.

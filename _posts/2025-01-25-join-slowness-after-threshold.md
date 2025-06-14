@@ -10,7 +10,7 @@ categories:
   - postgres
 toc: true
 menubar_toc: true
-hero_image: /images/rails.jpg
+hero_image: /images/posts/66.jpg
 hero_darken: true
 ---
 Ruby, PostgreSQL и Rails — мощный стек для разработки, но даже в нём есть подводные камни. Разберёмся, как эффективно работать с базами данных, избегать узких мест в производительности и выстраивать надёжные DevOps-процессы.
