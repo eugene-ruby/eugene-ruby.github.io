@@ -2,5 +2,5 @@
 layout: category
 title: <div id="terminal"></div>
 category: architecture
-hero_image: /images/ruby.jpg
+hero_image: /images/categories/architecture.jpg
 ---
