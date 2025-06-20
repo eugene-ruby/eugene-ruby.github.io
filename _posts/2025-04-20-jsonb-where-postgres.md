@@ -11,7 +11,7 @@ categories:
    - database
 toc: true
 menubar_toc: true
-hero_image: /images/posts/72.jpg
+hero_image: /images/posts/35.jpg
 hero_darken: true
 ---
 
