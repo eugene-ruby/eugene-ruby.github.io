@@ -5,7 +5,7 @@ title:  "Выбираем первый VPS: почему дорогой серв
 date:  2024-09-17 12:00:00 +0300
 rate: 1
 tags: VPS Server pet
-version: A9X
+version: 3.2.2
 categories:
   - pet
 hero_image: /images/posts/24.jpg

@@ -5,7 +5,7 @@ title:  "scopes, merge, default_scope и unscope — порядок важен"
 date:   2024-11-25 10:30:00 +0300
 rate: 3
 tags: Ruby,Rails,Scopes,SQL,PostgreSQL,DevOps
-version: A9X
+version: 3.2.2
 categories:
   - orm
   - rails

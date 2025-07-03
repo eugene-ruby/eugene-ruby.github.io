@@ -5,7 +5,7 @@ title: "SSH — это твой волшебный ключ к серверу"
 date:   2024-10-18 12:00:00 +0300
 rate: 1
 tags: SSH, Pet, VPS
-version: A9X
+version: 3.2.2
 categories:
   - pet
   - ruby

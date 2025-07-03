@@ -5,7 +5,7 @@ title:  "Блокировки в PostgreSQL: SELECT FOR UPDATE и другие �
 date:   2024-12-18 11:30:00 +0300
 rate: 4
 tags: PostgreSQL,Ruby on Rails,блокировки,race condition,Sidekiq,конкурентный доступ
-version: A9X
+version: 3.2.2
 categories:
   - orm
   - rails

@@ -5,7 +5,7 @@ title:  "Brakeman, Bundler Audit и другие: Ruby-гемы для безо�
 date:   2024-09-18 10:00:00 +0300
 rate: 2
 tags: Gem,безопасность,DevOps,аудит,уязвимости
-version: A9X
+version: 3.2.2
 categories:
   - security
   - ruby

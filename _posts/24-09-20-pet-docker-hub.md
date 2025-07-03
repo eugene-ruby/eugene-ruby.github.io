@@ -5,7 +5,7 @@ title:  "Выгуливаем Pet-проект: краткий гайд про D
 date:   2024-09-20 14:00:00 +0300
 rate: 1
 tags: Docker, CI/CD, контейнеризация, pet
-version: A9X
+version: 3.2.2
 categories:
   - pet
 hero_image: /images/posts/99.jpg

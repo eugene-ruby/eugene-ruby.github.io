@@ -5,7 +5,7 @@ title:  "pluck, calculations и кастомный select — быстро, но
 date:   2024-12-01 11:15:00 +0300
 rate: 3
 tags: Ruby,Rails,PostgreSQL,pluck,count,select
-version: A9X
+version: 3.2.2
 categories:
   - orm
   - rails

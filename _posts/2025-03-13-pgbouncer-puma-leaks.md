@@ -5,7 +5,7 @@ title: "PgBouncer не спасёт, если вы не умеете закры�
 date: 2025-03-13 15:00:00 +0300
 rate: 3
 tags: PgBouncer,PostgreSQL,Rails,соединения,утечки,CPU
-version: A9X
+version: 3.2.2
 categories:
   - postgres
   - rails

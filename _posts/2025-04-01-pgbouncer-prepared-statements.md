@@ -5,7 +5,7 @@ title: "PgBouncer и Prepared Statements: медленная смерть Rails"
 date: 2025-04-01 16:00:00 +0300
 rate: 3
 tags: Ruby on Rails,PostgreSQL,PgBouncer,prepared statements,transaction mode,performance
-version: A9X
+version: 3.2.2
 categories:
   - postgres
   - rails

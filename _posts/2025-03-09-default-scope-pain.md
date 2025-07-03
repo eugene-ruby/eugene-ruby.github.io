@@ -5,7 +5,7 @@ title:  "Почему default_scope = боль"
 date:   2025-03-09 10:30:00 +0300
 rate: 3
 tags: Ruby,Rails,default_scope,PostgreSQL,SQL,запросы
-version: A9X
+version: 3.2.2
 categories:
   - orm
   - rails

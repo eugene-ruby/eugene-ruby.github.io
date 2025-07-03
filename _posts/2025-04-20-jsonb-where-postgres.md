@@ -5,7 +5,7 @@ title:  "Как использовать WHERE для JSONB в PostgreSQL. Ра�
 date:  2025-04-20 11:00:00 +0300
 rate: 3
 tags: PostgreSQL  JSONB SQL performance
-version: A9X
+version: 3.2.2
 categories:
    - postgres
    - database

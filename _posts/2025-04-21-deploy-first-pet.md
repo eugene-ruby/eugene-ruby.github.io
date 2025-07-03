@@ -5,7 +5,7 @@ title:  "Деплой приложения: от ручной выкатки д�
 date:   2025-04-21 14:00:00 +0300
 rate: 1
 tags: Docker CI/CD Pet Python
-version: A9X
+version: 3.2.2
 categories:
   - pet
   - docker

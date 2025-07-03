@@ -4,7 +4,7 @@ subtitle: <div id="terminal"></div>
 title:  "Zeitwerk против require: автоматическая загрузка без боли"
 rate: 3
 tags: Ruby,Zeitwerk,автозагрузка,require,классы,архитектура
-version: A9X
+version: 3.2.2
 date:   2024-09-18 10:00:00 +0300
 categories:
   - gems

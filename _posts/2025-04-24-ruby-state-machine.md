@@ -5,7 +5,7 @@ title:  "Когда enum уже не справляется: State Machine ка�
 date:   2024-09-18 12:00:00 +0300
 rate: 3
 tags: Ruby,enum,методы,условия,проверки,состояния
-version: A9X
+version: 3.2.2
 categories:
   - pattern
   - rails

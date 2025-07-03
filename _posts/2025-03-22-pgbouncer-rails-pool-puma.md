@@ -5,7 +5,7 @@ title: "PgBouncer, Puma и Rails — как работают пулы соеди
 date: 2025-03-22 18:00:00 +0300
 rate: 4
 tags: Ruby,PostgreSQL,Rails,DevOps,Puma,PgBouncer
-version: A9X
+version: 3.2.2
 categories:
   - postgres
   - rails

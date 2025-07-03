@@ -5,7 +5,7 @@ title:  "PostgreSQL Query Plan: что значат Nested Loop, Hash Join и п
 date:   2025-01-17 10:30:00 +0300
 rate: 5
 tags: PostgreSQL,JOIN-операции,оптимизация запросов,EXPLAIN ANALYZE,Rails,индексы
-version: A9X
+version: 3.2.2
 categories:
   - postgres
 toc: true

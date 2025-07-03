@@ -5,7 +5,7 @@ title:  "Ruby: Yielder, BasicObject и прочие тайные элемент�
 date:   2022-02-02 11:00:00 +0300
 rate: 5
 tags: Ruby,метапрограммирование,DSL,Enumerator::Yielder,BasicObject,Binding
-version: A9X
+version: 3.2.2
 categories:
   - ruby
 toc: true

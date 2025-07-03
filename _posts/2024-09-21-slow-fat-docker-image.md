@@ -5,7 +5,7 @@ title:  "Docker-образы как чемоданы: как собрать бы
 date:   2024-09-21 12:00:00 +0300
 rate: 2
 tags: Docker,CI/CD,оптимизация,DevOps,контейнеризация
-version: A9X
+version: 3.2.2
 categories:
   - devops
   - pet

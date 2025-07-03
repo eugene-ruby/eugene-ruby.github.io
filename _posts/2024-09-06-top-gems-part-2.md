@@ -5,7 +5,7 @@ title:  "Гемы под капотом: 10 библиотек, которые �
 date: 2024-09-05 10:00:00 +0300
 rate: 2
 tags: ruby gems tzinfo concurrent-ruby json diff-lcs rspec-expectations rspec-core rspec-mocks rspec-support minitest nokogiri
-version: A9X
+version: 3.2.2
 categories:
   - gems
   - ruby

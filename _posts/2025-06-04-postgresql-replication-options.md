@@ -5,7 +5,7 @@ title: "Репликация в PostgreSQL: синхронная, асинхро
 date: 2025-06-04 12:30:00 +0300
 rate: 5
 tags: PostgreSQL,репликация,асинхронная,синхронная,логическая,production
-version: A9X
+version: 3.2.2
 categories:
   - database
   - architecture

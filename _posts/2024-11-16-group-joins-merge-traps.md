@@ -5,7 +5,7 @@ title:  "select, group, having, joins, merge — как сломать ActiveRec
 date:   2024-11-16 14:00:00 +0300
 rate: 5
 tags: ActiveRecord,PostgreSQL,SQL,Rails,group,having
-version: A9X
+version: 3.2.2
 categories:
   - orm
   - rails

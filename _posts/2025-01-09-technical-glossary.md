@@ -5,7 +5,7 @@ title:  "Глоссарий сложных технических слов пр�
 date:   2025-01-09 12:30:00 +0300
 rate: 3
 tags: Ruby,PostgreSQL,Rails,DevOps,веб-приложения,оптимизация
-version: A9X
+version: 3.2.2
 categories:
   - architecture
 toc: true

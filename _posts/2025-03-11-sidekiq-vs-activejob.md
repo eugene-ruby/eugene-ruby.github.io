@@ -5,7 +5,7 @@ title:  "Очередь на вынос: Sidekiq, ActiveJob, Resque и Delayed::
 date:   2024-09-18 12:00:00 +0300
 rate: 3
 tags: Ruby on Rails,Background Jobs,Redis,PostgreSQL,Performance
-version: A9X
+version: 3.2.2
 categories:
   - architecture
   - rails

@@ -5,7 +5,7 @@ title:  "XSS-атаки и erb: как Rails спасает, а когда — �
 date:   2024-09-18 12:00:00 +0300
 rate: 2
 tags: Ruby on Rails, Безопасность, XSS, ERB, PostgreSQL, Веб-разработка
-version: A9X
+version: 3.2.2
 categories:
   - security
   - rails

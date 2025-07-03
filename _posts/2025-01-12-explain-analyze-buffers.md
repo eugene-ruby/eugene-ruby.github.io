@@ -5,7 +5,7 @@ title:  "EXPLAIN ANALYZE BUFFERS: читаем планы PostgreSQL как пр
 date:   2025-01-12 11:00:00 +0300
 rate: 4
 tags: PostgreSQL,SQL,производительность,EXPLAIN ANALYZE,BUFFERS,Rails
-version: A9X
+version: 3.2.2
 categories:
   - postgres
 toc: true

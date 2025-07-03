@@ -5,7 +5,7 @@ title:  "Мой первый Pet + GitHub: быстро и только нужн
 date:   2024-09-18 10:00:00 +0300
 rate: 1
 tags: GitHub pet
-version: A9X
+version: 3.2.2
 categories:
   - pet
 hero_image: /images/posts/26.jpg

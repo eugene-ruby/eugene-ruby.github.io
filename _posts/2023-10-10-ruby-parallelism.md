@@ -5,7 +5,7 @@ title:  "Ruby: fork, Parallel, Ractor и async — когда GIL не прой�
 date:   2023-10-10 13:00:00 +0300
 rate: 3
 tags: Ruby,параллельность,GIL,процессы,асинхронность,Ractor
-version: A9X
+version: 3.2.2
 categories:
   - performance
   - ruby

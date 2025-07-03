@@ -5,7 +5,7 @@ title:  "Ruby: lambda, proc и yield — три грани одного ужас
 date:   2023-03-05 14:00:00 +0300
 rate: 3  
 tags: lambda,proc,yield,Ruby,блоки кода,разница
-version: A9X
+version: 3.2.2
 categories:
   - ruby
 toc: true

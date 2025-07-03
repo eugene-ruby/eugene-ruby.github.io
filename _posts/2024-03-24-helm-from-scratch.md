@@ -5,7 +5,7 @@ title: "Helm с нуля: чарты, values и деплой как у боль�
 date: 2024-03-24 12:00:00 +0300
 rate: 4
 tags: Kubernetes, Helm, DevOps, Deployment, CI/CD
-version: A9X
+version: 3.2.2
 categories:
   - devops
   - architecture

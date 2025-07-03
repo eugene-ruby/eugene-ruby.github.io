@@ -5,7 +5,7 @@ title:  "Катим pet в прод! — GitHub Actions это легче чем
 date:   2024-09-23 12:00:00 +0300
 rate: 2
 tags: GitHub Actions, CI/CD, Docker, SSH, DevOps
-version: A9X
+version: 3.2.2
 categories:
   - pet
   - devops

@@ -5,7 +5,7 @@ title:  "PostgreSQL + JSONB: магия `@>` и запросы к вложенн
 date:   2025-02-04 11:00:00 +0300
 rate: 3
 tags: JSONB,PostgreSQL,Rails,индексация,фильтрация,вложенные объекты
-version: A9X
+version: 3.2.2
 categories:
   - postgres
   - rails

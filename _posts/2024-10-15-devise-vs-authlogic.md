@@ -5,7 +5,7 @@ title:  "Devise против Authlogic: что выбрать и как не н�
 date:   2024-09-18 10:00:00 +0300
 rate: 2
 tags: Ruby on Rails,Authentication,Devise,Authlogic,PostgreSQL,безопасность
-version: A9X
+version: 3.2.2
 categories:
   - gems
   - rails

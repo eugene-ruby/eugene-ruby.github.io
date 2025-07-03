@@ -5,7 +5,7 @@ title: "DevOps для тех, кто не хочет Helm: настройка Do
 date: 2024-11-20 14:00:00 +0300
 rate: 4
 tags: Docker, DevOps, Swarm, PostgreSQL, оркестрация
-version: A9X
+version: 3.2.2
 categories:
   - devops
   - architecture

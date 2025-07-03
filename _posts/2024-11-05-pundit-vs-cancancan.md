@@ -5,7 +5,7 @@ title:  "Pundit и CanCanCan: борьба за авторизацию без б
 date:   2024-09-18 12:00:00 +0300
 rate: 2
 tags: Ruby on Rails,Авторизация,Безопасность,PostgreSQL,Архитектура
-version: A9X
+version: 3.2.2
 categories:
   - gems
   - rails

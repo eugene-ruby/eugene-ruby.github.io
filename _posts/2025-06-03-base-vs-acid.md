@@ -5,7 +5,7 @@ title: "BASE vs ACID — философия данных под разными �
 date: 2025-06-03 11:00:00 +0300
 rate: 4
 tags: ACID,BASE,NoSQL,PostgreSQL,MongoDB,Rails
-version: A9X
+version: 3.2.2
 categories:
   - database
   - architecture

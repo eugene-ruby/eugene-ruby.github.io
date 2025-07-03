@@ -5,7 +5,7 @@ title: "Мой первый Pet + VPS: Оплатил сервер, есть SSH
 date: 2024-09-18 12:00:00 +0300
 rate: 1
 tags: Ubuntu, Docker, VPS, pet
-version: A9X
+version: 3.2.2
 categories:
   - pet
   - devops

@@ -5,7 +5,7 @@ title:  "Ruby: Метапрограммирование — define_method, alias
 date:   2024-01-12 10:00:00 +0300
 rate: 4
 tags: метапрограммирование,Ruby,define_method,alias_method,const_get,send
-version: A9X
+version: 3.2.2
 categories:
   - ruby
 toc: true

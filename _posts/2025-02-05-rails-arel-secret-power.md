@@ -5,7 +5,7 @@ title:  "Rails ORM и этот странный Arel"
 date:   2025-02-05 10:30:00 +0300
 rate: 3
 tags: Arel,Ruby on Rails,SQL,ActiveRecord,запросы,ORM
-version: A9X
+version: 3.2.2
 categories:
   - orm
   - rails

@@ -5,7 +5,7 @@ title:  "Ruby: private_class_method, public_send, freeze и прочие мер�
 date:   2022-09-21 17:00:00 +0300
 rate: 3
 tags: Ruby,безопасность,приватные методы,защита данных,методы объектов,продакшен
-version: A9X
+version: 3.2.2
 categories:
   - ruby
 toc: true

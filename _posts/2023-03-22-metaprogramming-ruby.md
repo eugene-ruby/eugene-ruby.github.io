@@ -5,7 +5,7 @@ title:  "Ruby: method_missing, define_method и метапрограммиров
 date:   2023-03-22 16:00:00 +0300
 rate: 4
 tags: Ruby,метапрограммирование,method_missing,define_method,eval,Rails
-version: A9X
+version: 3.2.2
 categories:
   - ruby
 toc: true

@@ -5,7 +5,7 @@ title:  "Почему select(\"...\") ломает методы модели в 
 date:   2024-11-09 11:00:00 +0300
 rate: 3
 tags: Ruby,PostgreSQL,Rails,DevOps,оптимизация запросов,автоматизация
-version: A9X
+version: 3.2.2
 categories:
   - rails
 toc: true

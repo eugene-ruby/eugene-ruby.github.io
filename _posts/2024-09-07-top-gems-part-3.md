@@ -5,7 +5,7 @@ title:  "Архитектура, AWS и DSL: 10 Ruby-гемов для тех, �
 date: 2024-09-06 10:00:00 +0300
 rate: 2
 tags: ruby gems faraday addressable multi_json thor public_suffix rspec aws-sdk-s3 aws-sdk-kms ffi mime-types
-version: A9X
+version: 3.2.2
 categories:
   - gems
   - ruby

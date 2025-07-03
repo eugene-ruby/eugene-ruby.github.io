@@ -4,7 +4,7 @@ subtitle: <div id="terminal"></div>
 title:  "Rubygems, Gemfile.lock и версия, которая всё сломала"
 rate: 3
 tags: Ruby, bundle update, Gemfile.lock, зависимости, ошибки, Rubygems
-version: A9X
+version: 3.2.2
 date:   2024-09-18 12:00:00 +0300
 categories:
   - gems

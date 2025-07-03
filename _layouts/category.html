@@ -11,7 +11,8 @@ layout: default
 
         <div class="columns is-multiline">
             {% assign category_name = page.category %}
-            {% assign posts = site.categories[category_name] %}
+            {% assign posts = site.categories[category_name] | sort: 'date' | reverse %}
+
             {% for post in posts %}
             {% include post_card.html post=post %}
             {% endfor %}

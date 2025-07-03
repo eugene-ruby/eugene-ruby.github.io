@@ -4,7 +4,7 @@ subtitle: <div id="terminal"></div>
 title:  "Vendoring гемов: когда твой CI не любит интернет"
 rate: 3
 tags: Ruby,gems,vendoring,CI,dependencies,network errors
-version: A9X
+version: 3.2.2
 date:   2024-09-18 12:00:00 +0300
 categories:
   - devops

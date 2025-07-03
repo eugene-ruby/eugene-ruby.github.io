@@ -5,7 +5,7 @@ title: "PgBouncer и max_client_conn — почему лимит не спаса
 date: 2025-05-12 16:30:00 +0300
 rate: 4
 tags: PostgreSQL,PgBouncer,Rails,DevOps,connection pooling,performance
-version: A9X
+version: 3.2.2
 categories:
   - postgres
   - rails

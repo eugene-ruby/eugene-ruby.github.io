@@ -5,7 +5,7 @@ title:  "Индексы в PostgreSQL: какие бывают и как они 
 date:   2025-02-02 10:30:00 +0300
 rate: 3  
 tags: PostgreSQL,индексы,Rails,B-tree,GIN,BRIN
-version: A9X
+version: 3.2.2
 categories:
   - postgres
   - rails

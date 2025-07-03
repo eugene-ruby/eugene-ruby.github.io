@@ -5,7 +5,7 @@ title: "🔐 Секреты — не секрет! Как не отдать кл
 date:   2024-10-12 14:00:00 +0300
 rate: 4
 tags: Pet,GitHub,Secrets
-version: A9X
+version: 3.2.2
 categories:
   - pet
   - ruby

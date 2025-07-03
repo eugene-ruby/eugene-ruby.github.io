@@ -5,7 +5,7 @@ title:  "Был JOIN — и всё было хорошо. Пока таблиц�
 date:   2025-01-25 14:00:00 +0300
 rate: 3
 tags: Ruby,PostgreSQL,Rails,базы данных,производительность,DevOps
-version: A9X
+version: 3.2.2
 categories:
   - postgres
 toc: true

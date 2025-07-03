@@ -5,7 +5,7 @@ title:  "Git Tags: катим релизы через v1.0.0 без боли"
 date:   2024-09-25 12:00:00 +0300
 rate: 2
 tags: Git,DevOps,CI/CD,Pet,GitHub Actions
-version: A9X
+version: 3.2.2
 categories:
   - pet
   - devops

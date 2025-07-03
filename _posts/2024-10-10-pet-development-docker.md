@@ -5,7 +5,7 @@ title:  "Docker для pet-проекта: как избежать «у меня
 date:   2024-10-10 12:00:00 +0300
 rate: 2
 tags: Docker,Ruby on Rails,Pet
-version: A9X
+version: 3.2.2
 categories:
   - pet
   - ruby

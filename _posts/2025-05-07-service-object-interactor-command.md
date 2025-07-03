@@ -5,7 +5,7 @@ title:  "Service Object, Interactor и Command-подход: кто во что 
 date:   2025-05-07 11:00:00 +0300
 rate: 4
 tags: Ruby on Rails,Service Object,Interactor,Command,бизнес-логика,сервисный слой
-version: A9X
+version: 3.2.2
 categories:
   - architecture
   - rails
