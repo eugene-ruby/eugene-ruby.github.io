@@ -4,7 +4,7 @@ subtitle: <div id="terminal"></div>
 title: "Очередь или поток? Kafka vs RabbitMQ с практическим уклоном"
 date:   2024-09-20 12:00:00 +0300
 rate: 3
-tags: Ruby on Rails,Kafka,RabbitMQ,архитектура,PostgreSQL,брокеры сообщений
+tags: Ruby on Rails,Kafka,RabbitMQ,архитектура,PostgreSQL,брокеры сообщений,message brokers
 version: 3.2.2
 categories:
   - architecture
