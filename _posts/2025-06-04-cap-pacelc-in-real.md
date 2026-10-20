@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "CAP и PACELC глазами PostgreSQL-разработчика"
-date: 2025-06-04 12:00:00 +0300
-rate: 4
-tags: PostgreSQL,CAP-теорема,PACELC,NoSQL,репликация,кластер
 version: 3.2.2
-categories:
-  - database
-  - architecture
 toc: true
 menubar_toc: true
-hero_image: /images/posts/96.jpg
 hero_darken: true
+title: CAP и PACELC глазами PostgreSQL-разработчика
+date: '2025-06-04 12:00:00 +0300'
+categories:
+- architecture
+- database
+tags: PostgreSQL,CAP-теорема,PACELC,NoSQL,репликация,кластер
+rate: 4
+hero_image: "/images/posts/0100.webp"
 ---
 PostgreSQL — мощная СУБД, но в распределённых системах она сталкивается с теми же вызовами, что и NoSQL-решения: CAP-теорема диктует выбор между доступностью и консистентностью, а PACELC уточняет компромиссы при работе в штатном режиме. Понимание этих принципов критично для проектирования отказоустойчивых кластеров и репликации в Rails-приложениях.
 
