@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Rails 7.2: главное за 5 минут"
-date:   2024-12-04 12:00:00 +0300
-rate: 4
-tags: Ruby on Rails,Rails 7.2,YJIT,Hotwire,Active Record,DevOps
 version: 3.2.2
-categories:
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/55.jpg
 hero_darken: true
+title: 'Rails 7.2: главное за 5 минут'
+date: '2024-12-04 12:00:00 +0300'
+categories:
+- rails
+tags: Ruby on Rails,Rails 7.2,YJIT,Hotwire,Active Record,DevOps
+rate: 4
+hero_image: "/images/posts/background_post-0044.webp"
 ---
 Rails 7.2 продолжает укреплять позиции фреймворка, предлагая разработчикам улучшенную производительность благодаря YJIT, стабильность Hotwire и оптимизации Active Record. Этот релиз делает работу с Ruby on Rails ещё удобнее, сохраняя при этом совместимость с современными версиями Ruby и инструментами DevOps.
 

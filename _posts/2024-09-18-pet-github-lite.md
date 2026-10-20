@@ -1,17 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Мой первый Pet + GitHub: быстро и только нужное — commit, push, pull, работа только в main"
-date:   2024-09-18 10:00:00 +0300
-rate: 1
-tags: GitHub pet
 version: 3.2.2
-categories:
-  - pet
-hero_image: /images/posts/26.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Мой первый Pet + GitHub: быстро и только нужное — commit, push, pull, работа
+  только в main'
+date: '2024-09-18 10:00:00 +0300'
+categories:
+- pet
+tags: GitHub pet
+rate: 1
+hero_image: "/images/posts/background_post-0054.webp"
 ---
 GitHub — это мощный инструмент для контроля версий, но часто разработчики с первых дней усложняют себе жизнь лишними ветками, merge-конфликтами и сложными workflow. В статье разберём, как работать эффективно: только `main`, минимум команд, максимум результата.
 

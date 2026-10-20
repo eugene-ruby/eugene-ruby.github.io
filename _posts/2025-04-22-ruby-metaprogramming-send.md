@@ -1,19 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "📞 Вызов методов динамически в Ruby: send, __send__ и public_send"
-date:   2025-04-22 12:00:00 +0300
-rate: 4
-tags: Ruby,метапрограммирование,рефлексия,динамический-вызов
 version: 3.2.2
-categories:
-   - ruby
-hero_image: /images/posts/32.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: "\U0001F4DE Вызов методов динамически в Ruby: send, __send__ и public_send"
+date: '2025-04-22 12:00:00 +0300'
+categories:
+- ruby
+tags: Ruby,метапрограммирование,рефлексия,динамический-вызов
+rate: 4
+hero_image: "/images/posts/background_post-0032.webp"
 ---
-
 Иногда в Ruby нужно вызвать метод, имя которого неизвестно до момента выполнения программы — например, при обработке пользовательского ввода или реализации плагинной архитектуры. В этой статье разберём три способа динамического вызова методов: `send`, `__send__` и `public_send`, их различия и подводные камни.
 
 ---

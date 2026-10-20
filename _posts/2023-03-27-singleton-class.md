@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Ruby: class << self и singleton-классы — что это за магия?"
-date:   2023-03-27 15:00:00 +0300
-rate: 4
-tags: Ruby,Singleton-классы,метапрограммирование,class methods,extend,объекты
 version: 3.2.2
-categories:
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/9.jpg
 hero_darken: true
+title: 'Ruby: class << self и singleton-классы — что это за магия?'
+date: '2023-03-27 15:00:00 +0300'
+categories:
+- ruby
+tags: Ruby,Singleton-классы,метапрограммирование,class methods,extend,объекты
+rate: 4
+hero_image: "/images/posts/background_post-0075.webp"
 ---
 Singleton-классы в Ruby — это мощный инструмент метапрограммирования, позволяющий добавлять уникальные методы к отдельным объектам. Они лежат в основе таких концепций, как class methods и extend, открывая гибкие возможности для настройки поведения объектов и классов. Понимание их работы помогает глубже разобраться в устройстве Ruby и писать более выразительный код.
 

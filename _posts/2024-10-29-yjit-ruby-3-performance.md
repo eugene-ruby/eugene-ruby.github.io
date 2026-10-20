@@ -1,20 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "YJIT и производительность Ruby 3+: стоит ли того?"
-rate: 3
-tags: Ruby,YJIT,оптимизация,производительность,JIT-компиляция,продакшен
 version: 3.2.2
-date:   2024-09-20 12:00:00 +0300
-categories:
-  - performance
-  - ruby
-hero_image: /images/posts/44.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'YJIT и производительность Ruby 3+: стоит ли того?'
+date: '2024-09-20 12:00:00 +0300'
+categories:
+- performance
+- ruby
+tags: Ruby,YJIT,оптимизация,производительность,JIT-компиляция,продакшен
+rate: 3
+hero_image: "/images/posts/background_post-0087.webp"
 ---
-
 YJIT — это как турбонаддув для вашего Ruby-приложения. Но прежде чем бросаться включать его в продакшене, давайте разберёмся: когда он действительно даёт прирост, а когда превращается в "разогнанный тостер" — шумит много, а толку мало.
 
 ---

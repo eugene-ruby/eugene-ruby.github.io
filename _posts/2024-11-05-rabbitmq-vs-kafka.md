@@ -1,19 +1,20 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "Очередь или поток? Kafka vs RabbitMQ с практическим уклоном"
-date:   2024-09-20 12:00:00 +0300
-rate: 3
-tags: Ruby on Rails,Kafka,RabbitMQ,архитектура,PostgreSQL,брокеры сообщений,message brokers
 version: 3.2.2
-categories:
-  - architecture
-  - rails
-  - performance
-hero_image: /images/posts/46.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: Очередь или поток? Kafka vs RabbitMQ с практическим уклоном
+date: '2024-09-20 12:00:00 +0300'
+categories:
+- architecture
+- rails
+- performance
+tags: Ruby on Rails,Kafka,RabbitMQ,архитектура,PostgreSQL,брокеры сообщений,message
+  brokers
+rate: 3
+hero_image: "/images/posts/background_post-0063.webp"
 ---
 Выбор между очередями и потоками сообщений — это как выбор между почтальоном и радиостанцией: один гарантированно доставит письмо, другой мгновенно разошлёт новости тысячам. В статье разберём Kafka и RabbitMQ на примерах из Rails-приложений, покажем, как избежать «брокерного ада» и не перегрузить PostgreSQL фоновыми задачами.
 

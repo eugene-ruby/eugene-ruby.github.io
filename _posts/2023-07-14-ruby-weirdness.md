@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Ruby: Странности, которые не объясняют в туториалах"
-date:   2023-07-14 14:00:00 +0300
-rate: 3
-tags: Ruby,подводные камни,сравнение false и nil,object_id,замороженные объекты,собеседования
 version: 3.2.2
-categories:
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/11.jpg
 hero_darken: true
+title: 'Ruby: Странности, которые не объясняют в туториалах'
+date: '2023-07-14 14:00:00 +0300'
+categories:
+- ruby
+tags: Ruby,подводные камни,сравнение false и nil,object_id,замороженные объекты,собеседования
+rate: 3
+hero_image: "/images/posts/background_post-0076.webp"
 ---
 Ruby — это мощный и выразительный язык, но иногда его поведение может удивить даже опытных разработчиков. В этой статье разберём подводные камни Ruby: от особенностей сравнения `false` и `nil` до работы с `object_id` и замороженными объектами. Эти нюансы не только помогут глубже понять язык, но и пригодятся на собеседованиях.
 

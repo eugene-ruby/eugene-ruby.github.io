@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Prometheus и Grafana: метрики, дашборды и здравый смысл"
-date: 2024-09-18 12:00:00 +0300
-rate: 4
-tags: Ruby on Rails,Monitoring,DevOps,PostgreSQL,Prometheus,Grafana
 version: 3.2.2
-categories:
-  - devops
-  - performance
-hero_image: /images/posts/75.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Prometheus и Grafana: метрики, дашборды и здравый смысл'
+date: '2024-09-18 12:00:00 +0300'
+categories:
+- devops
+- performance
+tags: Ruby on Rails,Monitoring,DevOps,PostgreSQL,Prometheus,Grafana
+rate: 4
+hero_image: "/images/posts/background_post-0043.webp"
 ---
 Мониторинг приложений — это не роскошь, а необходимость. Prometheus и Grafana стали стандартом де-факто для сбора метрик и их визуализации. Но как избежать типичных ошибок и не превратить дашборды в "стену ужаса"? Разберём на примерах Ruby-приложений.
 

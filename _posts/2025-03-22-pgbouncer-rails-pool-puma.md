@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "PgBouncer, Puma и Rails — как работают пулы соединений на самом деле"
-date: 2025-03-22 18:00:00 +0300
-rate: 4
-tags: Ruby,PostgreSQL,Rails,DevOps,Puma,PgBouncer
 version: 3.2.2
-categories:
-  - postgres
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/83.jpg
 hero_darken: true
+title: PgBouncer, Puma и Rails — как работают пулы соединений на самом деле
+date: '2025-03-22 18:00:00 +0300'
+categories:
+- postgres
+- rails
+tags: Ruby,PostgreSQL,Rails,DevOps,Puma,PgBouncer
+rate: 4
+hero_image: "/images/posts/background_post-0073.webp"
 ---
 Ruby, PostgreSQL и Rails — мощный стек для разработки современных веб-приложений, но без грамотного DevOps-подхода даже опытные разработчики могут столкнуться с проблемами масштабирования. В этой статье разберем ключевые аспекты работы с базами данных, пулерами соединений и многопоточностью, которые помогут избежать типичных ошибок в продакшене. Особое внимание уделим взаимодействию Puma, ActiveRecord и PgBouncer — трио, которое требует тонкой настройки для стабильной работы под нагрузкой.
 

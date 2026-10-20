@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "scopes, merge, default_scope и unscope — порядок важен"
-date:   2024-11-25 10:30:00 +0300
-rate: 3
-tags: Ruby,Rails,Scopes,SQL,PostgreSQL,DevOps
 version: 3.2.2
-categories:
-  - orm
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/52.jpg
 hero_darken: true
+title: scopes, merge, default_scope и unscope — порядок важен
+date: '2024-11-25 10:30:00 +0300'
+categories:
+- orm
+- rails
+tags: Ruby,Rails,Scopes,SQL,PostgreSQL,DevOps
+rate: 3
+hero_image: "/images/posts/background_post-0093.webp"
 ---
 Scopes в Rails — это мощный инструмент для структурирования запросов к базе данных, позволяющий избежать дублирования кода и повысить читаемость. Однако при неправильном использовании merge, default_scope или unscope можно столкнуться с неожиданным поведением SQL-запросов, особенно при работе с PostgreSQL и сложными ассоциациями. В этой статье разберём ключевые особенности scopes и подводные камни, которые важно учитывать в DevOps-среде.
 

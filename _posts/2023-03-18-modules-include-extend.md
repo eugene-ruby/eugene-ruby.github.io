@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Ruby: include, extend, prepend и refine — кто ты из модулей?"
-date:   2023-03-18 12:30:00 +0300
-rate: 3
-tags: Ruby,модули,include,extend,prepend,refine
 version: 3.2.2
-categories:
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/7.jpg
 hero_darken: true
+title: 'Ruby: include, extend, prepend и refine — кто ты из модулей?'
+date: '2023-03-18 12:30:00 +0300'
+categories:
+- ruby
+tags: Ruby,модули,include,extend,prepend,refine
+rate: 3
+hero_image: "/images/posts/background_post-0019.webp"
 ---
 Ruby предлагает мощные инструменты для расширения функциональности через модули — от классических `include` и `extend` до гибкого `prepend` и локальных патчей с `refine`. В этой статье разберёмся, как правильно использовать эти механизмы в Rails-приложениях, избегая типичных ошибок и подводных камней при работе с цепочкой наследования.
 

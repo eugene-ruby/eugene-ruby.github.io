@@ -1,19 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Транзакции в Rails + PostgreSQL: коммит или откат?"
-date:   2024-12-10 14:00:00 +0300
-rate: 3
-tags: PostgreSQL,Rails,транзакции,ActiveRecord,savepoints,целостность данных
 version: 3.2.2
-categories:
-  - orm
-  - rails
-  - postgres
 toc: true
 menubar_toc: true
-hero_image: /images/posts/56.jpg
 hero_darken: true
+title: 'Транзакции в Rails + PostgreSQL: коммит или откат?'
+date: '2024-12-10 14:00:00 +0300'
+categories:
+- orm
+- rails
+- postgres
+tags: PostgreSQL,Rails,транзакции,ActiveRecord,savepoints,целостность данных
+rate: 3
+hero_image: "/images/posts/background_post-0045.webp"
 ---
 Транзакции в PostgreSQL и Rails обеспечивают целостность данных, позволяя выполнять операции атомарно — либо все изменения применяются, либо ни одно. В этом материале разберём, как работают вложенные транзакции, когда использовать savepoints и какие подводные камни могут возникнуть при работе с ActiveRecord.
 

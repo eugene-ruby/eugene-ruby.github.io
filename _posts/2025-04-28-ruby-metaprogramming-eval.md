@@ -1,19 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "🪢 Системные методы Ruby: eval, binding и tap — когда и зачем?"
-date:   2025-04-28 12:00:00 +0300
-rate: 4
-tags: Ruby,метапрограммирование,отладка,рефлексия
 version: 3.2.2
-categories:
-  - ruby
-hero_image: /images/posts/78.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: "\U0001FAA2 Системные методы Ruby: eval, binding и tap — когда и зачем?"
+date: '2025-04-28 12:00:00 +0300'
+categories:
+- ruby
+tags: Ruby,метапрограммирование,отладка,рефлексия
+rate: 4
+hero_image: "/images/posts/background_post-0044.webp"
 ---
-
 Ruby — язык с богатыми метапрограммными возможностями, но некоторые его методы вызывают священный ужас у новичков и восторг у опытных разработчиков. Сегодня разберём три системных инструмента: `eval`, `binding` и `Kernel#tap` — покажем их силу, опасности и реальные кейсы применения.
 
 ---

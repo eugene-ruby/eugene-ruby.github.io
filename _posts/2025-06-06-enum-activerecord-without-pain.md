@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Enum в ActiveRecord: как сделать красиво, а не через боль"
-date:   2024-09-18 12:00:00 +0300
-rate: 3
-tags: Ruby,Rails,Enum,PostgreSQL,ActiveRecord,Бизнес-логика
 version: 3.2.2
-categories:
-  - pattern
-  - rails
-hero_image: /images/posts/98.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Enum в ActiveRecord: как сделать красиво, а не через боль'
+date: '2024-09-18 12:00:00 +0300'
+categories:
+- pattern
+- rails
+tags: Ruby,Rails,Enum,PostgreSQL,ActiveRecord,Бизнес-логика
+rate: 3
+hero_image: "/images/posts/background_post-0006.webp"
 ---
 Enum в Rails — это как швейцарский нож: кажется простым, пока не попробуешь открыть им консервную банку. В статье разберём, как избежать типичных ошибок с enum, сделать код читаемым и поддерживаемым, а заодно научимся дружить их с PostgreSQL и бизнес-логикой.
 

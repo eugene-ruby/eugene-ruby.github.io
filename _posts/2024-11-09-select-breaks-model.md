@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Почему select(\"...\") ломает методы модели в Rails"
-date:   2024-11-09 11:00:00 +0300
-rate: 3
-tags: Ruby,PostgreSQL,Rails,DevOps,оптимизация запросов,автоматизация
 version: 3.2.2
-categories:
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/47.jpg
 hero_darken: true
+title: Почему select("...") ломает методы модели в Rails
+date: '2024-11-09 11:00:00 +0300'
+categories:
+- rails
+tags: Ruby,PostgreSQL,Rails,DevOps,оптимизация запросов,автоматизация
+rate: 3
+hero_image: "/images/posts/background_post-0099.webp"
 ---
 Ruby, PostgreSQL и Rails — мощный стек для разработки современных веб-приложений, а DevOps-практики помогают развертывать их быстро и надежно. В этой статье разберём ключевые аспекты работы с базами данных, оптимизацию запросов и автоматизацию процессов для Ruby on Rails проектов.
 

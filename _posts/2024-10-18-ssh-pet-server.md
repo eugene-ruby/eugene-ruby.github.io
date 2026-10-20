@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "SSH — это твой волшебный ключ к серверу"
-date:   2024-10-18 12:00:00 +0300
-rate: 1
-tags: SSH, Pet, VPS
 version: 3.2.2
-categories:
-  - pet
-  - ruby
-hero_image: /images/posts/41.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: SSH — это твой волшебный ключ к серверу
+date: '2024-10-18 12:00:00 +0300'
+categories:
+- pet
+- ruby
+tags: SSH, Pet, VPS
+rate: 1
+hero_image: "/images/posts/background_post-0061.webp"
 ---
 SSH — это не просто способ подключиться к серверу. Это твой цифровой пропуск в мир DevOps, где пароли — вчерашний день, а безопасность начинается с пары файлов в `~/.ssh`. В статье разберём, как за 5 минут создать ключ, добавить его на сервер и забыть о бесконечных вводах паролей.
 

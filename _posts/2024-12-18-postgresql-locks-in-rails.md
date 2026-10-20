@@ -1,19 +1,20 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Блокировки в PostgreSQL: SELECT FOR UPDATE и другие способы не словить race condition"
-date:   2024-12-18 11:30:00 +0300
-rate: 4
-tags: PostgreSQL,Ruby on Rails,блокировки,race condition,Sidekiq,конкурентный доступ
 version: 3.2.2
-categories:
-  - orm
-  - rails
-  - postgres
 toc: true
 menubar_toc: true
-hero_image: /images/posts/57.jpg
 hero_darken: true
+title: 'Блокировки в PostgreSQL: SELECT FOR UPDATE и другие способы не словить race
+  condition'
+date: '2024-12-18 11:30:00 +0300'
+categories:
+- orm
+- rails
+- postgres
+tags: PostgreSQL,Ruby on Rails,блокировки,race condition,Sidekiq,конкурентный доступ
+rate: 4
+hero_image: "/images/posts/background_post-0037.webp"
 ---
 Блокировки в PostgreSQL — мощный инструмент для предотвращения race condition при конкурентном доступе к данным. В Ruby on Rails методы вроде `lock` и `SELECT FOR UPDATE` помогают безопасно обновлять записи, а advisory locks позволяют реализовать логические блокировки на уровне приложения.
 

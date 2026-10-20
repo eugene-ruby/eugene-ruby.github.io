@@ -1,20 +1,21 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Гемы под капотом: 10 библиотек, которые двигают весь Ruby-мир вперёд. Часть II"
-date: 2024-09-05 10:00:00 +0300
-rate: 2
-tags: ruby gems tzinfo concurrent-ruby json diff-lcs rspec-expectations rspec-core rspec-mocks rspec-support minitest nokogiri
 version: 3.2.2
-categories:
-  - gems
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/20.jpg
 hero_darken: true
+title: 'Гемы под капотом: 10 библиотек, которые двигают весь Ruby-мир вперёд. Часть
+  II'
+date: '2024-09-05 10:00:00 +0300'
+categories:
+- gems
+- ruby
+tags: ruby gems tzinfo concurrent-ruby json diff-lcs rspec-expectations rspec-core
+  rspec-mocks rspec-support minitest nokogiri
+rate: 2
+hero_image: "/images/posts/background_post-0030.webp"
 ---
-
 Многие Ruby-гемы работают незаметно, но именно они обеспечивают стабильную работу всего приложения: от HTTP-запросов до локализации и потоков. В этой статье мы заглянем под капот популярных библиотек, которые чаще всего являются зависимостями других гемов. Даже если вы напрямую их не подключаете, они почти наверняка уже крутятся у вас в проде. Понимание этих инструментов делает разработчика не просто опытнее, но и спокойнее при отладке.
 
 ---  

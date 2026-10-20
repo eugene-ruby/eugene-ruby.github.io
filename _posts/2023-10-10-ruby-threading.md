@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Ruby: Многопоточность, которой нет — потоки, GIL и Mutex"
-date:   2023-10-10 10:00:00 +0300
-rate: 3
-tags: Ruby,потоки,GIL,MRI,многопоточность,параллелизм
 version: 3.2.2
-categories:
-  - performance
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/13.jpg
 hero_darken: true
+title: 'Ruby: Многопоточность, которой нет — потоки, GIL и Mutex'
+date: '2023-10-10 10:00:00 +0300'
+categories:
+- performance
+- ruby
+tags: Ruby,потоки,GIL,MRI,многопоточность,параллелизм
+rate: 3
+hero_image: "/images/posts/background_post-0024.webp"
 ---
 Ruby — мощный язык с богатыми возможностями для работы с потоками, но его реализация в MRI имеет важную особенность: Global Interpreter Lock (GIL), который ограничивает параллельное выполнение Ruby-кода. Это делает потоки полезными для I/O-операций, таких как работа с сетью или базой данных, но не даёт преимуществ в CPU-задачах. В статье разберёмся, как эффективно использовать многопоточность в Ruby, какие подводные камни ждут разработчиков и какие альтернативы существуют для настоящего параллелизма.
 

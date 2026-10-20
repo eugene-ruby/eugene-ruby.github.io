@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Глоссарий сложных технических слов простыми словами"
-date:   2025-01-09 12:30:00 +0300
-rate: 3
-tags: Ruby,PostgreSQL,Rails,DevOps,веб-приложения,оптимизация
 version: 3.2.2
-categories:
-  - architecture
 toc: true
 menubar_toc: true
-hero_image: /images/posts/60.jpg
 hero_darken: true
+title: Глоссарий сложных технических слов простыми словами
+date: '2025-01-09 12:30:00 +0300'
+categories:
+- architecture
+tags: Ruby,PostgreSQL,Rails,DevOps,веб-приложения,оптимизация
+rate: 3
+hero_image: "/images/posts/background_post-0021.webp"
 ---
 Ruby, PostgreSQL, Rails и DevOps — это мощный стек технологий для создания надежных и масштабируемых веб-приложений. В этой статье разберем ключевые аспекты работы с этими инструментами: от оптимизации запросов к базе данных до автоматизации развертывания с помощью современных DevOps-практик. Вы узнаете, как эффективно сочетать эти технологии для построения производительных и отказоустойчивых систем.
 

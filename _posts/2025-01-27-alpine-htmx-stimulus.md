@@ -1,20 +1,20 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "Alpine.js, htmx, Stimulus и другие: лёгкий JS без React-переутомления"
-date:   2025-01-27 12:00:00 +0300
-rate: 2
-tags: Ruby on Rails, JavaScript, Frontend, Alpine.js, htmx, Stimulus, javascript, JS
 version: 3.2.2
-categories:
-  - frontend
-  - rails
-hero_image: /images/posts/67.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Alpine.js, htmx, Stimulus и другие: лёгкий JS без React-переутомления'
+date: '2025-01-27 12:00:00 +0300'
+categories:
+- frontend
+- rails
+tags: Ruby on Rails, JavaScript, Frontend, Alpine.js, htmx, Stimulus, javascript,
+  JS
+rate: 2
+hero_image: "/images/posts/background_post-0068.webp"
 ---
-
 Современный фронтенд часто ассоциируется с React, Vue и Angular — но что, если вам не нужен виртуальный DOM, тонны зависимостей и сложная настройка? В мире Ruby on Rails существуют лёгкие альтернативы, которые отлично работают с Turbolinks и Hotwire. Давайте разберёмся, когда выбрать Alpine.js вместо Stimulus, как htmx заменяет API-запросы, и почему иногда «маленький JS» — это именно то, что нужно.
 
 ---

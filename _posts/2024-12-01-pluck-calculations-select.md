@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "pluck, calculations и кастомный select — быстро, но аккуратно"
-date:   2024-12-01 11:15:00 +0300
-rate: 3
-tags: Ruby,Rails,PostgreSQL,pluck,count,select
 version: 3.2.2
-categories:
-  - orm
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/54.jpg
 hero_darken: true
+title: pluck, calculations и кастомный select — быстро, но аккуратно
+date: '2024-12-01 11:15:00 +0300'
+categories:
+- orm
+- rails
+tags: Ruby,Rails,PostgreSQL,pluck,count,select
+rate: 3
+hero_image: "/images/posts/background_post-0077.webp"
 ---
 Ruby предлагает мощные инструменты для работы с базой данных, такие как `pluck`, `count` и `select`, которые позволяют оптимизировать запросы и снизить нагрузку на приложение. Однако важно понимать их особенности, чтобы избежать неожиданного поведения и утечек памяти. В этой статье разберёмся, когда и как правильно использовать эти методы в Rails-приложениях с PostgreSQL.
 

@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Service Object в Ruby: когда `.call` уже не справляется"
-date:   2024-09-17 12:00:00 +0300
-rate: 4
-tags: Ruby on Rails,Service Object,бизнес-логика,PostgreSQL,DevOps,масштабируемость
 version: 3.2.2
-categories:
-  - pattern
-  - ruby
-hero_image: /images/posts/25.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Service Object в Ruby: когда `.call` уже не справляется'
+date: '2024-09-17 12:00:00 +0300'
+categories:
+- pattern
+- ruby
+tags: Ruby on Rails,Service Object,бизнес-логика,PostgreSQL,DevOps,масштабируемость
+rate: 4
+hero_image: "/images/posts/background_post-0020.webp"
 ---
 Service Object в Ruby on Rails — это мощный инструмент для вынесения сложной бизнес-логики из контроллеров и моделей, помогающий соблюдать принцип единой ответственности. В статье разберём, как правильно проектировать сервисные объекты, избегая типичных ошибок, и покажем их интеграцию с PostgreSQL и DevOps-практиками для масштабируемых приложений.
 

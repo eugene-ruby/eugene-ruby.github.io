@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "PgBouncer и max_client_conn — почему лимит не спасает"
-date: 2025-05-12 16:30:00 +0300
-rate: 4
-tags: PostgreSQL,PgBouncer,Rails,DevOps,connection pooling,performance
 version: 3.2.2
-categories:
-  - postgres
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/90.jpg
 hero_darken: true
+title: PgBouncer и max_client_conn — почему лимит не спасает
+date: '2025-05-12 16:30:00 +0300'
+categories:
+- postgres
+- rails
+tags: PostgreSQL,PgBouncer,Rails,DevOps,connection pooling,performance
+rate: 4
+hero_image: "/images/posts/background_post-0094.webp"
 ---
 PostgreSQL — мощная СУБД, но её архитектура с отдельными процессами на каждое соединение может стать узким местом в высоконагруженных Rails-приложениях. PgBouncer решает эту проблему, выступая в роли пулера соединений, однако его настройка требует понимания ключевых параметров вроде max_client_conn и pool_size, особенно в DevOps-среде с ограниченными ресурсами.
 

@@ -1,20 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "SQL-инъекции в Rails: не доверяй params как себе"
-date: 2024-09-18 12:00:00 +0300
-rate: 2
-tags: Ruby on Rails, PostgreSQL, Security, SQL Injection, Web Development
 version: 3.2.2
-categories:
-  - security
-  - rails
-hero_image: /images/posts/50.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'SQL-инъекции в Rails: не доверяй params как себе'
+date: '2024-09-18 12:00:00 +0300'
+categories:
+- security
+- rails
+tags: Ruby on Rails, PostgreSQL, Security, SQL Injection, Web Development
+rate: 2
+hero_image: "/images/posts/background_post-0082.webp"
 ---
-
 SQL-инъекции — одна из самых опасных уязвимостей веб-приложений, способная превратить безобидный параметр запроса в полноценную атаку на базу данных. В Rails эта проблема часто маскируется за удобством Active Record, создавая ложное ощущение безопасности. Разберёмся, где скрываются риски и как их устранить.
 
 ---

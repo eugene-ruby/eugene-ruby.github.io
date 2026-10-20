@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "EXPLAIN ANALYZE BUFFERS: читаем планы PostgreSQL как профи"
-date:   2025-01-12 11:00:00 +0300
-rate: 4
-tags: PostgreSQL,SQL,производительность,EXPLAIN ANALYZE,BUFFERS,Rails
 version: 3.2.2
-categories:
-  - postgres
 toc: true
 menubar_toc: true
-hero_image: /images/posts/62.jpg
 hero_darken: true
+title: 'EXPLAIN ANALYZE BUFFERS: читаем планы PostgreSQL как профи'
+date: '2025-01-12 11:00:00 +0300'
+categories:
+- postgres
+tags: PostgreSQL,SQL,производительность,EXPLAIN ANALYZE,BUFFERS,Rails
+rate: 4
+hero_image: "/images/posts/background_post-0030.webp"
 ---
 PostgreSQL предлагает мощные инструменты для анализа производительности SQL-запросов, среди которых `EXPLAIN ANALYZE` и `BUFFERS` — ключевые. Они помогают разработчикам выявлять узкие места, такие как отсутствие индексов или неоптимальные планы выполнения, что особенно актуально в Rails-приложениях с активной работой с базой данных. Понимание этих механизмов — важный навык для DevOps-инженеров, стремящихся к высокой отзывчивости системы.
 

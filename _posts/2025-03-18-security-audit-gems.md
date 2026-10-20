@@ -1,20 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Brakeman, Bundler Audit и другие: Ruby-гемы для безопасности"
-date:   2024-09-18 10:00:00 +0300
-rate: 2
-tags: Gem,безопасность,DevOps,аудит,уязвимости
 version: 3.2.2
-categories:
-  - security
-  - ruby
-hero_image: /images/posts/82.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Brakeman, Bundler Audit и другие: Ruby-гемы для безопасности'
+date: '2024-09-18 10:00:00 +0300'
+categories:
+- security
+- ruby
+tags: Gem,безопасность,DevOps,аудит,уязвимости
+rate: 2
+hero_image: "/images/posts/background_post-0031.webp"
 ---
-
 Безопасность в Ruby-приложениях — это не только про HTTPS и сложные пароли. Это про ежедневную рутину: обновления гемов, поиск уязвимостей в коде и автоматизацию проверок. Разберём инструменты, которые спасут ваш бэкенд от SQL-инъекций, устаревших зависимостей и других "подарков" из интернета.
 
 ---

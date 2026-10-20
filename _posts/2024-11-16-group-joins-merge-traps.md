@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "select, group, having, joins, merge — как сломать ActiveRecord (и выжить)"
-date:   2024-11-16 14:00:00 +0300
-rate: 5
-tags: ActiveRecord,PostgreSQL,SQL,Rails,group,having
 version: 3.2.2
-categories:
-  - orm
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/49.jpg
 hero_darken: true
+title: select, group, having, joins, merge — как сломать ActiveRecord (и выжить)
+date: '2024-11-16 14:00:00 +0300'
+categories:
+- orm
+- rails
+tags: ActiveRecord,PostgreSQL,SQL,Rails,group,having
+rate: 5
+hero_image: "/images/posts/background_post-0073.webp"
 ---
 ActiveRecord в Rails — мощный инструмент для работы с PostgreSQL, но даже опытные разработчики сталкиваются с неочевидными ошибками при использовании group, having и merge. В этой статье разберём типичные подводные камни при построении сложных SQL-запросов через ActiveRecord и способы их избежать.
 

@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "ActiveRecord: select, pluck и .ids — как не уронить базу"
-date:   2024-10-23 10:30:00 +0300
-rate: 3
-tags: Rails,PostgreSQL,ActiveRecord,оптимизация запросов,pluck,select
 version: 3.2.2
-categories:
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/31.jpg
 hero_darken: true
+title: 'ActiveRecord: select, pluck и .ids — как не уронить базу'
+date: '2024-10-23 10:30:00 +0300'
+categories:
+- rails
+tags: Rails,PostgreSQL,ActiveRecord,оптимизация запросов,pluck,select
+rate: 3
+hero_image: "/images/posts/background_post-0025.webp"
 ---
 Оптимизация запросов в Rails — ключевой навык для разработчиков, работающих с PostgreSQL. В этой статье разберём тонкости использования `pluck`, `select` и `ids` в ActiveRecord, чтобы избежать проблем с производительностью и нагрузкой на базу данных. Узнаем, как правильно фильтровать данные на стороне SQL, а не в Ruby, и когда каждый из методов может быть полезен.
 

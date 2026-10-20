@@ -1,19 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "🛠 Методы для работы с методами в Ruby: define_method, remove_method, undef_method, alias_method"
-date:   2025-04-22 12:00:00 +0300
-rate: 4
-tags: Ruby,метапрограммирование,рефлексия,методы
 version: 3.2.2
-categories:
-  - ruby
-hero_image: /images/posts/35.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: "\U0001F6E0 Методы для работы с методами в Ruby: define_method, remove_method,
+  undef_method, alias_method"
+date: '2025-04-22 12:00:00 +0300'
+categories:
+- ruby
+tags: Ruby,метапрограммирование,рефлексия,методы
+rate: 4
+hero_image: "/images/posts/background_post-0026.webp"
 ---
-
 В Ruby методы — это не просто куски кода, а полноценные объекты, которыми можно управлять динамически. В статье разберём четыре мощных инструмента для работы с методами: от создания на лету до хирургического удаления. Покажем, где это полезно и как не прострелить себе ногу метапрограммированием.
 
 ---

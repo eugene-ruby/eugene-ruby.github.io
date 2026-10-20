@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Ruby: Enumerator, Lazy, Fiber — искусство не делать лишнего"
-date:   2023-04-05 13:00:00 +0300
-rate: 5
-tags: Ruby,итераторы,Enumerator,Lazy,Fiber,ленивые вычисления
 version: 3.2.2
-categories:
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/10.jpg
 hero_darken: true
+title: 'Ruby: Enumerator, Lazy, Fiber — искусство не делать лишнего'
+date: '2023-04-05 13:00:00 +0300'
+categories:
+- ruby
+tags: Ruby,итераторы,Enumerator,Lazy,Fiber,ленивые вычисления
+rate: 5
+hero_image: "/images/posts/background_post-0021.webp"
 ---
 Итераторы в Ruby — мощный инструмент, выходящий далеко за рамки простого `each`. В статье разберём, как работают `Enumerator`, `Lazy` и `Fiber` под капотом, почему ленивые вычисления экономят память и как это применяется в Rails-приложениях. Вы узнаете, как эффективно обрабатывать большие данные и писать выразительный код без лишних вычислений.
 

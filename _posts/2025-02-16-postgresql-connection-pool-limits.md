@@ -1,19 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "Сколько соединений держать в Puma, Sidekiq и Webhooks?"
-date: 2025-02-16 12:00:00 +0300
-rate: 5
-tags: PostgreSQL,Ruby on Rails,Puma,Sidekiq,PgBouncer,DevOps
 version: 3.2.2
-categories:
-  - postgres
-  - database
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/76.jpg
 hero_darken: true
+title: Сколько соединений держать в Puma, Sidekiq и Webhooks?
+date: '2025-02-16 12:00:00 +0300'
+categories:
+- postgres
+- database
+- rails
+tags: PostgreSQL,Ruby on Rails,Puma,Sidekiq,PgBouncer,DevOps
+rate: 5
+hero_image: "/images/posts/background_post-0006.webp"
 ---
 PostgreSQL — мощная СУБД, но её соединения не безграничны, и превышение лимита может обрушить продакшен. В этой статье разберём, как правильно распределять подключения между Puma, Sidekiq и другими компонентами Ruby on Rails-приложения, чтобы избежать перегрузки базы. Узнаете, как считать активные соединения, настраивать пулы и использовать PgBouncer для эффективного управления ресурсами PostgreSQL в DevOps-среде.
 

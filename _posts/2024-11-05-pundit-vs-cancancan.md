@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Pundit и CanCanCan: борьба за авторизацию без боли"
-date:   2024-09-18 12:00:00 +0300
-rate: 2
-tags: Ruby on Rails,Авторизация,Безопасность,PostgreSQL,Архитектура
 version: 3.2.2
-categories:
-  - gems
-  - rails
-hero_image: /images/posts/45.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Pundit и CanCanCan: борьба за авторизацию без боли'
+date: '2024-09-18 12:00:00 +0300'
+categories:
+- gems
+- rails
+tags: Ruby on Rails,Авторизация,Безопасность,PostgreSQL,Архитектура
+rate: 2
+hero_image: "/images/posts/background_post-0078.webp"
 ---
 Авторизация в Rails-приложениях — это как охрана в ночном клубе: если пропустит не того, будет скандал, а если слишком строгая — никто не войдёт. В этой статье разберём два популярных инструмента — **Pundit** и **CanCanCan** — и выясним, когда какой выбрать, чтобы не превратить код в крепость с колючей проволокой.
 

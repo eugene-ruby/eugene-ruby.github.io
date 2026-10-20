@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "PostgreSQL + JSONB: магия `@>` и запросы к вложенным данным"
-date:   2025-02-04 11:00:00 +0300
-rate: 3
-tags: JSONB,PostgreSQL,Rails,индексация,фильтрация,вложенные объекты
 version: 3.2.2
-categories:
-  - postgres
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/72.jpg
 hero_darken: true
+title: 'PostgreSQL + JSONB: магия `@>` и запросы к вложенным данным'
+date: '2025-02-04 11:00:00 +0300'
+categories:
+- postgres
+- rails
+tags: JSONB,PostgreSQL,Rails,индексация,фильтрация,вложенные объекты
+rate: 3
+hero_image: "/images/posts/background_post-0007.webp"
 ---
 Работа с JSONB в PostgreSQL открывает новые возможности для хранения и обработки сложных структур данных прямо в базе. В этой статье разберём ключевые операторы JSONB, особенности индексации и практические примеры использования в Rails-приложениях — от простых фильтраций до работы с вложенными объектами.
 

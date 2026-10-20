@@ -1,19 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Ruby: Yielder, BasicObject и прочие тайные элементы языка"
-date:   2022-02-02 11:00:00 +0300
-rate: 5
-tags: Ruby,метапрограммирование,DSL,Enumerator::Yielder,BasicObject,Binding
 version: 3.2.2
-categories:
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/1.jpg
 hero_darken: true
+title: 'Ruby: Yielder, BasicObject и прочие тайные элементы языка'
+date: '2022-02-02 11:00:00 +0300'
+categories:
+- ruby
+tags: Ruby,метапрограммирование,DSL,Enumerator::Yielder,BasicObject,Binding
+rate: 5
+hero_image: "/images/posts/background_post-0094.webp"
 ---
-
 Ruby — это не просто язык, а целая вселенная возможностей для разработчика. Но знаете ли вы все его скрытые грани? В этой статье мы раскроем мощные, но редко используемые инструменты Ruby, которые помогут вам писать более выразительный и эффективный код. Вы узнаете, как применять `Enumerator::Yielder` для ленивых вычислений, зачем нужен `BasicObject` в метапрограммировании и как использовать `Binding` для отладки сложных сценариев. Эти знания не только прокачают ваш скилл-лист, но и дадут преимущество на собеседованиях — ведь именно такие «жемчужины» Ruby любят спрашивать у продвинутых разработчиков. Готовы погрузиться в магию Ruby глубже, чем 90% программистов? Тогда поехали!
 
 ---

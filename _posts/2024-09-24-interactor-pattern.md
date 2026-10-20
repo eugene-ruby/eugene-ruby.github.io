@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Interactor в Ruby: `.call!`, контекст и грязные руки"
-date:   2024-09-24 12:00:00 +0300
-rate: 3
-tags: Interactor,Ruby,Rails,бизнес-логика,Service-объекты,ошибки
 version: 3.2.2
-categories:
-  - pattern
-  - ruby
-hero_image: /images/posts/32.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Interactor в Ruby: `.call!`, контекст и грязные руки'
+date: '2024-09-24 12:00:00 +0300'
+categories:
+- pattern
+- ruby
+tags: Interactor,Ruby,Rails,бизнес-логика,Service-объекты,ошибки
+rate: 3
+hero_image: "/images/posts/background_post-0055.webp"
 ---
 Interactor — это мощный инструмент для организации бизнес-логики в Rails-приложениях, который помогает структурировать сложные операции в цепочки шагов с поддержкой отката и валидации. Он особенно полезен, когда стандартные Service-объекты уже не справляются с управлением потоком выполнения и обработкой ошибок. В этой статье разберём, как эффективно использовать Interactor для чистого и предсказуемого кода.
 

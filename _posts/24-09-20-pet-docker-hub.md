@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Выгуливаем Pet-проект: краткий гайд про Docker Hub — push, pull, tags и Free-лимиты"
-date:   2024-09-20 14:00:00 +0300
-rate: 1
-tags: Docker, CI/CD, контейнеризация, pet
 version: 3.2.2
-categories:
-  - pet
-hero_image: /images/posts/99.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Выгуливаем Pet-проект: краткий гайд про Docker Hub — push, pull, tags и Free-лимиты'
+date: '2024-09-20 14:00:00 +0300'
+categories:
+- pet
+tags: Docker, CI/CD, контейнеризация, pet
+rate: 1
+hero_image: "/images/posts/background_post-0057.webp"
 ---
 Docker Hub — это как собачий парк для ваших контейнеров: место, где они могут бегать на свободе, знакомиться с другими и не путать вам под ногами в локальном `docker images`. В статье разберём, как правильно "выгуливать" pet-проекты: от базовых команд до хитростей с тегами и подводных камней бесплатного тарифа.
 

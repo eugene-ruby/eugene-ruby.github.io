@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Почему staging должен быть почти как прод. Или жди беды 31 декабря в 23:50"
-date:   2025-01-28 12:00:00 +0300
-rate: 3
-tags: Ruby,PostgreSQL,ActiveRecord,SQL,тестирование,N+1
 version: 3.2.2
-categories:
-  - postgres
 toc: true
 menubar_toc: true
-hero_image: /images/posts/68.jpg
 hero_darken: true
+title: Почему staging должен быть почти как прод. Или жди беды 31 декабря в 23:50
+date: '2025-01-28 12:00:00 +0300'
+categories:
+- postgres
+tags: Ruby,PostgreSQL,ActiveRecord,SQL,тестирование,N+1
+rate: 3
+hero_image: "/images/posts/background_post-0090.webp"
 ---
 Тестирование на пустой базе staging — это как проверять работу двигателя на велосипеде, когда тебе предстоит гружёный КамАЗ. PostgreSQL и ActiveRecord могут вести себя совершенно по-разному в зависимости от объёма данных, кардинальности связей и индексов. Если не учитывать эти нюансы, даже простой SQL-запрос или рефакторинг кода способны превратить прод в ад из таймаутов, N+1 и Seq Scan на миллионы строк.
 

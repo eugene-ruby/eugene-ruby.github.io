@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "5 ограничений PostgreSQL, о которых стоит помнить"
-date: 2025-05-26 10:00:00 +0300
-rate: 3
-tags: PostgreSQL,Ruby on Rails,СУБД,производительность,DevOps,настройка
 version: 3.2.2
-categories:
-  - postgres
-  - database
 toc: true
 menubar_toc: true
-hero_image: /images/posts/92.jpg
 hero_darken: true
+title: 5 ограничений PostgreSQL, о которых стоит помнить
+date: '2025-05-26 10:00:00 +0300'
+categories:
+- postgres
+- database
+tags: PostgreSQL,Ruby on Rails,СУБД,производительность,DevOps,настройка
+rate: 3
+hero_image: "/images/posts/background_post-0076.webp"
 ---
 PostgreSQL — мощная и надежная СУБД, но даже у неё есть нюансы, которые важно учитывать при разработке на Ruby on Rails. В этой статье разберём ключевые ограничения PostgreSQL, влияющие на производительность и масштабируемость приложений, а также подскажем, как их обойти с помощью DevOps-практик и правильной настройки.
 

@@ -1,20 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Vendoring гемов: когда твой CI не любит интернет"
-rate: 3
-tags: Ruby,gems,vendoring,CI,dependencies,network errors
 version: 3.2.2
-date:   2024-09-18 12:00:00 +0300
-categories:
-  - devops
-  - ruby
-hero_image: /images/posts/42.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Vendoring гемов: когда твой CI не любит интернет'
+date: '2024-09-18 12:00:00 +0300'
+categories:
+- devops
+- ruby
+tags: Ruby,gems,vendoring,CI,dependencies,network errors
+rate: 3
+hero_image: "/images/posts/background_post-0078.webp"
 ---
-
 Вы знаете этот момент, когда CI падает с ошибкой `Network error: Failed to download gem 'some-gem-42.0'`, а дедлайн — вчера?  
 Поздравляю: вы только что встретили **главную боль distributed-систем — зависимость от интернета**.  
 

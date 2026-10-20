@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Ruby: Метапрограммирование — define_method, alias, const_get и send без сюрпризов"
-date:   2024-01-12 10:00:00 +0300
-rate: 4
-tags: метапрограммирование,Ruby,define_method,alias_method,const_get,send
 version: 3.2.2
-categories:
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/14.jpg
 hero_darken: true
+title: 'Ruby: Метапрограммирование — define_method, alias, const_get и send без сюрпризов'
+date: '2024-01-12 10:00:00 +0300'
+categories:
+- ruby
+tags: метапрограммирование,Ruby,define_method,alias_method,const_get,send
+rate: 4
+hero_image: "/images/posts/background_post-0022.webp"
 ---
 Метапрограммирование в Ruby открывает двери в мир динамического создания и управления методами, классами и константами прямо во время выполнения кода. В этой статье разберём ключевые инструменты — от `define_method` до `const_get` — и их тонкости, которые помогут писать гибкий и DRY-код без лишнего дублирования. Особое внимание уделим различиям между похожими методами, чтобы избежать подводных камней в продакшене.
 

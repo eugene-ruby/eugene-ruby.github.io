@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Docker-образы как чемоданы: как собрать быстро и не тащить лишнее"
-date:   2024-09-21 12:00:00 +0300
-rate: 2
-tags: Docker,CI/CD,оптимизация,DevOps,контейнеризация
 version: 3.2.2
-categories:
-  - devops
-  - pet
-hero_image: /images/posts/29.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Docker-образы как чемоданы: как собрать быстро и не тащить лишнее'
+date: '2024-09-21 12:00:00 +0300'
+categories:
+- devops
+- pet
+tags: Docker,CI/CD,оптимизация,DevOps,контейнеризация
+rate: 2
+hero_image: "/images/posts/background_post-0096.webp"
 ---
 Сборка Docker-образов превращается в квест на выживание, когда каждый `docker build` занимает 15 минут, а итоговый образ весит как гиппопотам? В статье разберём стратегии оптимизации — от базовых принципов до продвинутых техник кэширования, которые сократят время сборки в разы и облегчат ваш CI/CD-конвейер.
 

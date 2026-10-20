@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Docker и его друзья: Compose, Swarm, K8s"
-date:   2024-09-18 12:00:00 +0300
-rate: 3
-tags: Docker,DevOps,Ruby on Rails,PostgreSQL,масштабируемость
 version: 3.2.2
-categories:
-  - devops
-  - architecture
-hero_image: /images/posts/64.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Docker и его друзья: Compose, Swarm, K8s'
+date: '2024-09-18 12:00:00 +0300'
+categories:
+- devops
+- architecture
+tags: Docker,DevOps,Ruby on Rails,PostgreSQL,масштабируемость
+rate: 3
+hero_image: "/images/posts/background_post-0087.webp"
 ---
 Docker изменил правила игры в разработке и деплое приложений, но одинокий контейнер — лишь начало истории. В статье разберём, как его друзья — Compose, Swarm и Kubernetes — помогают строить отказоустойчивые системы, и покажем их интеграцию с Ruby on Rails и PostgreSQL.
 

@@ -1,19 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Ruby: lambda, proc и yield — три грани одного ужаса"
-date:   2023-03-05 14:00:00 +0300
-rate: 3  
-tags: lambda,proc,yield,Ruby,блоки кода,разница
 version: 3.2.2
-categories:
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/4.jpg
 hero_darken: true
+title: 'Ruby: lambda, proc и yield — три грани одного ужаса'
+date: '2023-03-05 14:00:00 +0300'
+categories:
+- ruby
+tags: lambda,proc,yield,Ruby,блоки кода,разница
+rate: 3
+hero_image: "/images/posts/background_post-0099.webp"
 ---
-
 В Ruby работа с блоками кода — фундаментальный навык для любого разработчика. Понимание разницы между `lambda`, `proc` и `yield` критически важно для написания чистого, эффективного и поддерживаемого кода. В этой статье мы детально разберём ключевые отличия, особенности поведения и практические сценарии применения каждого подхода.
 
 ---

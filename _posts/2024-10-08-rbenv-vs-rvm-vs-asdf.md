@@ -1,20 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "rbenv, RVM или chruby? Менеджеры Ruby под микроскопом"
-rate: 3
-tags: Ruby,RVM,rbenv,chruby,менеджеры версий,Ubuntu
 version: 3.2.2
-date:   2024-09-18 14:00:00 +0300
-categories:
-  - tools
-  - ruby
-hero_image: /images/posts/36.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: rbenv, RVM или chruby? Менеджеры Ruby под микроскопом
+date: '2024-09-18 14:00:00 +0300'
+categories:
+- tools
+- ruby
+tags: Ruby,RVM,rbenv,chruby,менеджеры версий,Ubuntu
+rate: 3
+hero_image: "/images/posts/background_post-0092.webp"
 ---
-
 Вы только что установили свежий Ubuntu, открыли терминал с мечтами о новом Rails-проекте... И тут **"ruby: command not found"**. Знакомо? Добро пожаловать в мир менеджеров Ruby-версий — где одни спасают ваши нервы, а другие их испытывают. Сегодня разберём трёх китов: **RVM**, **rbenv** и **chruby**, их больные места и подводные камни.
 
 ---

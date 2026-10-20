@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Паттерн Command в Ruby: `self.call`, чистые руки и немного магии"
-date:   2024-05-06 15:00:00 +0300
-rate: 4
-tags: Ruby,Rails,PostgreSQL,DevOps,CI/CD,репликация
 version: 3.2.2
-categories:
-  - pattern
-  - ruby
-hero_image: /images/posts/16.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Паттерн Command в Ruby: `self.call`, чистые руки и немного магии'
+date: '2024-05-06 15:00:00 +0300'
+categories:
+- pattern
+- ruby
+tags: Ruby,Rails,PostgreSQL,DevOps,CI/CD,репликация
+rate: 4
+hero_image: "/images/posts/background_post-0014.webp"
 ---
 Ruby и Rails предлагают мощные инструменты для работы с базами данных PostgreSQL, а DevOps-практики помогают эффективно развертывать и масштабировать такие решения. В этой статье разберём ключевые аспекты интеграции этих технологий — от оптимизации запросов до настройки репликации и CI/CD-процессов. Вы узнаете, как строить отказоустойчивые приложения, используя лучшие практики Ruby-экосистемы.
 

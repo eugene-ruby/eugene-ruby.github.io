@@ -1,20 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "ActiveRecord и PostgreSQL JSONB: когда обычных таблиц уже недостаточно"
-date:   2024-09-18 12:00:00 +0300
-rate: 3
-tags: Ruby,PostgreSQL,JSONB,Rails,базы данных,миграции
 version: 3.2.2
-categories:
-  - postgres
-  - rails
-hero_image: /images/posts/27.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'ActiveRecord и PostgreSQL JSONB: когда обычных таблиц уже недостаточно'
+date: '2024-09-18 12:00:00 +0300'
+categories:
+- postgres
+- rails
+tags: Ruby,PostgreSQL,JSONB,Rails,базы данных,миграции
+rate: 3
+hero_image: "/images/posts/background_post-0065.webp"
 ---
-
 Вы когда-нибудь чувствовали, что реляционные таблицы — это как пытаться впихнуть квадратный колышек в круглое отверстие? Когда очередной `users` с 50 колонками превращается в ад миграций, а `serialize :preferences, JSON` просто смеётся вам в лицо своей неэффективностью — пора знакомиться с **PostgreSQL JSONB**.
 
 

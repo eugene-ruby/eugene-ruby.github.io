@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "Дед учит Английский (часть III: Существительное и причастие)"
-date:  2023-11-19 22:32:03 +0300
-categories: english
 toc: true
 menubar_toc: true
-hero_image: /images/rubu-back.jpeg
 hero_darken: true
+title: 'Дед учит Английский (часть III: Существительное и причастие)'
+date: '2023-11-19 22:32:03 +0300'
+categories:
+- english
+tags: ''
+hero_image: "/images/posts/background_post-0035.webp"
 ---
-
 # Существительное и причастие
 
 В английском языке можно использовать предлог "of" для соединения существительного с причастием, чтобы образовать фразу, выражающую определенное действие или состояние. Например, "the joy of dancing" (радость танцев), "the art of painting" (искусство живописи), "the sound of singing" (звук пения).

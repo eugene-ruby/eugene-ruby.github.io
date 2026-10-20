@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Ruby: GIL, MRI, MJIT, YJIT — глоссарий рубистовских страшилок"
-date:   2025-01-30 10:00:00 +0300
-rate: 3
-tags: Ruby,GVL,YJIT,Ractors,Fiber Scheduler,CRuby
 version: 3.2.2
-categories:
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/70.jpg
 hero_darken: true
+title: 'Ruby: GIL, MRI, MJIT, YJIT — глоссарий рубистовских страшилок'
+date: '2025-01-30 10:00:00 +0300'
+categories:
+- ruby
+tags: Ruby,GVL,YJIT,Ractors,Fiber Scheduler,CRuby
+rate: 3
+hero_image: "/images/posts/background_post-0004.webp"
 ---
 Ruby продолжает развиваться, предлагая разработчикам новые инструменты для оптимизации производительности и параллельной работы. В этой статье разберём ключевые термины — от GVL и YJIT до Ractors и Fiber Scheduler, — которые помогут глубже понять внутреннее устройство языка и его экосистему.
 

@@ -1,20 +1,20 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Как использовать WHERE для JSONB в PostgreSQL. Разбираем JSONB-запросы на живых данных с генерацией тестового стенда на 10.000 строк"
-date:  2025-04-20 11:00:00 +0300
-rate: 3
-tags: PostgreSQL  JSONB SQL performance
 version: 3.2.2
-categories:
-   - postgres
-   - database
 toc: true
 menubar_toc: true
-hero_image: /images/posts/35.jpg
 hero_darken: true
+title: Как использовать WHERE для JSONB в PostgreSQL. Разбираем JSONB-запросы на живых
+  данных с генерацией тестового стенда на 10.000 строк
+date: '2025-04-20 11:00:00 +0300'
+categories:
+- postgres
+- database
+tags: PostgreSQL  JSONB SQL performance
+rate: 3
+hero_image: "/images/posts/background_post-0058.webp"
 ---
-
 PostgreSQL с поддержкой JSONB — это ~~бездонная~~ магическая сумка разработчика: можно хранить полуструктурированные данные и при этом эффективно их фильтровать. В статье разберём реальные примеры запросов с `WHERE` по JSONB-полям и соберём тестовый стенд для экспериментов.
 
 ---

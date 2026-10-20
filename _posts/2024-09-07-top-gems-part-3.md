@@ -1,20 +1,21 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Архитектура, AWS и DSL: 10 Ruby-гемов для тех, кто вышел за пределы Hello World. Часть III"
-date: 2024-09-06 10:00:00 +0300
-rate: 2
-tags: ruby gems faraday addressable multi_json thor public_suffix rspec aws-sdk-s3 aws-sdk-kms ffi mime-types
 version: 3.2.2
-categories:
-  - gems
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/21.jpg
 hero_darken: true
+title: 'Архитектура, AWS и DSL: 10 Ruby-гемов для тех, кто вышел за пределы Hello
+  World. Часть III'
+date: '2024-09-06 10:00:00 +0300'
+categories:
+- gems
+- ruby
+tags: ruby gems faraday addressable multi_json thor public_suffix rspec aws-sdk-s3
+  aws-sdk-kms ffi mime-types
+rate: 2
+hero_image: "/images/posts/background_post-0073.webp"
 ---
-
 На определённом этапе карьеры вы перестаёте просто писать контроллеры и начинаете задумываться о шифровании, сервисах AWS, тестовой изоляции и генерации DSL-ов. Именно для таких задач существуют гемы, о которых пойдёт речь в этой части. Здесь вы встретите библиотеки, которые требуют больше знаний, внимательности и архитектурного мышления. Это не must-have для старта, но must-learn для роста.
 
 ## 🌐 Faraday

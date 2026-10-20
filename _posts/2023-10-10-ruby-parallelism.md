@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Ruby: fork, Parallel, Ractor и async — когда GIL не пройдёт"
-date:   2023-10-10 13:00:00 +0300
-rate: 3
-tags: Ruby,параллельность,GIL,процессы,асинхронность,Ractor
 version: 3.2.2
-categories:
-  - performance
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/12.jpg
 hero_darken: true
+title: 'Ruby: fork, Parallel, Ractor и async — когда GIL не пройдёт'
+date: '2023-10-10 13:00:00 +0300'
+categories:
+- performance
+- ruby
+tags: Ruby,параллельность,GIL,процессы,асинхронность,Ractor
+rate: 3
+hero_image: "/images/posts/background_post-0041.webp"
 ---
 Ruby предлагает несколько подходов для достижения параллельности, несмотря на ограничения GIL. В этой статье разберёмся, как использовать процессы через fork, асинхронные библиотеки и новые возможности вроде Ractor, а также когда стоит перейти на альтернативные реализации Ruby вроде JRuby.
 

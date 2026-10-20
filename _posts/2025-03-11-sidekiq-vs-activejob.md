@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Очередь на вынос: Sidekiq, ActiveJob, Resque и Delayed::Job"
-date:   2024-09-18 12:00:00 +0300
-rate: 3
-tags: Ruby on Rails,Background Jobs,Redis,PostgreSQL,Performance
 version: 3.2.2
-categories:
-  - architecture
-  - rails
-hero_image: /images/posts/80.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Очередь на вынос: Sidekiq, ActiveJob, Resque и Delayed::Job'
+date: '2024-09-18 12:00:00 +0300'
+categories:
+- architecture
+- rails
+tags: Ruby on Rails,Background Jobs,Redis,PostgreSQL,Performance
+rate: 3
+hero_image: "/images/posts/background_post-0096.webp"
 ---
 Когда вашему Rails-приложению нужно отправить письмо, обработать CSV или просто сделать что-то долгое, встаёт вопрос: «Как не заставлять пользователя ждать?». Ответ — фоновые задачи. В статье разберём четыре популярных инструмента для работы с очередями: их сильные стороны, подводные камни и случаи, когда каждый из них — идеальный выбор.
 

@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "PACELC — CAP с дополнением: а что, если сети нет?"
-date: 2025-06-02 10:00:00 +0300
-rate: 3
-tags: CAP-теорема,PACELC,распределённые системы,PostgreSQL,репликация,консистентность
 version: 3.2.2
-categories:
-  - database
-  - architecture
 toc: true
 menubar_toc: true
-hero_image: /images/posts/94.jpg
 hero_darken: true
+title: 'PACELC — CAP с дополнением: а что, если сети нет?'
+date: '2025-06-02 10:00:00 +0300'
+categories:
+- database
+- architecture
+tags: CAP-теорема,PACELC,распределённые системы,PostgreSQL,репликация,консистентность
+rate: 3
+hero_image: "/images/posts/background_post-0101.webp"
 ---
 В мире распределённых систем CAP-теорема давно стала классикой, но её расширение PACELC часто остаётся в тени. В то время как CAP фокусируется на поведении системы при сбоях, PACELC добавляет критически важный аспект — компромиссы между латентностью и консистентностью в штатном режиме работы. Особенно актуально это для PostgreSQL и других баз данных, где настройки репликации напрямую влияют на баланс между скоростью и надёжностью.
 

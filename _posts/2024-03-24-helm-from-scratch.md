@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "Helm с нуля: чарты, values и деплой как у больших"
-date: 2024-03-24 12:00:00 +0300
-rate: 4
-tags: Kubernetes, Helm, DevOps, Deployment, CI/CD
 version: 3.2.2
-categories:
-  - devops
-  - architecture
-hero_image: /images/posts/15.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Helm с нуля: чарты, values и деплой как у больших'
+date: '2024-03-24 12:00:00 +0300'
+categories:
+- devops
+- architecture
+tags: Kubernetes, Helm, DevOps, Deployment, CI/CD
+rate: 4
+hero_image: "/images/posts/background_post-0065.webp"
 ---
 Helm — это не просто менеджер пакетов для Kubernetes, а полноценный инструмент оркестрации, который превращает ваш `kubectl apply -f` в осмысленный процесс управления конфигурациями. В статье разберём, как создавать чарты, работать с values.yaml и деплоить приложения без головной боли, как это делают в production-средах.
 

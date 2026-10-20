@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Был JOIN — и всё было хорошо. Пока таблица не превысила 1000 строк..."
-date:   2025-01-25 14:00:00 +0300
-rate: 3
-tags: Ruby,PostgreSQL,Rails,базы данных,производительность,DevOps
 version: 3.2.2
-categories:
-  - postgres
 toc: true
 menubar_toc: true
-hero_image: /images/posts/66.jpg
 hero_darken: true
+title: Был JOIN — и всё было хорошо. Пока таблица не превысила 1000 строк...
+date: '2025-01-25 14:00:00 +0300'
+categories:
+- postgres
+tags: Ruby,PostgreSQL,Rails,базы данных,производительность,DevOps
+rate: 3
+hero_image: "/images/posts/background_post-0052.webp"
 ---
 Ruby, PostgreSQL и Rails — мощный стек для разработки, но даже в нём есть подводные камни. Разберёмся, как эффективно работать с базами данных, избегать узких мест в производительности и выстраивать надёжные DevOps-процессы.
 

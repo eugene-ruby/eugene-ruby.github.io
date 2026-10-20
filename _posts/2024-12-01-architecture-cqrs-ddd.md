@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "CQRS, Event Sourcing и DDD в микросервисах на Rails"
-date:   2024-12-01 10:00:00 +0300
-rate: 4
-tags: Ruby,PostgreSQL,Rails,DevOps,базы данных,оптимизация запросов
 version: 3.2.2
-categories:
-    - architecture
-    - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/53.jpg
 hero_darken: true
+title: CQRS, Event Sourcing и DDD в микросервисах на Rails
+date: '2024-12-01 10:00:00 +0300'
+categories:
+- architecture
+- rails
+tags: Ruby,PostgreSQL,Rails,DevOps,базы данных,оптимизация запросов
+rate: 4
+hero_image: "/images/posts/background_post-0015.webp"
 ---
 Ruby, PostgreSQL и Rails — мощный стек для разработки, но без правильного DevOps-подхода даже лучший код может стать проблемой. В этой статье разберём ключевые аспекты работы с базами данных, оптимизацию запросов и deployment-стратегии для Ruby-приложений.
 

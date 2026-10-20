@@ -1,20 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Rubygems, Gemfile.lock и версия, которая всё сломала"
-rate: 3
-tags: Ruby, bundle update, Gemfile.lock, зависимости, ошибки, Rubygems
 version: 3.2.2
-date:   2024-09-18 12:00:00 +0300
-categories:
-  - gems
-  - ruby
-hero_image: /images/posts/33.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: Rubygems, Gemfile.lock и версия, которая всё сломала
+date: '2024-09-18 12:00:00 +0300'
+categories:
+- gems
+- ruby
+tags: Ruby, bundle update, Gemfile.lock, зависимости, ошибки, Rubygems
+rate: 3
+hero_image: "/images/posts/background_post-0011.webp"
 ---
-
 Вы только что сделали `bundle update`, и теперь ваше приложение ведёт себя так, будто его писали на PHP после трёх бутылок виски. Всё сломано, тесты горят, а в логах — ошибки, которых вы никогда не видели. Добро пожаловать в ад зависимостей, где `Gemfile.lock` — ваш единственный спаситель, а Rubygems — коварный тролль, подкладывающий грабли.
 
 ---

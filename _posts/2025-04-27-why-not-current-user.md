@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Почему нельзя просто взять current_user"
-date:   2025-04-27 12:00:00 +0300
-rate: 3
-tags: Ruby on Rails,current_user,фоновые задачи,сериализация,PostgreSQL,DevOps
 version: 3.2.2
-categories:
-  - architecture
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/87.jpg
 hero_darken: true
+title: Почему нельзя просто взять current_user
+date: '2025-04-27 12:00:00 +0300'
+categories:
+- architecture
+- rails
+tags: Ruby on Rails,current_user,фоновые задачи,сериализация,PostgreSQL,DevOps
+rate: 3
+hero_image: "/images/posts/background_post-0090.webp"
 ---
 В современных веб-приложениях на Ruby on Rails работа с пользовательским контекстом становится сложнее по мере роста кодовой базы — особенно когда задачи выходят за рамки HTTP-запросов. В этой статье разберём, как правильно передавать current_user в фоновых задачах, событиях и сервисных объектах, избегая скрытых зависимостей и проблем с сериализацией в PostgreSQL-ориентированных приложениях. DevOps-специалисты оценят подходы, которые делают код предсказуемым как в продакшене, так и в тестовом окружении.
 

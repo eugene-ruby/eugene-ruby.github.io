@@ -1,20 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Деплой приложения: от ручной выкатки до автоматического CI/CD"
-date:   2025-04-21 14:00:00 +0300
-rate: 1
-tags: Docker CI/CD Pet Python
 version: 3.2.2
-categories:
-  - pet
-  - docker
-hero_image: /images/posts/73.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Деплой приложения: от ручной выкатки до автоматического CI/CD'
+date: '2025-04-21 14:00:00 +0300'
+categories:
+- pet
+- docker
+tags: Docker CI/CD Pet Python
+rate: 1
+hero_image: "/images/posts/background_post-0059.webp"
 ---
-
 Деплой приложения — это как первый полёт на самолёте, который вы собрали в гараже: страшно, но если всё сделано правильно — невероятно приятно. В статье разберём, как перейти от ручных выкаток к автоматизированному CI/CD даже для pet-проектов, и почему это стоит сделать сразу, а не "когда-нибудь потом".
 
 ---

@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "PgBouncer: настройка, проблемы и ловушки"
-date: 2025-05-20 14:00:00 +0300
-rate: 3
-tags: PgBouncer,PostgreSQL,Rails,оптимизация,настройка,база данных
 version: 3.2.2
-categories:
-  - postgres
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/91.jpg
 hero_darken: true
+title: 'PgBouncer: настройка, проблемы и ловушки'
+date: '2025-05-20 14:00:00 +0300'
+categories:
+- postgres
+- rails
+tags: PgBouncer,PostgreSQL,Rails,оптимизация,настройка,база данных
+rate: 3
+hero_image: "/images/posts/background_post-0078.webp"
 ---
 PgBouncer — это мощный инструмент для оптимизации работы PostgreSQL, особенно в высоконагруженных Rails-приложениях. Он эффективно управляет соединениями, снижая нагрузку на базу данных и предотвращая её перегрузку. Разберёмся, как правильно настроить PgBouncer, какие режимы работы выбрать и как избежать типичных ошибок при интеграции с Rails и другими компонентами.
 

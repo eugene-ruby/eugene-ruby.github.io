@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Почему default_scope = боль"
-date:   2025-03-09 10:30:00 +0300
-rate: 3
-tags: Ruby,Rails,default_scope,PostgreSQL,SQL,запросы
 version: 3.2.2
-categories:
-  - orm
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/77.jpg
 hero_darken: true
+title: Почему default_scope = боль
+date: '2025-03-09 10:30:00 +0300'
+categories:
+- orm
+- rails
+tags: Ruby,Rails,default_scope,PostgreSQL,SQL,запросы
+rate: 3
+hero_image: "/images/posts/background_post-0046.webp"
 ---
 Ruby on Rails предлагает мощные инструменты для работы с данными, но некоторые из них, например default_scope, могут принести больше проблем, чем пользы. В этой статье разберём подводные камни автоматического применения условий к запросам и альтернативные подходы, которые помогут избежать неожиданного поведения при работе с PostgreSQL и сложных SQL-запросах.
 

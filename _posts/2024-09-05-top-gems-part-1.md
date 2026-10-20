@@ -1,18 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "10 Ruby-гемов, с которых начинается путь каждого разработчика. Часть I"
-date: 2024-09-05 10:00:00 +0300
-rate: 2
-tags: ruby gems bundler aws-sdk-core aws-sigv4 jmespath aws-partitions i18n activesupport rack aws-eventstream rake
 version: 3.2.2
-categories:
-  - gems
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/19.jpg
 hero_darken: true
+title: 10 Ruby-гемов, с которых начинается путь каждого разработчика. Часть I
+date: '2024-09-05 10:00:00 +0300'
+categories:
+- gems
+- ruby
+tags: ruby gems bundler aws-sdk-core aws-sigv4 jmespath aws-partitions i18n activesupport
+  rack aws-eventstream rake
+rate: 2
+hero_image: "/images/posts/background_post-0100.webp"
 ---
 Ruby — это не только синтаксис ради поэзии, но и целая экосистема инструментов, которые делают его удобным, читаемым и продуктивным. В этой статье мы разберём десять самых базовых гемов, которые встречаются почти в каждом проекте. Это те библиотеки, с которых начинается путь junior-разработчика, и без которых не обходится ни один bundle install. Мы кратко рассмотрим, зачем они нужны, как устроены и в чём их сила.
 

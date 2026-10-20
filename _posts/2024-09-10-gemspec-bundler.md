@@ -1,20 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Gemspec и Bundler: как устроены гемы"
-rate: 3
-tags: Ruby,гемы,Bundler,зависимости,gemspec,production
 version: 3.2.2
-date:   2024-09-18 12:00:00 +0300
-categories:
-  - tools
-  - ruby
-hero_image: /images/posts/22.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Gemspec и Bundler: как устроены гемы'
+date: '2024-09-18 12:00:00 +0300'
+categories:
+- tools
+- ruby
+tags: Ruby,гемы,Bundler,зависимости,gemspec,production
+rate: 3
+hero_image: "/images/posts/background_post-0040.webp"
 ---
-
 Вы когда-нибудь задумывались, почему `bundle install` иногда работает как швейцарские часы, а иногда — как советский трактор в -30°C? Сегодня разберёмся, как устроены Ruby-гемы изнутри, почему ваш `gemspec` внезапно сломал production, и как Bundler решает головоломку зависимостей.
 
 ---

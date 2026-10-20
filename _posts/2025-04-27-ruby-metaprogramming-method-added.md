@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Специальные методы в Ruby: как подслушать свои классы"
-date:   2025-04-27 10:00:00 +0300
-rate: 4
-tags: Ruby,метапрограммирование,рефлексия,методы
 version: 3.2.2
-categories:
-  - ruby
-hero_image: /images/posts/21.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Специальные методы в Ruby: как подслушать свои классы'
+date: '2025-04-27 10:00:00 +0300'
+categories:
+- ruby
+tags: Ruby,метапрограммирование,рефлексия,методы
+rate: 4
+hero_image: "/images/posts/background_post-0088.webp"
 ---
 Ruby — язык с открытыми настройками. Хотите знать, когда в классе появляется новый метод? Или отследить удаление синглтон-метода? Специальные методы-хуки дают вам такую возможность. Разберёмся, как ими пользоваться без вреда для кодовой базы.
 

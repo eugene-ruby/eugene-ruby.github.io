@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "10 типичных ошибок при работе с ORM в Rails"
-date:   2025-01-05 11:00:00 +0300
-rate: 3
-tags: ActiveRecord,Ruby on Rails,ORM,PostgreSQL,N+1,scope
 version: 3.2.2
-categories:
-  - orm
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/59.jpg
 hero_darken: true
+title: 10 типичных ошибок при работе с ORM в Rails
+date: '2025-01-05 11:00:00 +0300'
+categories:
+- orm
+- rails
+tags: ActiveRecord,Ruby on Rails,ORM,PostgreSQL,N+1,scope
+rate: 3
+hero_image: "/images/posts/background_post-0079.webp"
 ---
 ActiveRecord в Ruby on Rails — это мощный ORM, но даже опытные разработчики часто допускают ошибки, которые убивают производительность. В этой статье разберём 10 типичных проблем с запросами к PostgreSQL и покажем, как их исправлять — от N+1 до неожиданного поведения scope.
 

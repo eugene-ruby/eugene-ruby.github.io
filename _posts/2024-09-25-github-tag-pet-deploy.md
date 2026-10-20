@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Git Tags: катим релизы через v1.0.0 без боли"
-date:   2024-09-25 12:00:00 +0300
-rate: 2
-tags: Git,DevOps,CI/CD,Pet,GitHub Actions
 version: 3.2.2
-categories:
-  - pet
-  - devops
-hero_image: /images/posts/34.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Git Tags: катим релизы через v1.0.0 без боли'
+date: '2024-09-25 12:00:00 +0300'
+categories:
+- pet
+- devops
+tags: Git,DevOps,CI/CD,Pet,GitHub Actions
+rate: 2
+hero_image: "/images/posts/background_post-0074.webp"
 ---
 Выкатка релизов через git tag — это как отправка космического корабля: нужно точно знать, какая версия кода полетит в прод. В статье разберём семантическое версионирование (v1.2.0), автоматизацию деплоя через GitHub Actions и как избежать хаоса в тегах.
 

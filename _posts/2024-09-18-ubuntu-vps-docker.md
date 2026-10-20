@@ -1,18 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "Мой первый Pet + VPS: Оплатил сервер, есть SSH — а что дальше? Лайт-гайд по Ubuntu для Docker"
-date: 2024-09-18 12:00:00 +0300
-rate: 1
-tags: Ubuntu, Docker, VPS, pet
 version: 3.2.2
-categories:
-  - pet
-  - devops
-hero_image: /images/posts/28.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Мой первый Pet + VPS: Оплатил сервер, есть SSH — а что дальше? Лайт-гайд по
+  Ubuntu для Docker'
+date: '2024-09-18 12:00:00 +0300'
+categories:
+- pet
+- devops
+tags: Ubuntu, Docker, VPS, pet
+rate: 1
+hero_image: "/images/posts/background_post-0006.webp"
 ---
 Вы только что получили доступ к своему первому VPS на Ubuntu 24.04 — и теперь смотрите на чёрный экран терминала с чувством, будто открыли дверь в космический корабль. Не волнуйтесь! В этой статье мы разберём, как превратить голый Ubuntu-сервер в готовую площадку для запуска Docker-контейнеров с Ruby on Rails и PostgreSQL.
 

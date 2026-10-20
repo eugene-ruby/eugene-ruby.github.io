@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Ruby 3.0 → 3.4: что добавили, что убрали, что изменилось"
-date:   2025-03-10 11:30:00 +0300
-rate: 3
-tags: Ruby,Rails,PostgreSQL,DevOps,Ractor,Pattern Matching
 version: 3.2.2
-categories:
-  - performance
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/79.jpg
 hero_darken: true
+title: 'Ruby 3.0 → 3.4: что добавили, что убрали, что изменилось'
+date: '2025-03-10 11:30:00 +0300'
+categories:
+- performance
+- ruby
+tags: Ruby,Rails,PostgreSQL,DevOps,Ractor,Pattern Matching
+rate: 3
+hero_image: "/images/posts/background_post-0009.webp"
 ---
 Ruby продолжает развиваться, предлагая разработчикам новые инструменты для работы с параллелизмом, улучшенную производительность и удобные синтаксические конструкции. В этой статье мы рассмотрим ключевые изменения в версиях Ruby 3.x, которые помогут вам эффективнее использовать язык в проектах с Rails, PostgreSQL и современными DevOps-практиками.
 

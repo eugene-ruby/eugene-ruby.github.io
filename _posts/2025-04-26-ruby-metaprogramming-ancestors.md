@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "🔗 Наследование в Ruby: included, extended и другие магические методы"
-date:   2025-04-26 13:00:00 +0300
-rate: 4
-tags: Ruby,наследование,метаклассы,модули,OOP
 version: 3.2.2
-categories:
-  - ruby
-hero_image: /images/posts/52.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: "\U0001F517 Наследование в Ruby: included, extended и другие магические методы"
+date: '2025-04-26 13:00:00 +0300'
+categories:
+- ruby
+tags: Ruby,наследование,метаклассы,модули,OOP
+rate: 4
+hero_image: "/images/posts/background_post-0018.webp"
 ---
 Наследование в Ruby — это не просто `class Child < Parent`. Это целый арсенал методов для тонкой настройки поведения классов. В статье разберём ключевые инструменты работы с иерархией: от базового `superclass` до магии `prepended` модулей, и покажем, как избежать "цепочки зомби" в сложных проектах.
 

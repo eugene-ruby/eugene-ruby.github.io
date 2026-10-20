@@ -1,17 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Ruby: define_method против define_singleton_method — метапрограммируй, но не колдуй"
-date:   2023-03-09 11:00:00 +0300
-rate: 3
-tags: Ruby,метапрограммирование,define_method,define_singleton_method,DRY,Rails
 version: 3.2.2
-categories:
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/5.jpg
 hero_darken: true
+title: 'Ruby: define_method против define_singleton_method — метапрограммируй, но
+  не колдуй'
+date: '2023-03-09 11:00:00 +0300'
+categories:
+- ruby
+tags: Ruby,метапрограммирование,define_method,define_singleton_method,DRY,Rails
+rate: 3
+hero_image: "/images/posts/background_post-0013.webp"
 ---
 Ruby предлагает мощные инструменты метапрограммирования, такие как define_method и define_singleton_method, которые позволяют динамически создавать методы во время выполнения. В этой статье разберём ключевые различия между ними, типичные ошибки и практические примеры использования в Rails-приложениях. Вы узнаете, как правильно применять эти методы для DRY-кода и гибкой настройки объектов.
 

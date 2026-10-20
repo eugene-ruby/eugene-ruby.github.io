@@ -1,14 +1,15 @@
 ---
 layout: post
-title:  "Паттерн Адаптер для расчета доставки"
-date:   2023-07-24 08:52:48 +0300
-categories: singleton
 toc: true
 menubar_toc: true
-hero_image: /images/rubu-back.jpeg
 hero_darken: true
+title: Паттерн Адаптер для расчета доставки
+date: '2023-07-24 08:52:48 +0300'
+categories:
+- singleton
+tags: ''
+hero_image: "/images/posts/background_post-0099.webp"
 ---
-
 <img alt="ded" src="/images/sleep.jpeg" width="40%"/>
 # пример паттерна Adapter на Ruby
 

@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Devise против Authlogic: что выбрать и как не наломать"
-date:   2024-09-18 10:00:00 +0300
-rate: 2
-tags: Ruby on Rails,Authentication,Devise,Authlogic,PostgreSQL,безопасность
 version: 3.2.2
-categories:
-  - gems
-  - rails
-hero_image: /images/posts/39.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Devise против Authlogic: что выбрать и как не наломать'
+date: '2024-09-18 10:00:00 +0300'
+categories:
+- gems
+- rails
+tags: Ruby on Rails,Authentication,Devise,Authlogic,PostgreSQL,безопасность
+rate: 2
+hero_image: "/images/posts/background_post-0048.webp"
 ---
 Выбор системы аутентификации для Rails-приложения — как выбор между ножом и скальпелем: оба режут, но для разных задач. Devise и Authlogic — два самых популярных решения, но их философия и подход к безопасности кардинально отличаются. Разберёмся, когда какой инструмент использовать, как избежать типичных ошибок и не превратить авторизацию в головную боль.
 

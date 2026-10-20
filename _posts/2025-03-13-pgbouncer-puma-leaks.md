@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "PgBouncer не спасёт, если вы не умеете закрывать соединения"
-date: 2025-03-13 15:00:00 +0300
-rate: 3
-tags: PgBouncer,PostgreSQL,Rails,соединения,утечки,CPU
 version: 3.2.2
-categories:
-  - postgres
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/81.jpg
 hero_darken: true
+title: PgBouncer не спасёт, если вы не умеете закрывать соединения
+date: '2025-03-13 15:00:00 +0300'
+categories:
+- postgres
+- rails
+tags: PgBouncer,PostgreSQL,Rails,соединения,утечки,CPU
+rate: 3
+hero_image: "/images/posts/background_post-0084.webp"
 ---
 PgBouncer — это эффективный инструмент для управления соединениями PostgreSQL, но он не решает проблему утечек соединений в вашем Rails-приложении. Если не освобождать соединения после запросов, база данных быстро столкнётся с перегрузкой CPU, особенно при использовании Puma или Sidekiq. Правильная настройка очистки соединений в контроллерах и воркерах — ключ к стабильной работе системы.
 

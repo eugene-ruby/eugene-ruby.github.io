@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Индексы в PostgreSQL: какие бывают и как они живут в Rails"
-date:   2025-02-02 10:30:00 +0300
-rate: 3  
-tags: PostgreSQL,индексы,Rails,B-tree,GIN,BRIN
 version: 3.2.2
-categories:
-  - postgres
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/71.jpg
 hero_darken: true
+title: 'Индексы в PostgreSQL: какие бывают и как они живут в Rails'
+date: '2025-02-02 10:30:00 +0300'
+categories:
+- postgres
+- rails
+tags: PostgreSQL,индексы,Rails,B-tree,GIN,BRIN
+rate: 3
+hero_image: "/images/posts/background_post-0017.webp"
 ---
 Индексы в PostgreSQL — это мощный инструмент для ускорения запросов, но их эффективность зависит от правильного выбора типа. В Rails можно легко настраивать B-tree для стандартных условий, GIN для работы с JSON и массивами, GiST для геоданных и BRIN для больших таблиц с упорядоченными значениями. Разберёмся, как подобрать оптимальный индекс под конкретную задачу и избежать типичных ошибок.
 

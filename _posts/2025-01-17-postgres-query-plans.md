@@ -1,17 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "PostgreSQL Query Plan: что значат Nested Loop, Hash Join и прочие страшные слова"
-date:   2025-01-17 10:30:00 +0300
-rate: 5
-tags: PostgreSQL,JOIN-операции,оптимизация запросов,EXPLAIN ANALYZE,Rails,индексы
 version: 3.2.2
-categories:
-  - postgres
 toc: true
 menubar_toc: true
-hero_image: /images/posts/63.jpg
 hero_darken: true
+title: 'PostgreSQL Query Plan: что значат Nested Loop, Hash Join и прочие страшные
+  слова'
+date: '2025-01-17 10:30:00 +0300'
+categories:
+- postgres
+tags: PostgreSQL,JOIN-операции,оптимизация запросов,EXPLAIN ANALYZE,Rails,индексы
+rate: 5
+hero_image: "/images/posts/background_post-0076.webp"
 ---
 PostgreSQL — мощная СУБД, но без понимания планов выполнения запросов даже опытные разработчики сталкиваются с неожиданными тормозами. В этой статье разберём основные типы JOIN-операций (Nested Loop, Hash Join, Merge Join) и методы доступа к данным (Index Scan, Seq Scan, Bitmap Scan), которые влияют на производительность Rails-приложений. Узнаем, как читать вывод EXPLAIN ANALYZE и оптимизировать запросы с учётом статистики, индексов и настроек work_mem.
 

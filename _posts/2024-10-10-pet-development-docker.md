@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Docker для pet-проекта: как избежать «у меня на локалке работало»"
-date:   2024-10-10 12:00:00 +0300
-rate: 2
-tags: Docker,Ruby on Rails,Pet
 version: 3.2.2
-categories:
-  - pet
-  - ruby
-hero_image: /images/posts/37.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Docker для pet-проекта: как избежать «у меня на локалке работало»'
+date: '2024-10-10 12:00:00 +0300'
+categories:
+- pet
+- ruby
+tags: Docker,Ruby on Rails,Pet
+rate: 2
+hero_image: "/images/posts/background_post-0063.webp"
 ---
 Вы только что написали свой первый Rails-проект. На локальной машине всё летает, но при попытке запустить его на сервере вы получаете ошибки в духе «Gem::Ext::BuildError» или «Postgresql version mismatch». Знакомо? Docker решает эти проблемы раз и навсегда — и вот как начать им пользоваться уже сегодня.
 

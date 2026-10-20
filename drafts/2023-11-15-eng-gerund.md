@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "Дед учит Английский (часть II: Герундий)"
-date:  2023-11-15 17:55:34 +0300
-categories: english
 toc: true
 menubar_toc: true
-hero_image: /images/rubu-back.jpeg
 hero_darken: true
+title: 'Дед учит Английский (часть II: Герундий)'
+date: '2023-11-15 17:55:34 +0300'
+categories:
+- english
+tags: ''
+hero_image: "/images/posts/background_post-0013.webp"
 ---
-
 # Герундий
 
 Герундий - это неличная форма глагола, которая образуется прибавлением окончания "-ing" к основе глагола. Герундий используется в качестве существительного и обозначает действие или процесс. Например, в предложении "I enjoy swimming" слово "swimming" является герундием, обозначающим действие плавания.

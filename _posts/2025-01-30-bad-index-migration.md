@@ -1,19 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Добавил индекс — и прод лёг. А на стейдже всё было хорошо!"
-date:   2025-01-30 10:00:00 +0300
-rate: 4
-tags: PostgreSQL,индексы,Rails,миграции,CONCURRENTLY,блокировки
 version: 3.2.2
-categories:
-  - migration
-  - postgres
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/69.jpg
 hero_darken: true
+title: Добавил индекс — и прод лёг. А на стейдже всё было хорошо!
+date: '2025-01-30 10:00:00 +0300'
+categories:
+- migration
+- postgres
+- rails
+tags: PostgreSQL,индексы,Rails,миграции,CONCURRENTLY,блокировки
+rate: 4
+hero_image: "/images/posts/background_post-0019.webp"
 ---
 Создание индексов в PostgreSQL — мощный инструмент для ускорения запросов, но бездумное их добавление может привести к блокировкам таблиц на проде. В статье разберём, как безопасно добавлять индексы в Rails-приложениях с помощью алгоритма CONCURRENTLY и избежать типичных ошибок, которые приводят к простоям.
 

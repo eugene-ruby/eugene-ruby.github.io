@@ -1,20 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "XSS-атаки и erb: как Rails спасает, а когда — нет"
-date:   2024-09-18 12:00:00 +0300
-rate: 2
-tags: Ruby on Rails, Безопасность, XSS, ERB, PostgreSQL, Веб-разработка
 version: 3.2.2
-categories:
-  - security
-  - rails
-hero_image: /images/posts/61.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'XSS-атаки и erb: как Rails спасает, а когда — нет'
+date: '2024-09-18 12:00:00 +0300'
+categories:
+- security
+- rails
+tags: Ruby on Rails, Безопасность, XSS, ERB, PostgreSQL, Веб-разработка
+rate: 2
+hero_image: "/images/posts/background_post-0065.webp"
 ---
-
 XSS (Cross-Site Scripting) — одна из самых распространённых уязвимостей веб-приложений, позволяющая злоумышленникам внедрять вредоносный код в страницы. Rails предоставляет встроенные механизмы защиты, но даже они иногда дают сбой. Разберёмся, как ERB и Rails борются с XSS, и где разработчики сами открывают двери для атак.
 
 ---

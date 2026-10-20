@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Service Object, Interactor и Command-подход: кто во что обернут"
-date:   2025-05-07 11:00:00 +0300
-rate: 4
-tags: Ruby on Rails,Service Object,Interactor,Command,бизнес-логика,сервисный слой
 version: 3.2.2
-categories:
-  - architecture
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/88.jpg
 hero_darken: true
+title: 'Service Object, Interactor и Command-подход: кто во что обернут'
+date: '2025-05-07 11:00:00 +0300'
+categories:
+- architecture
+- rails
+tags: Ruby on Rails,Service Object,Interactor,Command,бизнес-логика,сервисный слой
+rate: 4
+hero_image: "/images/posts/background_post-0065.webp"
 ---
 Сервисные объекты в Ruby on Rails помогают вынести бизнес-логику из контроллеров, делая код чище и тестируемее. В статье разбираем три популярных подхода — Service Object, Interactor и Command — с примерами реализации и рекомендациями по выбору для разных сценариев. Узнайте, как правильно организовать сервисный слой в вашем Rails-приложении, чтобы упростить поддержку и масштабирование.
 

@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Острые темы по Ruby и Rails, которые спрашивают на техническом интервью Middle/Senior"
-date:   2024-11-10 09:00:00 +0300
-rate: 5
-tags: Ruby,PostgreSQL,Rails,ORM,метапрограммирование,оптимизация запросов
 version: 3.2.2
-categories:
-  - rails
-  - architecture
 toc: true
 menubar_toc: true
-hero_image: /images/posts/48.jpg
 hero_darken: true
+title: Острые темы по Ruby и Rails, которые спрашивают на техническом интервью Middle/Senior
+date: '2024-11-10 09:00:00 +0300'
+categories:
+- rails
+- architecture
+tags: Ruby,PostgreSQL,Rails,ORM,метапрограммирование,оптимизация запросов
+rate: 5
+hero_image: "/images/posts/background_post-0009.webp"
 ---
 Ruby, PostgreSQL и Rails — мощный стек для разработки, но даже опытные разработчики сталкиваются с тонкостями: от метапрограммирования в Ruby до оптимизации запросов в PostgreSQL. В этой статье собраны ключевые темы — от основ ORM до архитектурных решений и блокировок в базе данных.
 

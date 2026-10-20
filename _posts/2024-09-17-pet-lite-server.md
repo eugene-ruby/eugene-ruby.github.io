@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Выбираем первый VPS: почему дорогой сервер ≠ успешный проект"
-date:  2024-09-17 12:00:00 +0300
-rate: 1
-tags: VPS Server pet
 version: 3.2.2
-categories:
-  - pet
-hero_image: /images/posts/24.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Выбираем первый VPS: почему дорогой сервер ≠ успешный проект'
+date: '2024-09-17 12:00:00 +0300'
+categories:
+- pet
+tags: VPS Server pet
+rate: 1
+hero_image: "/images/posts/background_post-0003.webp"
 ---
 Выбор первого VPS похож на покупку первой машины: хочется взять «что-то помощнее», но на практике часто оказывается, что скромный тариф с HDD и 1 ГБ RAM справляется лучше, чем топовый сервер за $100/мес. Разберёмся, как не переплатить за ненужные ресурсы и правильно оценить потребности Ruby-приложения.
 

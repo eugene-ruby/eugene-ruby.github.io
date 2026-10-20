@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Как мы переехали на event-driven (и не пожалели)"
-date:   2025-05-11 12:00:00 +0300
-rate: 5
-tags: Ruby,событийная архитектура,pub/sub,Wisper,RailsEventStore,PostgreSQL
 version: 3.2.2
-categories:
-  - architecture
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/89.jpg
 hero_darken: true
+title: Как мы переехали на event-driven (и не пожалели)
+date: '2025-05-11 12:00:00 +0300'
+categories:
+- architecture
+- rails
+tags: Ruby,событийная архитектура,pub/sub,Wisper,RailsEventStore,PostgreSQL
+rate: 5
+hero_image: "/images/posts/background_post-0067.webp"
 ---
 Событийная архитектура в Ruby-приложениях позволяет эффективно разделять бизнес-логику и упрощает масштабирование кода. Используя механизмы pub/sub с помощью инструментов вроде Wisper или RailsEventStore, разработчики могут создавать гибкие и отказоустойчивые системы. Такой подход особенно полезен при переходе к микросервисам и работе с PostgreSQL в контексте DevOps.
 

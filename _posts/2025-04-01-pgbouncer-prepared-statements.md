@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "PgBouncer и Prepared Statements: медленная смерть Rails"
-date: 2025-04-01 16:00:00 +0300
-rate: 3
-tags: Ruby on Rails,PostgreSQL,PgBouncer,prepared statements,transaction mode,performance
 version: 3.2.2
-categories:
-  - postgres
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/84.jpg
 hero_darken: true
+title: 'PgBouncer и Prepared Statements: медленная смерть Rails'
+date: '2025-04-01 16:00:00 +0300'
+categories:
+- postgres
+- rails
+tags: Ruby on Rails,PostgreSQL,PgBouncer,prepared statements,transaction mode,performance
+rate: 3
+hero_image: "/images/posts/background_post-0011.webp"
 ---
 При работе с Ruby on Rails и PostgreSQL важно учитывать особенности взаимодействия при использовании PgBouncer в режиме transaction, чтобы избежать ошибок вроде PG::ProtocolViolation. В этой статье разберём, почему возникают проблемы с prepared statements, как их избежать и какие альтернативы существуют для баланса между производительностью и стабильностью.
 

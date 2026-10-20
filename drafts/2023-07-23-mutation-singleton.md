@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Меням класс через паттерн singleton"
-date:   2023-07-23 14:52:48 +0300
-categories:
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/rubu-back.jpeg
 hero_darken: true
+title: Меням класс через паттерн singleton
+date: '2023-07-23 14:52:48 +0300'
+categories:
+- ruby
+tags: ''
+hero_image: "/images/posts/background_post-0090.webp"
 ---
-
 <img alt="ded" src="/images/define_singleton.jpeg" width="40%"/>
 # Ruby метод `define_singleton_method`
 

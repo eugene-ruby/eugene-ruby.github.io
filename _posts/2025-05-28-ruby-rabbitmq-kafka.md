@@ -1,19 +1,18 @@
 ---
 layout: post
-title: "Ruby, RabbitMQ или Kafka — что выбрать и зачем?"
 subtitle: <div id="terminal"></div>
-date:  2025-05-28 12:00:00 +0300
-tags: Ruby, RabbitMQ,Kafka,message brokers,event streaming,брокеры сообщений
-categories: 
-  - architecture
-  - rails
-  - performance
-hero_image: /images/posts/42.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: Ruby, RabbitMQ или Kafka — что выбрать и зачем?
+date: '2025-05-28 12:00:00 +0300'
+categories:
+- architecture
+- rails
+- performance
+tags: Ruby, RabbitMQ,Kafka,message brokers,event streaming,брокеры сообщений
+hero_image: "/images/posts/background_post-0047.webp"
 ---
-
 ## Введение: зачем нам эти очереди?
 
 Представьте: ваш Ruby-сервис получает тысячи запросов в секунду, и каждый требует отправки email, обновления аналитики и записи в лог. Если делать это синхронно — пользователи будут ждать как в очереди за новым iPhone. 

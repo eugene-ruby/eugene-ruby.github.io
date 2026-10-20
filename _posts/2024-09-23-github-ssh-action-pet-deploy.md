@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Катим pet в прод! — GitHub Actions это легче чем кажется"
-date:   2024-09-23 12:00:00 +0300
-rate: 2
-tags: GitHub Actions, CI/CD, Docker, SSH, DevOps
 version: 3.2.2
-categories:
-  - pet
-  - devops
-hero_image: /images/posts/30.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: Катим pet в прод! — GitHub Actions это легче чем кажется
+date: '2024-09-23 12:00:00 +0300'
+categories:
+- pet
+- devops
+tags: GitHub Actions, CI/CD, Docker, SSH, DevOps
+rate: 2
+hero_image: "/images/posts/background_post-0101.webp"
 ---
 Вы уже сделали Dockerfile, настроили docker-compose и даже разобрались с [DockerHub](/posts/pet-docker-hub.html). Теперь пришло время автоматизировать деплой — и GitHub Actions сделает это за вас буквально в несколько строк конфига. В статье разберём, как настроить CI/CD с SSH-деплоем через `appleboy/ssh-action`, избегая типичных ошибок новичков.
 

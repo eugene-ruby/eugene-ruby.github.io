@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Rails ORM и этот странный Arel"
-date:   2025-02-05 10:30:00 +0300
-rate: 3
-tags: Arel,Ruby on Rails,SQL,ActiveRecord,запросы,ORM
 version: 3.2.2
-categories:
-  - orm
-  - rails
 toc: true
 menubar_toc: true
-hero_image: /images/posts/74.jpg
 hero_darken: true
+title: Rails ORM и этот странный Arel
+date: '2025-02-05 10:30:00 +0300'
+categories:
+- orm
+- rails
+tags: Arel,Ruby on Rails,SQL,ActiveRecord,запросы,ORM
+rate: 3
+hero_image: "/images/posts/background_post-0074.webp"
 ---
 Arel — это мощный инструмент для работы с SQL-запросами в Ruby on Rails, который позволяет создавать сложные и безопасные запросы без конкатенации строк. Он особенно полезен при динамическом построении условий, работе с подзапросами или нестандартными SQL-выражениями. Хотя ActiveRecord покрывает большинство повседневных задач, Arel даёт разработчикам дополнительную гибкость и контроль над запросами.
 

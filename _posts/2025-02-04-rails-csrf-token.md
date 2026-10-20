@@ -1,20 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "CSRF в Rails: зачем этот authenticity_token вообще нужен"
-date:   2024-09-18 12:00:00 +0300
-rate: 2
-tags: Ruby on Rails,безопасность,CSRF,веб-разработка
 version: 3.2.2
-categories:
-  - security
-  - rails
-hero_image: /images/posts/73.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'CSRF в Rails: зачем этот authenticity_token вообще нужен'
+date: '2024-09-18 12:00:00 +0300'
+categories:
+- security
+- rails
+tags: Ruby on Rails,безопасность,CSRF,веб-разработка
+rate: 2
+hero_image: "/images/posts/background_post-0101.webp"
 ---
-
 Каждый Rails-разработчик сталкивался с загадочным `authenticity_token` в формах. Он появляется как по волшебству, ломает тесты, если его забыть, но мало кто понимает, зачем он на самом деле нужен. Разберёмся, как этот токен защищает ваше приложение от CSRF-атак, почему его нельзя игнорировать и как правильно с ним работать.
 
 ---

@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Методы eval и exec в Ruby: когда обычного ООП уже недостаточно"
-date:  2025-04-23 11:00:00 +0300
-rate: 4
-tags: Ruby,метапрограммирование,классы,модули,рефлексия
 version: 3.2.2
-categories:
-   - ruby
-hero_image: /images/posts/36.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Методы eval и exec в Ruby: когда обычного ООП уже недостаточно'
+date: '2025-04-23 11:00:00 +0300'
+categories:
+- ruby
+tags: Ruby,метапрограммирование,классы,модули,рефлексия
+rate: 4
+hero_image: "/images/posts/background_post-0086.webp"
 ---
 Методы `eval` и `exec` в Ruby — это мощные инструменты метапрограммирования, позволяющие динамически изменять классы, модули и объекты во время выполнения программы. В статье разберём их различия, практические применения и подводные камни, которые могут превратить ваш код в минное поле.
 

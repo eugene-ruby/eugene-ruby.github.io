@@ -1,17 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Ruby: method_missing и respond_to_missing? — друг или враг?"
-date:   2023-03-01 12:00:00 +0300
-rate: 4
-tags: метапрограммирование Ruby, метод method_missing, динамические методы, DSL в Ruby, respond_to_missing, магические методы Ruby
 version: 3.2.2
-categories:
-  - ruby
 toc: true
 menubar_toc: true
-hero_image: /images/posts/3.jpg
 hero_darken: true
+title: 'Ruby: method_missing и respond_to_missing? — друг или враг?'
+date: '2023-03-01 12:00:00 +0300'
+categories:
+- ruby
+tags: метапрограммирование Ruby, метод method_missing, динамические методы, DSL в
+  Ruby, respond_to_missing, магические методы Ruby
+rate: 4
+hero_image: "/images/posts/background_post-0006.webp"
 ---
 Метод `method_missing` в Ruby — мощный инструмент метапрограммирования, позволяющий гибко обрабатывать вызовы несуществующих методов, что особенно полезно при создании DSL или динамических API. Однако его использование требует осторожности: без правильной реализации `respond_to_missing?` могут возникнуть проблемы с совместимостью и отладкой. В этой статье разберём лучшие практики и подводные камни работы с этой "магической" функцией Ruby.
 

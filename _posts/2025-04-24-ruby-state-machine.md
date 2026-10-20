@@ -1,20 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Когда enum уже не справляется: State Machine как спасение"
-date:   2024-09-18 12:00:00 +0300
-rate: 3
-tags: Ruby,enum,методы,условия,проверки,состояния
 version: 3.2.2
-categories:
-  - pattern
-  - rails
-hero_image: /images/posts/86.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Когда enum уже не справляется: State Machine как спасение'
+date: '2024-09-18 12:00:00 +0300'
+categories:
+- pattern
+- rails
+tags: Ruby,enum,методы,условия,проверки,состояния
+rate: 3
+hero_image: "/images/posts/background_post-0082.webp"
 ---
-
 Enum в Rails — это удобство, которое легко перерастает в катастрофу.
 Вы начали с невинного `enum status: [:draft, :published, :archived]`.
 А теперь в коде: `if post.draft? && user.admin? && !weekend? && moon_in_taurus?`.

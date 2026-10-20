@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "🪄 Магия хуков в Ruby: method_missing и define_singleton_method"
-date:   2025-04-24 10:00:00 +0300
-rate: 4
-tags: Ruby,метапрограммирование,методы,хуки,рефлексия
 version: 3.2.2
-categories:
-  - ruby
-hero_image: /images/posts/26.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: "\U0001FA84 Магия хуков в Ruby: method_missing и define_singleton_method"
+date: '2025-04-24 10:00:00 +0300'
+categories:
+- ruby
+tags: Ruby,метапрограммирование,методы,хуки,рефлексия
+rate: 4
+hero_image: "/images/posts/background_post-0034.webp"
 ---
 Ruby — язык, где можно подслушать, как объекты шепчутся между собой, и даже вставить своё слово. В статье разберём два мощных хука: `method_missing` для перехвата несуществующих методов и `define_singleton_method` для динамического создания методов на лету. Покажем, как ими пользоваться без вреда для кодовой базы.
 

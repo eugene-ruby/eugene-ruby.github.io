@@ -1,20 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Zeitwerk против require: автоматическая загрузка без боли"
-rate: 3
-tags: Ruby,Zeitwerk,автозагрузка,require,классы,архитектура
 version: 3.2.2
-date:   2024-09-18 10:00:00 +0300
-categories:
-  - gems
-  - ruby
-hero_image: /images/posts/35.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Zeitwerk против require: автоматическая загрузка без боли'
+date: '2024-09-18 10:00:00 +0300'
+categories:
+- gems
+- ruby
+tags: Ruby,Zeitwerk,автозагрузка,require,классы,архитектура
+rate: 3
+hero_image: "/images/posts/background_post-0003.webp"
 ---
-
 Помните те времена, когда каждый новый файл в Ruby-проекте требовал ручного `require`? Когда забытый `require_relative` вызывал `NameError` в самый неподходящий момент? А потом появился Zeitwerk — и всё изменилось. В этой статье разберём, как автоматическая загрузка классов эволюционировала от каменного века `require` до магии Zeitwerk, и почему теперь вы можете забыть про ручное подключение файлов (но не про архитектуру!).
 
 ---

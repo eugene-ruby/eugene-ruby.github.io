@@ -1,17 +1,17 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title:  "Сделал EXPLAIN — и что дальше? Как оптимизировать SQL-запрос"
-date:   2025-01-22 11:00:00 +0300
-rate: 4
-tags: PostgreSQL,SQL,оптимизация запросов,EXPLAIN ANALYZE,индексы,JOIN
 version: 3.2.2
-categories:
-  - postgres
 toc: true
 menubar_toc: true
-hero_image: /images/posts/65.jpg
 hero_darken: true
+title: Сделал EXPLAIN — и что дальше? Как оптимизировать SQL-запрос
+date: '2025-01-22 11:00:00 +0300'
+categories:
+- postgres
+tags: PostgreSQL,SQL,оптимизация запросов,EXPLAIN ANALYZE,индексы,JOIN
+rate: 4
+hero_image: "/images/posts/background_post-0083.webp"
 ---
 PostgreSQL — мощная СУБД, но даже опытные разработчики сталкиваются с медленными запросами. В этой статье разбираем, как анализировать план выполнения через `EXPLAIN ANALYZE`, находить узкие места и применять конкретные оптимизации — от индексов до пересмотра JOIN'ов. Практические примеры и чеклист помогут ускорить ваши SQL-запросы в Rails-приложениях.
 

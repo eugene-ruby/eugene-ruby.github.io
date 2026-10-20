@@ -1,18 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "🔐 Секреты — не секрет! Как не отдать ключи от проекта в первый же день"
-date:   2024-10-12 14:00:00 +0300
-rate: 4
-tags: Pet,GitHub,Secrets
 version: 3.2.2
-categories:
-  - pet
-  - ruby
-hero_image: /images/posts/38.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: "\U0001F510 Секреты — не секрет! Как не отдать ключи от проекта в первый же
+  день"
+date: '2024-10-12 14:00:00 +0300'
+categories:
+- pet
+- ruby
+tags: Pet,GitHub,Secrets
+rate: 4
+hero_image: "/images/posts/background_post-0083.webp"
 ---
 Вы только начали pet-проект: база работает, API отвечает, бот в Telegram шлёт котиков. И вдруг — случайный коммит с `TOKEN=abc123` в публичный репозиторий. История знает сотни таких случаев, когда разработчики теряли доступ к API или получали счёт на $50.000 за облачные сервисы. Разберём минимальный, но эффективный стек для защиты секретов в Ruby-проектах.
 

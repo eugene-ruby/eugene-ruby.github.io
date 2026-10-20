@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "Hotwire, Turbo и Stimulus: frontend без JS-фреймворков (почти)"
-date:   2024-09-20 12:00:00 +0300
-rate: 2
-tags: Ruby on Rails, Hotwire, Turbo, Stimulus, архитектура, JS, frontend, javascript
 version: 3.2.2
-categories:
-  - frontend
-  - rails
-hero_image: /images/posts/85.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'Hotwire, Turbo и Stimulus: frontend без JS-фреймворков (почти)'
+date: '2024-09-20 12:00:00 +0300'
+categories:
+- frontend
+- rails
+tags: Ruby on Rails, Hotwire, Turbo, Stimulus, архитектура, JS, frontend, javascript
+rate: 2
+hero_image: "/images/posts/background_post-0073.webp"
 ---
 Hotwire, Turbo и Stimulus — это современный подход к фронтенду в Rails-приложениях, который позволяет почти полностью отказаться от тяжелых JS-фреймворков. В статье разберём, как эти технологии работают вместе, какие проблемы решают и как интегрировать их в ваш проект без головной боли.
 

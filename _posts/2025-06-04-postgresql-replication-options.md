@@ -1,18 +1,18 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "Репликация в PostgreSQL: синхронная, асинхронная и логическая"
-date: 2025-06-04 12:30:00 +0300
-rate: 5
-tags: PostgreSQL,репликация,асинхронная,синхронная,логическая,production
 version: 3.2.2
-categories:
-  - database
-  - architecture
 toc: true
 menubar_toc: true
-hero_image: /images/posts/97.jpg
 hero_darken: true
+title: 'Репликация в PostgreSQL: синхронная, асинхронная и логическая'
+date: '2025-06-04 12:30:00 +0300'
+categories:
+- architecture
+- database
+tags: PostgreSQL,репликация,асинхронная,синхронная,логическая,production
+rate: 5
+hero_image: "/images/posts/background_post-0009.webp"
 ---
 PostgreSQL предлагает три мощных механизма репликации, каждый из которых решает свои задачи: асинхронная для скорости, синхронная для надёжности и логическая для гибкости. Разберём их особенности, trade-offs и лучшие сценарии применения в production-средах.
 

@@ -1,20 +1,19 @@
 ---
 layout: post
 subtitle: <div id="terminal"></div>
-title: "DevOps для тех, кто не хочет Helm: настройка Docker Swarm шаг за шагом"
-date: 2024-11-20 14:00:00 +0300
-rate: 4
-tags: Docker, DevOps, Swarm, PostgreSQL, оркестрация
 version: 3.2.2
-categories:
-  - devops
-  - architecture
-hero_image: /images/posts/51.jpg
 hero_darken: true
 toc: true
 menubar_toc: true
+title: 'DevOps для тех, кто не хочет Helm: настройка Docker Swarm шаг за шагом'
+date: '2024-11-20 14:00:00 +0300'
+categories:
+- devops
+- architecture
+tags: Docker, DevOps, Swarm, PostgreSQL, оркестрация
+rate: 4
+hero_image: "/images/posts/background_post-0054.webp"
 ---
-
 Helm — это мощно, но иногда хочется чего-то попроще, особенно когда ваш стек — Ruby on Rails + PostgreSQL, а не гигантский микросервисный зоопарк. Docker Swarm — это встроенная оркестрация "из коробки", которая справится с большинством задач без YAML-ада в 500 строк. Разберём, как развернуть Swarm-кластер для Rails-приложения, избежав типичных граблей.
 
 ---
