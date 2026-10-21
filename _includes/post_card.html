@@ -5,8 +5,12 @@
         </h4>
 
         <div class="excerpt-text">
+            {% assign card_description = include.post.short_description | strip %}
+            {% if card_description == "" %}
+                {% assign card_description = include.post.excerpt %}
+            {% endif %}
             <p class="content">
-                {{ include.post.excerpt | strip_newlines | strip_html }}
+                {{ card_description | strip_newlines | strip_html }}
             </p>
             <div class="excerpt-blur"></div>
         </div>

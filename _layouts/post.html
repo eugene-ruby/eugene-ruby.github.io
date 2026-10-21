@@ -13,7 +13,7 @@ layout: default
     {{ content }}
 </div>
 
-<p>🗓 Дата публикации: {{ page.date | date: '%d.%m.%Y' }}, но это не точно...</p>
+<p>🗓 Дата публикации: {{ page.date | date: '%d.%m.%Y' }}</p>
 
 {%- assign raw_tags = page.tags | join: "," -%}
 {%- assign cleaned_tags = raw_tags | replace: ",", " " | split: " " | uniq -%}
