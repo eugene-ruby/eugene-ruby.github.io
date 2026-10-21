@@ -22,7 +22,7 @@ Ruby, PostgreSQL и Rails — мощный стек для разработки 
 
 ```ruby
 User.select("id").first.name
-# => nil
+# => ActiveModel::MissingAttributeError: missing attribute 'name'
 ````
 
 Почему? Потому что `ActiveRecord` создаёт модель, в которой **нет поля `name`**, ты его не выбирал.
@@ -44,11 +44,11 @@ Rails создаёт объект `User`, но в `attributes` — только 
 ## 💥 А если ты вызовешь `user.name`?
 
 ```ruby
-user.name # => nil
+user.name # => ActiveModel::MissingAttributeError
 user.attributes # => { "id" => 1 }
 ```
 
-Метод `#name` не упал с ошибкой — но вернул `nil`, потому что атрибут вообще не был загружен.
+Если столбец `name` есть в таблице, но не вошёл в `select`, Active Record обычно поднимает `ActiveModel::MissingAttributeError`. Это отличается от загруженного столбца, в котором хранится `NULL`: тогда метод вернёт `nil`.
 
 ---
 
@@ -76,7 +76,7 @@ User.pluck(:name)
 | `.select("id")`                   | Нет других атрибутов         |
 | `.select(:id, :name)`             | Только указанные работают    |
 | `.pluck(:id)`                     | Возвращает массив значений   |
-| `.first.name` без `name` в select | `nil`, без ошибки, но опасно |
+| `.first.name` без `name` в select | `ActiveModel::MissingAttributeError` |
 
 ---
 

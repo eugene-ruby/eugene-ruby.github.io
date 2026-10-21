@@ -71,7 +71,7 @@ EXPOSE 3000
 CMD ["rails", "server", "-b", "0.0.0.0"]
 ```
 
- 🤓 Загляни в полезную статью: [Как не собирать жирный Docker образ](/posts/slow-fat-docker-image)
+ 🤓 Загляни в полезную статью: [Как не собирать жирный Docker образ](/posts/slow-fat-docker-image.html)
 
 ### Шаг 3. Пишем `docker-compose.yml`
 ```yaml

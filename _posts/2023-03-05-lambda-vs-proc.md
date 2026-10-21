@@ -52,11 +52,13 @@ def p
 end
 
 puts l # => "после lambda"
-puts p # => LocalJumpError (или nil, если rescue)
+puts p # => "proc"
 ```
 
-**lambda:** `return` выходит из lambda
-**proc:** `return` выходит из окружающего метода!
+Вызванный внутри ещё выполняющегося метода `Proc.new` выполняет `return` из метода, в котором был создан. Если вызвать сохранённый proc после завершения этого метода, цель `return` уже не существует и Ruby поднимет `LocalJumpError`.
+
+**lambda:** `return` завершает вызов lambda.
+**proc:** `return` выходит из создавшего его метода, пока тот ещё выполняется.
 
 ---
 

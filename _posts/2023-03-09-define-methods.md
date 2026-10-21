@@ -69,9 +69,17 @@ puts robot.greet # => I'm unique!
 
 ## 🧨 Подводные камни
 
-1. `define_method` не принимает `return` в блоке — будет `LocalJumpError`.
-2. Нельзя использовать обычные `def` внутри `define_method` — только блок.
-3. При попытке вызвать `define_singleton_method` в теле класса: 💥 `NoMethodError`.
+1. Поведение `return` в блоке `define_method` зависит от того, где создан этот блок. Не переносите утверждение о `Proc.new` на любой блок `define_method`; проверяйте минимальный пример на целевой версии Ruby.
+2. `define_method` принимает блок, а не определение `def` как аргумент.
+3. Класс сам является объектом, поэтому `define_singleton_method` можно вызвать в теле класса: так создаётся метод класса.
+
+```ruby
+class Robot
+  define_singleton_method(:greet) { "Hello" }
+end
+
+Robot.greet # => "Hello"
+```
 
 ---
 

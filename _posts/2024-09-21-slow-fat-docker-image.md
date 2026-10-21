@@ -104,15 +104,18 @@ RUN bundle install && \
     rails assets:precompile && \
     rm -rf node_modules tmp/* log/*
 
-# Финальный образ
-FROM ruby:3.2-alpine
+# Финальный образ использует то же семейство ОС и версию Ruby, что и builder.
+FROM ruby:3.2
 
+# В официальном Ruby-образе гемы находятся в /usr/local/bundle.
+# Путь проверьте, если приложение задаёт собственный BUNDLE_PATH.
+COPY --from=builder /usr/local/bundle /usr/local/bundle
 COPY --from=builder /app /app
 WORKDIR /app
 CMD ["rails", "server"]
 ```
 
-Размер уменьшился с 1.8GB до 420MB!
+Проверьте, что в финальном образе доступны системные библиотеки, необходимые native-гемам. Размер образа зависит от зависимостей и не подтверждён универсальной цифрой.
 
 ---
 

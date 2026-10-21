@@ -50,6 +50,8 @@ myapp = host=127.0.0.1 port=5432 dbname=myapp
 [pgbouncer]
 listen_port = 6432
 listen_addr = 127.0.0.1
+# Только для изолированного локального стенда: trust не проверяет пароль.
+# Для сетевого production-контура настройте парольную аутентификацию и TLS.
 auth_type = trust
 pool_mode = transaction
 max_client_conn = 1000

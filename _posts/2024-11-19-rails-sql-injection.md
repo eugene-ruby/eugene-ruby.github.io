@@ -86,11 +86,12 @@ User.where(name: params[:name])
 User.where("name = :name", name: params[:name])
 ```
 
-### 2. `sanitize_sql` для сложных случаев
+### 2. Плейсхолдеры для значений
+
+Для SQL-условия передавайте значения через плейсхолдеры. Rails передаст их отдельно от текста запроса:
 
 ```ruby
-safe_condition = ActiveRecord::Base.sanitize_sql(["role = ?", params[:role]])
-User.where(safe_condition)
+User.where("role = ?", params[:role])
 ```
 
 ### 3. Whitelisting для сортировки
@@ -124,7 +125,7 @@ SELECT * FROM transactions WHERE amount > 0 AND (SELECT 1 FROM pg_sleep(10)) --
 **Виновник:** 
 
 ```ruby
-Transaction.where("amount > #{params[:min_amount]") if params[:min_amount].present?
+Transaction.where("amount > ?", params[:min_amount]) if params[:min_amount].present?
 ```
 
 **Решение:** 
@@ -164,11 +165,12 @@ brakeman -q -w2
 ### 2. RSpec-тесты с вредоносными параметрами
 
 ```ruby
-describe "SQL injection protection" do
-  it "sanitizes user input in where clauses" do
-    expect {
-      User.where("name = '#{'\' OR \'1\'=\'1'}'").to_a
-    }.to raise_error(ActiveRecord::StatementInvalid)
+RSpec.describe "SQL query values" do
+  it "treats SQL-looking input as a value" do
+    user = User.create!(name: "Alice")
+    attack = "' OR '1'='1"
+
+    expect(User.where("name = ?", attack).pluck(:id)).not_to include(user.id)
   end
 end
 ```
@@ -185,26 +187,25 @@ query = users[:name].eq(params[:name]).and(users[:active].eq(true))
 User.where(query)
 ```
 
-Для критических операций — **хранимые процедуры PostgreSQL**:
+Если процедура принимает одно текстовое значение, передайте его через quoting адаптера Active Record:
 
 ```ruby
-ActiveRecord::Base.connection.execute(
-  "SELECT secure_user_search(#{ActiveRecord::Base.sanitize_sql(params[:query])})"
-)
+connection = ActiveRecord::Base.connection
+query = "SELECT secure_user_search(#{connection.quote(params[:query])})"
+connection.select_value(query)
 ```
+
+`quote` подходит для значения параметра, но не для имени таблицы или столбца. Для обычных Rails-запросов предпочтительны bind-плейсхолдеры.
 
 ---
 
 ## 📝 Вывод: правила параноика
 
 1. **Никогда** не интерполируйте `params` напрямую в SQL
-2. Для динамического SQL используйте **только**:
-   - Плейсхолдеры (`?`)
-   - Именованные параметры (`:name`)
-   - `sanitize_sql`
-3. Тестируйте все endpoints с **специально сформированными параметрами**
-4. Регулярно запускайте **brakeman**
-5. Для админок и API используйте **strong parameters** + whitelisting
+2. Передавайте значения через bind-плейсхолдеры (`?`) или именованные binds.
+3. Имена таблиц, столбцов и направления сортировки выбирайте из allowlist: bind-плейсхолдеры предназначены для значений.
+4. Проверяйте защиту тестами с вводом, похожим на SQL, и запускайте **Brakeman**.
+5. Strong parameters ограничивают mass assignment, но сами по себе не защищают SQL-запросы.
 
 > "Доверяй, но проверяй" — хороший принцип для жизни, но ужасный для работы с `params` в Rails. Здесь работает только **"Не доверяй вообще"**.
 

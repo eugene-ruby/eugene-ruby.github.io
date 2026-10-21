@@ -76,6 +76,11 @@ METRICS = {
     :db_query_time_seconds,
     'Database query time',
     %i[model]
+  ),
+  request_duration: Prometheus::Client::Histogram.new(
+    :http_request_duration_seconds,
+    'HTTP request duration in seconds',
+    %i[method path status]
   )
 }
 ```

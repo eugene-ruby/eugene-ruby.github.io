@@ -55,7 +55,7 @@ gem 'sidekiq'
 
 **Минусы:**
 - Требует Redis
-- Нет встроенного отложенного выполнения (без Enterprise)
+- Отложенный запуск доступен и в Sidekiq OSS через `perform_in` и `perform_at`; для этого нужен работающий процесс Sidekiq.
 
 **Когда выбирать:** Высоконагруженные проекты с Redis в стэке.
 
@@ -169,14 +169,20 @@ end
 ```ruby
 def perform(order_id)
   order = Order.find(order_id)
-  return if order.paid? # Проверяем статус
 
   order.with_lock do
-    PaymentGateway.charge(order.total)
+    return if order.paid?
+
+    PaymentGateway.charge(
+      order.total,
+      idempotency_key: "order-#{order.id}-charge"
+    )
     order.update!(paid: true)
   end
 end
 ```
+
+Проверка статуса выполняется уже под блокировкой. Она сериализует обработку одного заказа в этой базе, но внешний платёж не становится частью транзакции PostgreSQL. Если воркер завершится после списания, но до `update!`, повтор должен использовать тот же ключ идемпотентности; платёжный шлюз должен поддерживать такую возможность. Без неё нужен отдельный процесс сверки неопределённого результата.
 
 ---
 
@@ -205,7 +211,7 @@ end
 
 ## 🎛️ Интеграция с PostgreSQL
 
-Для Delayed::Job (и ActiveJob с адаптером :async) PostgreSQL — родная среда. Но есть нюансы:
+Delayed::Job с адаптером Active Record хранит задания в выбранной SQL-базе, в том числе PostgreSQL. Адаптер Active Job `:async` хранит очередь в памяти процесса Rails: он не использует PostgreSQL как хранилище заданий и теряет очередь при завершении процесса.
 
 ### Блокировки
 ```sql
