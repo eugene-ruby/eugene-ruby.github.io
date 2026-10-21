@@ -5,7 +5,10 @@ version: 3.2.2
 toc: true
 menubar_toc: true
 hero_darken: true
-title: Острые темы по Ruby и Rails, которые спрашивают на техническом интервью Middle/Senior
+title: Темы по Ruby, Rails и PostgreSQL для подготовки к техническому интервью Middle/Senior
+short_description: 'Подборка статей для подготовки к техническому интервью по Ruby
+  и Rails: особенности языка, запросы ActiveRecord, транзакции и блокировки PostgreSQL,
+  архитектурные подходы.'
 date: '2024-11-10 09:00:00 +0300'
 categories:
 - rails
@@ -14,7 +17,7 @@ tags: Ruby,PostgreSQL,Rails,ORM,метапрограммирование,опт�
 rate: 5
 hero_image: "/images/posts/background_post-0009.webp"
 ---
-Ruby, PostgreSQL и Rails — мощный стек для разработки, но даже опытные разработчики сталкиваются с тонкостями: от метапрограммирования в Ruby до оптимизации запросов в PostgreSQL. В этой статье собраны ключевые темы — от основ ORM до архитектурных решений и блокировок в базе данных.
+Ruby, PostgreSQL и Rails — мощный стек для разработки, но даже опытные разработчики сталкиваются с тонкостями: от метапрограммирования в Ruby до оптимизации запросов в PostgreSQL. Ниже — подборка материалов для подготовки к техническому интервью Middle/Senior: особенности языка, ActiveRecord, работа с базой данных и архитектурные решения.
 
 ---
 
@@ -23,14 +26,14 @@ Ruby, PostgreSQL и Rails — мощный стек для разработки,
 * [lambda, proc, yield и return: кто куда уходит](/posts/lambda-vs-proc.html)
 * [method\_missing и respond\_to\_missing?](/posts/method-missing.html)
 * [Метапрограммирование в Ruby: define\_method и друзья](/posts/define-methods.html)
-* [send, **send**, public\_send — и когда всё рушится](/posts/ruby-terms.html)
+* [send, \_\_send\_\_, public\_send — и когда всё рушится](/posts/ruby-terms.html)
 * [@, @@ и \$ — переменные, в которых легко потеряться](/posts/variable-soup.html)
 
 ## 🔬 Ruby внутри
 
 * [Что такое singleton\_class и class << self](/posts/singleton-class.html)
 * [GIL, MJIT, YJIT, RJIT и почему Ruby всё ещё не летает](/posts/ruby-terms.html)
-* [Ractor: попытка Ruby в многопоточность](/posts/ruby-ractor-3-4.html)
+* [Ractor: параллельное выполнение в Ruby](/posts/ruby-ractor-3-4.html)
 * [refine и BasicObject — странности ядра](/posts/ruby-weirdness.html)
 
 ## 🗄 ActiveRecord
@@ -40,7 +43,7 @@ Ruby, PostgreSQL и Rails — мощный стек для разработки,
 * [Почему пропадают поля при select("...")](/posts/select-breaks-model.html)
 * [scopes, merge, default\_scope — и как не взорваться](/posts/scopes-merge-unscope.html)
 * [select, group, having, joins — и когда всё ломается](/posts/group-joins-merge-traps.html)
-* [Нестабильные include + where — что с этим делать](/posts/rails-orm-mistakes.html)
+* [Нестабильные includes + where — что с этим делать](/posts/rails-orm-mistakes.html)
 
 ## 💥 ORM и боль
 
@@ -50,7 +53,7 @@ Ruby, PostgreSQL и Rails — мощный стек для разработки,
 * [10 ошибок ORM, о которых вы пожалеете](/posts/rails-orm-mistakes.html)
 * [EXPLAIN ANALYZE: читаем, не паникуем](/posts/explain-analyze-buffers.html)
 * [Виды JOIN и почему всё тормозит](/posts/join-slowness-after-threshold.html)
-* [Почему staging-база должна быть огромной](/posts/stage-database-size-matters.html)
+* [Почему размер staging-базы имеет значение](/posts/stage-database-size-matters.html)
 * [Новая миграция, старые грабли: без strategy!](/posts/bad-index-migration.html)
 * [Индексы в PostgreSQL и в ActiveRecord](/posts/postgresql-index-types-in-rails.html)
 * [JSONB и запросы вида metadata @> ?](/posts/postgres-jsonb-query-magic.html)

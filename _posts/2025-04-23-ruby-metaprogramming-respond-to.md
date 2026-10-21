@@ -6,6 +6,9 @@ hero_darken: true
 toc: true
 menubar_toc: true
 title: "\U0001F50D Методы о методах: как Ruby позволяет исследовать поведение объектов"
+short_description: Как проверить, какие методы доступны объекту Ruby, получить метод
+  как объект и разобраться с динамическими методами. Примеры показывают различия между
+  respond_to?, method_defined?, instance_methods и singleton_methods.
 date: '2025-04-23 12:00:00 +0300'
 categories:
 - ruby
@@ -13,19 +16,21 @@ tags: Ruby,метапрограммирование,рефлексия,объе�
 rate: 4
 hero_image: "/images/posts/background_post-0055.webp"
 ---
-В Ruby всё — объект, а каждый объект обладает поведением, определяемым его методами. Но как узнать, какие методы доступны объекту, как проверить его возможности и даже подменить их? Разберём инструменты интроспекции Ruby на практических примерах из жизни разработчика.
+В Ruby всё — объект, а поведение объекта определяется его методами. Как узнать, какие методы ему доступны, проверить его возможности или добавить поведение во время выполнения? Разберём инструменты интроспекции Ruby на практических примерах.
+
+В примерах с `User` предполагается модель Active Record; доступность конкретных методов зависит от модели и её столбцов.
 
 ---
 
 ## 🧠 Теория: зачем нужна интроспекция методов?
 
-Интроспекция (рефлексия) — это возможность программы исследовать свою собственную структуру во время выполнения. В Ruby это особенно важно, потому что:
+Интроспекция (рефлексия) — это возможность программы исследовать свою структуру во время выполнения. В Ruby она полезна, потому что:
 
-- Объекты могут динамически получать новые методы
-- Классы могут переопределять поведение "на лету"
-- Методы могут быть приватными, защищёнными или публичными
+- Объекты могут динамически получать новые методы.
+- Классы могут переопределять поведение во время работы программы.
+- Методы могут быть приватными, защищёнными или публичными.
 
-Разберём ключевые методы для работы с методами.
+Разберём ключевые инструменты для работы с методами.
 
 ---
 
@@ -33,14 +38,12 @@ hero_image: "/images/posts/background_post-0055.webp"
 
 ```ruby
 user = User.find(1)
-save_method = user.method(:save)
-# => #<Method: User#save()>
+save_method = user.method(:save) # объект Method
 
-save_method.call # аналогично user.save
+save_method.call # вызывает метод save у user
 ```
 
-**Жизненный пример**:  
-Вы пишете универсальный обработчик событий, где нужно вызывать разные методы объекта в зависимости от входящих данных:
+**Жизненный пример:** вы пишете обработчик событий, который вызывает метод объекта по имени события:
 
 ```ruby
 def handle_event(object, event_name)
@@ -52,8 +55,9 @@ def handle_event(object, event_name)
 end
 ```
 
-**Антипаттерн**:  
-Использовать `method` без проверки `respond_to?` — это верный способ получить `NameError`.
+Если имя события приходит из недоверенного источника, одной проверки `respond_to?` недостаточно: ограничьте список методов, которые разрешено вызывать. Проверка также не гарантирует, что метод принимает ноль аргументов.
+
+Вызов `method` с неизвестным именем вызовет `NameError`. Но предварительная проверка нужна не всегда: если отсутствие метода — ошибка, исключение можно обработать там, где это уместно. Кроме того, `method` может получить приватный метод, который `respond_to?` без второго аргумента не покажет.
 
 ---
 
@@ -64,55 +68,66 @@ end
 42.respond_to?(:split)       # => false
 ```
 
-**Практический кейс**:  
-При работе с API ответ может приходить в разных форматах:
+**Практический кейс:** ответ API может быть объектом с `to_h` или строкой JSON. Здесь проверка метода помогает обработать первый вариант, а для строки нужен отдельный разбор:
 
 ```ruby
+require 'json'
+
 def parse_response(response)
   if response.respond_to?(:to_h)
     response.to_h
-  elsif response.respond_to?(:to_json)
-    JSON.parse(response.to_json)
+  elsif response.is_a?(String)
+    JSON.parse(response)
   else
-    raise "Unsupported response format"
+    raise ArgumentError, "Unsupported response format"
   end
 end
 ```
 
-**Важно**:  
-`respond_to?` не видит приватные методы по умолчанию. Нужно передать второй параметр:
+`respond_to?` проверяет доступность метода, но не его результат. Если вызывающему коду нужен именно `Hash`, проверьте результат `to_h` или `JSON.parse` отдельно.
+
+**Важно:** `respond_to?` по умолчанию не учитывает приватные методы. Чтобы включить их в проверку, передайте второй аргумент:
 
 ```ruby
-user.respond_to?(:admin?, true) # проверяет приватные методы тоже
+user.respond_to?(:admin?, true) # учитывает и приватный метод
 ```
 
 ---
 
 ## 3️⃣ `respond_to_missing?` — магия method_missing
 
-Когда вызывается несуществующий метод, Ruby проверяет `method_missing`. Но для корректной работы `respond_to?` нужно переопределить и `respond_to_missing?`:
+Если обычный поиск метода ничего не нашёл, Ruby передаёт вызов в `method_missing`. Когда объект действительно обрабатывает такие вызовы, стоит переопределить и `respond_to_missing?`, чтобы `respond_to?` и `method` отражали это поведение:
 
 ```ruby
 class DynamicAttributes
-  def method_missing(name, *args)
-    if name.to_s.start_with?('find_by_')
-      # реализация поиска
+  def initialize(records)
+    @records = records
+  end
+
+  def method_missing(name, *args, &block)
+    if name == :find_by_email && args.length == 1 && !block
+      @records.find { |record| record[:email] == args.first }
     else
       super
     end
   end
 
   def respond_to_missing?(name, include_private = false)
-    name.to_s.start_with?('find_by_') || super
+    name == :find_by_email || super
   end
 end
+
+users = DynamicAttributes.new([{ email: 'a@example.com' }])
+users.respond_to?(:find_by_email) # => true
+users.method(:find_by_email).call('a@example.com') # => { email: 'a@example.com' }
 ```
 
-**Пример из жизни**:  
-ORM вроде ActiveRecord использует это для динамических finder'ов:
+Здесь `respond_to_missing?` объявляет только то имя, которое умеет обработать `method_missing`. Проверка числа аргументов остаётся в самом обработчике: `respond_to?` не проверяет сигнатуру вызова.
+
+**Пример из жизни:** у модели Active Record динамический finder вызывают на классе модели, если есть соответствующий столбец:
 
 ```ruby
-User.respond_to?(:find_by_email) # => true, хотя метод явно не определён
+User.respond_to?(:find_by_email) # => true при наличии столбца email
 ```
 
 ---
@@ -120,48 +135,45 @@ User.respond_to?(:find_by_email) # => true, хотя метод явно не о
 ## 4️⃣ `method_defined?` — проверка на уровне класса
 
 ```ruby
-User.method_defined?(:save) # => true
-User.method_defined?(:new)  # => false (это метод класса)
+User.method_defined?(:save) # => true, если доступен метод экземпляра save
+User.method_defined?(:new)  # => false, new — метод класса
 ```
 
-**Практическое применение**:  
-При создании плагина или модуля, который добавляет методы только если они ещё не определены:
+**Практическое применение:** при подключении модуля можно проверить, доступен ли уже метод экземпляра:
 
 ```ruby
-module SafeMonkeyPatch
-  def add_feature
-    unless method_defined?(:original_method)
-      alias_method :original_method, :method
-      # ... наша переопределённая реализация
-    end
+module OptionalFeature
+  def feature
+    :enabled
   end
 end
+
+User.include(OptionalFeature) unless User.method_defined?(:feature)
 ```
 
-**Осторожно**:  
-`method_defined?` не проверяет методы модулей, включённых в класс.
+`method_defined?` учитывает публичные и защищённые методы экземпляра, в том числе унаследованные и полученные из подключённых модулей. Приватные методы он не учитывает: для них есть `private_method_defined?`. Поэтому, если важно избежать конфликта с методом любого уровня доступа, проверяйте и их.
 
 ---
 
-## 5️⃣ `instance_methods` — все методы экземпляра
+## 5️⃣ `instance_methods` — методы экземпляра
 
 ```ruby
-User.instance_methods(false) # только методы, определённые в User
-User.instance_methods(true)  # включая унаследованные
+User.instance_methods(false) # методы, определённые непосредственно в User
+User.instance_methods(true)  # также методы предков и подключённых модулей
 ```
 
-**Реальный пример**:  
-Генерация документации или валидация интерфейса:
+**Реальный пример:** проверка списка методов экземпляра:
 
 ```ruby
 required_methods = [:save, :validate, :to_json]
-missing = required_methods - User.instance_methods(false)
+missing = required_methods - User.instance_methods
 
 raise "Interface not implemented: #{missing}" unless missing.empty?
 ```
 
-**Совет**:  
-Используйте `false` как параметр, чтобы не засорять вывод унаследованными методами.
+Здесь не стоит передавать `false`: нужный метод мог прийти из предка или модуля. Но и полный список не охватывает методы, обрабатываемые через `method_missing`. Для проверки возможностей конкретного объекта в таком случае используйте `respond_to?`.
+
+Параметр `false` полезен, когда нужны именно методы, определённые непосредственно в классе, например при изучении его собственной реализации.
 
 ---
 
@@ -171,11 +183,10 @@ raise "Interface not implemented: #{missing}" unless missing.empty?
 user = User.new
 def user.custom_method; end
 
-user.singleton_methods # => [:custom_method]
+user.singleton_methods(false) # => [:custom_method]
 ```
 
-**Кейс из практики**:  
-Декораторы или динамическое добавление поведения:
+**Кейс из практики:** динамическое добавление поведения одному объекту:
 
 ```ruby
 def decorate_user(user, role)
@@ -186,11 +197,12 @@ def decorate_user(user, role)
 end
 
 admin = decorate_user(User.new, :admin)
-admin.singleton_methods # => [:admin?]
+admin.singleton_methods(false) # => [:admin?]
 ```
 
-**Антипаттерн**:  
-Злоупотребление синглтон-методами усложняет отладку и тестирование.
+С `false` метод показывает методы, определённые непосредственно у этого объекта. Без аргумента в список могут попасть и методы из модулей, подключённых к его синглтон-классу.
+
+**Осторожно:** злоупотребление синглтон-методами усложняет отладку и тестирование.
 
 ---
 
@@ -205,10 +217,12 @@ describe User do
   end
 
   it "responds to dynamic finders" do
-    expect(User.new).to respond_to(:find_by_email)
+    expect(User).to respond_to(:find_by_email)
   end
 end
 ```
+
+Второй тест применим, если у модели есть столбец `email`: динамический finder вызывается на `User`, а не на `User.new`.
 
 ---
 
@@ -216,16 +230,16 @@ end
 
 > — Как вы проверяете, что объект реализует нужный интерфейс?
 
-— В Ruby есть несколько уровней проверки: `respond_to?` для конкретного объекта, `method_defined?` для класса, `instance_methods` для полного списка. Важно понимать различия и использовать их в зависимости от контекста.
+— В Ruby есть несколько уровней проверки: `respond_to?` — для конкретного объекта, `method_defined?` — для методов экземпляра класса, `instance_methods` — для их списка. Если методы обрабатываются через `method_missing`, важно согласовать это поведение с `respond_to_missing?`.
 
 ---
 
 ## 🧾 Вывод
 
-1. Используйте `method` когда нужно работать с методом как с объектом
-2. `respond_to?` — ваша первая линия защиты от NoMethodError
-3. Для method_missing всегда реализуйте `respond_to_missing?`
-4. `method_defined?` и `instance_methods` работают на уровне классов
-5. `singleton_methods` покажут методы конкретного экземпляра
+1. Используйте `method`, когда нужно работать с методом как с объектом.
+2. `respond_to?` помогает проверить доступность метода, но не его аргументы и результат.
+3. Если `method_missing` обрабатывает вызовы динамически, реализуйте соответствующий `respond_to_missing?`.
+4. `method_defined?` и `instance_methods` исследуют методы экземпляров на уровне класса, но по-разному учитывают область поиска.
+5. `singleton_methods(false)` показывает методы, определённые непосредственно у конкретного объекта.
 
-**Интроспекция методов — это как рентген для ваших объектов: позволяет заглянуть внутрь и понять их структуру, не разбирая на части.**
+Интроспекция помогает выяснить, какое поведение доступно объекту во время выполнения, — главное, выбрать проверку под свою задачу.
