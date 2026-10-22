@@ -1,3 +1,5 @@
+@import url("knowledge-mc.css");
+
 .categories .title a {;
     display: -webkit-box;
     -webkit-line-clamp: 2;      /* ограничение в 2 строки */

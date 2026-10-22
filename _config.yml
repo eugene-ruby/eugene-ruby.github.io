@@ -65,6 +65,12 @@ collections:
   products:
     output: true
     permalink: /categories/:name/
+  technologies:
+    output: true
+    permalink: /technologies/:name/
+  topics:
+    output: true
+    permalink: /topics/:name/
 
 
 # Exclude ненужное

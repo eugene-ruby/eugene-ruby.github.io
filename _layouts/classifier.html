@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<section class="section mc-knowledge mc-classifier mc-collection-page" aria-labelledby="classifier-title">
+  <div class="container">
+    <header class="mc-heading">
+      {% if page.classifier_kind == "topic" %}{% assign classifier_collection = "topics" %}{% else %}{% assign classifier_collection = "technologies" %}{% endif %}
+      <p class="mc-path" aria-hidden="true">~/knowledge/{{ classifier_collection }}/{{ page.classifier_slug }}</p>
+      <h1 id="classifier-title">{{ page.classifier_name }}</h1>
+      {% if page.description %}<h2>{{ page.description }}</h2>{% endif %}
+    </header>
+
+    {% if page.article_paths.size > 0 %}
+    <ul class="mc-classifier-list" aria-label="Статьи">
+      {% for post_path in page.article_paths %}
+        {% assign post = site.posts | where: "path", post_path | first %}
+        {% if post %}
+        {% include classifier_post_row.html post=post %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="mc-empty-state">Опубликованных статей пока нет.</p>
+    {% endif %}
+  </div>
+</section>

@@ -31,33 +31,7 @@
 {% include terminal.html %}
 {% include search.html %}
 {% include home_terminal.html %}
-
-{% if site.cookie_policy %}
-{% endif %}
-<section class="section">
-    <div class="container categories">
-        <h2 class="title is-3">📚 Категории</h2>
-
-        {% assign sorted_categories = site.categories | sort %}
-        {% for category in sorted_categories %}
-        <div class="mb-6">
-            <h3 class="title is-4">
-                <a class="is-size-6 has-text-link" href="/categories/{{ category[0] | slugify }}/">
-                    Все статьи категории {{ category[0] }} →
-                </a>
-            </h3>
-
-            <div class="columns is-multiline">
-                {% assign posts = category[1] | sort: 'date' | reverse %}
-                {% assign top_posts = posts | slice: 0, 3 %}
-                {% for post in top_posts %}
-                {% include post_card.html post=post %}
-                {% endfor %}
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-</section>
+{% include knowledge_mc.html %}
 
 
 {% unless page.hide_footer %}

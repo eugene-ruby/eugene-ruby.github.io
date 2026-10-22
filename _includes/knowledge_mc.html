@@ -1,0 +1,108 @@
+<main class="section mc-knowledge" aria-labelledby="mc-title">
+  <div class="container">
+    <header class="mc-heading">
+      <p class="mc-brand">GNU Midnight Commander <span>— Engineering Knowledge Base</span></p>
+      <h2 id="mc-title">Инженерная библиотека</h2>
+    </header>
+
+    <div class="mc-panels">
+      <nav class="mc-panel" aria-labelledby="mc-domains-title">
+        <div class="mc-panel-heading">
+          <span class="mc-path" aria-hidden="true">~/knowledge/domains</span>
+          <h3 id="mc-domains-title">Предметные области</h3>
+        </div>
+        <ul class="mc-list">
+          {% assign domains = site.products | sort: "category" %}
+          {% for domain in domains %}
+          {% assign domain_name = domain.category | replace: "-", " " | capitalize %}
+          <li>
+            <a href="{{ domain.url | relative_url }}">
+              <span>{{ domain_name }}/</span>
+              {% if domain.description %}<small>{{ domain.description }}</small>{% endif %}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <nav class="mc-panel" aria-labelledby="mc-technologies-title" data-technology-browser>
+        <div class="mc-panel-heading">
+          <span class="mc-path" aria-hidden="true">~/knowledge/technologies</span>
+          <h3 id="mc-technologies-title">Технологии</h3>
+        </div>
+        <p class="mc-list-caption" data-technology-popular-label>Популярные технологии</p>
+        {% assign technologies_all = site.technologies | sort: "classifier_name" %}
+        {% assign technology_names = "" %}
+        {% for domain in site.products %}
+          {% for technology in domain.technology_groups %}
+            {% assign technology_names = technology_names | append: technology.name | append: "||" %}
+          {% endfor %}
+        {% endfor %}
+        {% assign technologies = technology_names | split: "||" | uniq | sort %}
+        <ul class="mc-list mc-technology-list" data-technology-popular>
+          {% for technology_name in technologies %}
+          {% if technology_name != "" %}
+          {% assign popular_technology = technologies_all | where: "classifier_name", technology_name | first %}
+          {% if popular_technology %}
+          <li>
+            <a href="{{ popular_technology.url | relative_url }}">
+              <span>{{ popular_technology.classifier_name }}</span>
+              {% if popular_technology.description %}<small>{{ popular_technology.description }}</small>{% endif %}
+            </a>
+          </li>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+        </ul>
+        {% assign technology_initials = "" %}
+        {% for technology in technologies_all %}
+          {% assign technology_initials = technology_initials | append: technology.classifier_initial | append: "||" %}
+        {% endfor %}
+        {% assign technology_initials = technology_initials | split: "||" | uniq | sort %}
+        <div class="mc-technology-alpha" data-technology-alpha aria-label="Выбрать первую букву технологии" hidden>
+          {% for initial in technology_initials %}
+          {% if initial != "" %}<button type="button" data-technology-letter="{{ initial | escape }}" aria-pressed="false">{{ initial }}</button>{% endif %}
+          {% endfor %}
+        </div>
+        <ul class="mc-list mc-technology-results" data-technology-results hidden>
+          {% for technology in technologies_all %}
+          <li data-technology-item data-technology-initial="{{ technology.classifier_initial | escape }}">
+            <a href="{{ technology.url | relative_url }}">
+              <span>{{ technology.classifier_name }}</span>
+              {% if technology.description %}<small>{{ technology.description }}</small>{% endif %}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <nav class="mc-panel mc-panel-wide" aria-labelledby="mc-topics-title">
+        <div class="mc-panel-heading">
+          <span class="mc-path" aria-hidden="true">~/knowledge/topics</span>
+          <h3 id="mc-topics-title">Инженерные темы</h3>
+        </div>
+        <ul class="mc-topic-grid">
+          {% assign topics = site.topics | sort: "classifier_name" %}
+          {% for topic in topics %}
+          {% assign topic_size = topic.article_paths.size %}
+          {% if topic_size >= 16 %}
+            {% assign topic_level = 5 %}
+          {% elsif topic_size >= 8 %}
+            {% assign topic_level = 4 %}
+          {% elsif topic_size >= 4 %}
+            {% assign topic_level = 3 %}
+          {% elsif topic_size >= 2 %}
+            {% assign topic_level = 2 %}
+          {% else %}
+            {% assign topic_level = 1 %}
+          {% endif %}
+          <li class="mc-topic-level-{{ topic_level }}">
+            <a href="{{ topic.url | relative_url }}">{{ topic.classifier_name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</main>
+<script src="{{ '/assets/js/technology-browser.js' | relative_url }}" defer></script>

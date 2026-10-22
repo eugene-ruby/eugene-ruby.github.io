@@ -1,0 +1,44 @@
+<li class="mc-classifier-row">
+  {% if include.heading_level == 3 %}
+  <h3 class="mc-classifier-title"><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
+  {% else %}
+  <h2 class="mc-classifier-title"><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h2>
+  {% endif %}
+  {% assign card_description = include.post.short_description | strip %}
+  {% if card_description == "" %}{% assign card_description = include.post.excerpt %}{% endif %}
+  <p class="mc-classifier-description">{{ card_description | strip_newlines | strip_html | escape }}</p>
+  {% assign pain_rating = include.post.rate | plus: 0 %}
+  {% assign minutes = include.post.content | size | divided_by: 1000 | plus: 1 %}
+  {% assign reading_half_units = minutes | divided_by: 1.5 | round %}
+  {% if reading_half_units > 10 %}{% assign reading_half_units = 10 %}{% endif %}
+  <p class="mc-classifier-meta">
+    {% if include.post.rate %}
+    <span class="mc-classifier-metric">
+      <span>Рейтинг боли:</span>
+      <span class="mc-meter" role="img" aria-label="Шкала рейтинга боли">
+        {% for level in (1..5) %}
+          <span class="mc-meter-block{% if level <= pain_rating %} is-filled{% endif %}"></span>
+        {% endfor %}
+      </span>
+      <span>{{ pain_rating }}/5</span>
+    </span>
+    {% endif %}
+    <span class="mc-classifier-metric">
+      <span>Время на чтение:</span>
+      <span class="mc-meter" role="img" aria-label="Шкала до 15 минут">
+        {% for level in (1..5) %}
+          {% assign full_threshold = level | times: 2 %}
+          {% assign half_threshold = full_threshold | minus: 1 %}
+          {% assign block_class = "" %}
+          {% if reading_half_units >= full_threshold %}
+            {% assign block_class = " is-filled" %}
+          {% elsif reading_half_units >= half_threshold %}
+            {% assign block_class = " is-half-filled" %}
+          {% endif %}
+          <span class="mc-meter-block{{ block_class }}"></span>
+        {% endfor %}
+      </span>
+      <span>~{{ minutes }} мин.</span>
+    </span>
+  </p>
+</li>

@@ -5,22 +5,26 @@ layout: default
 {% include search.html %}
 {% include category_terminal.html %}
 
-<section id="posts" class="section">
+<section id="posts" class="section mc-knowledge mc-classifier" aria-labelledby="category-title">
     <div class="container categories">
-        <h1 class="title is-3">{{ page.description }}</h1>
+        <header class="mc-heading">
+            <h1 id="category-title">{{ page.description }}</h1>
+        </header>
 
         {% for technology in page.technology_groups %}
-        <section class="category-technology">
-            <h2 class="title is-4">{{ technology.name }} {{ technology.description }}</h2>
+        <section class="mc-classifier-group" aria-labelledby="category-technology-{{ forloop.index }}">
+            <header class="mc-panel-heading">
+                <h2 id="category-technology-{{ forloop.index }}">{{ technology.name }} {{ technology.description }}</h2>
+            </header>
 
-            <div class="columns is-multiline">
+            <ul class="mc-classifier-list" aria-label="Статьи">
                 {% for post_path in technology.posts %}
                 {% assign post = site.posts | where: 'path', post_path | first %}
                 {% if post %}
-                {% include post_card.html post=post %}
+                {% include classifier_post_row.html post=post heading_level=3 %}
                 {% endif %}
                 {% endfor %}
-            </div>
+            </ul>
         </section>
         {% endfor %}
     </div>
