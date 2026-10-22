@@ -11,9 +11,14 @@ short_description: 'Как хранить настройки в PostgreSQL JSONB
   использовать отдельную таблицу.'
 date: '2024-09-18 12:00:00 +0300'
 categories:
-- postgres
-- rails
-tags: Ruby,PostgreSQL,JSONB,Rails,базы данных,миграции
+- database
+- development
+tags:
+- Data Integrity
+- Indexing
+- JSONB
+- Migrations
+- Race Conditions
 rate: 3
 hero_image: "/images/posts/background_post-0065.webp"
 ---

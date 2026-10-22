@@ -12,9 +12,13 @@ short_description: 'Как хранить секреты в Ruby- и Rails-пр�
   ли они в историю.'
 date: '2024-10-12 14:00:00 +0300'
 categories:
-- pet
-- ruby
-tags: Pet,GitHub,Secrets
+- devops
+- security
+tags:
+- Application Security
+- CI/CD
+- Deployment
+- Secrets Management
 rate: 4
 hero_image: "/images/posts/background_post-0083.webp"
 ---

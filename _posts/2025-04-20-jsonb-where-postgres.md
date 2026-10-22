@@ -11,9 +11,8 @@ short_description: 'Примеры фильтрации JSONB в PostgreSQL: п�
   применимость GIN-индекса через EXPLAIN ANALYZE.'
 date: '2025-04-20 11:00:00 +0300'
 categories:
-- postgres
 - database
-tags: PostgreSQL  JSONB SQL performance
+tags: []
 rate: 3
 hero_image: "/images/posts/background_post-0058.webp"
 ---

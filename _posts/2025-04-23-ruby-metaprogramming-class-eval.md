@@ -11,8 +11,14 @@ short_description: Чем различаются class_eval, instance_eval и м
   каких ошибок избегать.
 date: '2025-04-23 11:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,метапрограммирование,классы,модули,рефлексия
+- development
+tags:
+- Application Security
+- Blocks
+- define_method
+- DSL
+- eval
+- Metaprogramming
 rate: 4
 hero_image: "/images/posts/background_post-0086.webp"
 ---

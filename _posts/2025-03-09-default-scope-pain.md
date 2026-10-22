@@ -10,9 +10,13 @@ short_description: Разбираем, как default_scope в Rails скрыв�
   запросов, влияет на тесты и JOIN, и когда лучше использовать явный scope.
 date: '2025-03-09 10:30:00 +0300'
 categories:
-- orm
-- rails
-tags: Ruby,Rails,default_scope,PostgreSQL,SQL,запросы
+- database
+- development
+tags:
+- ActiveRecord Scopes
+- default_scope
+- SQL Joins
+- Testing
 rate: 3
 hero_image: "/images/posts/background_post-0046.webp"
 ---

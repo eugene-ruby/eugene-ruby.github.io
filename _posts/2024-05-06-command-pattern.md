@@ -10,9 +10,10 @@ short_description: Как устроен объект действия с `self.
   от полноценного Command и когда помогает вынести логику из вызывающего кода.
 date: '2024-05-06 15:00:00 +0300'
 categories:
-- pattern
-- ruby
-tags: Ruby,Rails,PostgreSQL,DevOps,CI/CD,репликация
+- architecture
+tags:
+- CI/CD
+- Replication
 rate: 4
 hero_image: "/images/posts/background_post-0014.webp"
 ---

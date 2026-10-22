@@ -10,10 +10,11 @@ short_description: Как оценить число подключений к Po
   процессов с вебхуками, настроить пулы Active Record и понять, когда поможет PgBouncer.
 date: '2025-02-16 12:00:00 +0300'
 categories:
-- postgres
 - database
-- rails
-tags: PostgreSQL,Ruby on Rails,Puma,Sidekiq,PgBouncer,DevOps
+- devops
+tags:
+- Concurrency
+- Connection Pooling
 rate: 5
 hero_image: "/images/posts/background_post-0006.webp"
 ---

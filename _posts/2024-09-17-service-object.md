@@ -11,9 +11,14 @@ short_description: 'Как организовать регистрацию по�
   и учесть сбои внешних вызовов.'
 date: '2024-09-17 12:00:00 +0300'
 categories:
-- pattern
-- ruby
-tags: Ruby on Rails,Service Object,бизнес-логика,PostgreSQL,DevOps,масштабируемость
+- architecture
+- database
+- development
+tags:
+- Business Logic
+- Service Object
+- Testing
+- Transactions
 rate: 4
 hero_image: "/images/posts/background_post-0020.webp"
 ---

@@ -11,8 +11,12 @@ short_description: 'Когда передавать ID из ActiveRecord в Ruby
   записей.'
 date: '2024-10-23 10:30:00 +0300'
 categories:
-- rails
-tags: Rails,PostgreSQL,ActiveRecord,оптимизация запросов,pluck,select
+- database
+- development
+tags:
+- pluck
+- Query Optimization
+- select
 rate: 3
 hero_image: "/images/posts/background_post-0025.webp"
 ---

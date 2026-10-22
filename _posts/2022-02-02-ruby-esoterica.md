@@ -10,9 +10,13 @@ short_description: 'Как устроены Enumerator::Yielder, BasicObject и 
   примеры использования, ограничения и способы получить доступ к методам и локальным
   переменным.'
 date: '2022-02-02 11:00:00 +0300'
-categories:
-- ruby
-tags: Ruby,метапрограммирование,DSL,Enumerator::Yielder,BasicObject,Binding
+categories: []
+tags:
+- BasicObject
+- Binding
+- DSL
+- Enumerator::Yielder
+- Metaprogramming
 rate: 5
 hero_image: "/images/posts/background_post-0094.webp"
 ---

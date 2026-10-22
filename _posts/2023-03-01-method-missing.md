@@ -10,9 +10,12 @@ short_description: Как обрабатывать динамические ме
   и согласовать их с respond_to?, не скрывая опечатки и ошибки вызова.
 date: '2023-03-01 12:00:00 +0300'
 categories:
-- ruby
-tags: метапрограммирование Ruby, метод method_missing, динамические методы, DSL в
-  Ruby, respond_to_missing, магические методы Ruby
+- development
+tags:
+- Dynamic Dispatch
+- Metaprogramming
+- method_missing
+- respond_to_missing?
 rate: 4
 hero_image: "/images/posts/background_post-0006.webp"
 ---

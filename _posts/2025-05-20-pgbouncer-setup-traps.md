@@ -11,9 +11,14 @@ short_description: Как выбрать режим пула PgBouncer для Ra
   мониторинга.
 date: '2025-05-20 14:00:00 +0300'
 categories:
-- postgres
-- rails
-tags: PgBouncer,PostgreSQL,Rails,оптимизация,настройка,база данных
+- database
+- development
+- devops
+tags:
+- Connection Pooling
+- Migrations
+- prepared statements
+- transaction mode
 rate: 3
 hero_image: "/images/posts/background_post-0078.webp"
 ---

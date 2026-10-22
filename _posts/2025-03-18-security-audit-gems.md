@@ -10,9 +10,17 @@ short_description: Как проверять Rails-код с помощью Brak
   уязвимости в зависимостях через Bundler Audit и запускать обе проверки в CI.
 date: '2024-09-18 10:00:00 +0300'
 categories:
+- development
+- devops
 - security
-- ruby
-tags: Gem,безопасность,DevOps,аудит,уязвимости
+tags:
+- Application Security
+- Continuous Integration
+- Dependency Management
+- Dependency Vulnerability Scanning
+- Ruby Gems
+- Static Analysis
+- Vulnerabilities
 rate: 2
 hero_image: "/images/posts/background_post-0031.webp"
 ---

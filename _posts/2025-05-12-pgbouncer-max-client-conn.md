@@ -11,9 +11,12 @@ short_description: 'Почему высокий max_client_conn в PgBouncer н�
   при мониторинге.'
 date: '2025-05-12 16:30:00 +0300'
 categories:
-- postgres
-- rails
-tags: PostgreSQL,PgBouncer,Rails,DevOps,connection pooling,performance
+- database
+- devops
+tags:
+- Connection Pooling
+- Monitoring
+- Scalability
 rate: 4
 hero_image: "/images/posts/background_post-0094.webp"
 ---

@@ -11,8 +11,14 @@ short_description: 'Как CQRS, Event Sourcing и DDD соотносятся в
 date: '2024-12-01 10:00:00 +0300'
 categories:
 - architecture
-- rails
-tags: Ruby,PostgreSQL,Rails,DevOps,базы данных,оптимизация запросов
+- development
+tags:
+- Business Logic
+- CQRS
+- Distributed Systems
+- Domain-Driven Design
+- Event Sourcing
+- Event-driven Architecture
 rate: 4
 hero_image: "/images/posts/background_post-0015.webp"
 ---

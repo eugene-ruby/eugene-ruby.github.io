@@ -11,9 +11,11 @@ short_description: Как устроен Ruby-гем, какие данные з
   разработке гема.
 date: '2024-09-18 12:00:00 +0300'
 categories:
-- tools
-- ruby
-tags: Ruby,гемы,Bundler,зависимости,gemspec,production
+- development
+tags:
+- Dependency Management
+- Gem Specification
+- Gemfile.lock
 rate: 3
 hero_image: "/images/posts/background_post-0040.webp"
 ---

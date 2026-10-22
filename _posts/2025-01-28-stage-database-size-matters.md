@@ -11,8 +11,15 @@ short_description: Почему запросы и миграции, которы
   до релиза.
 date: '2025-01-28 12:00:00 +0300'
 categories:
-- postgres
-tags: Ruby,PostgreSQL,ActiveRecord,SQL,тестирование,N+1
+- database
+- development
+- devops
+tags:
+- N+1 Queries
+- Production-like Test Data
+- Query Optimization
+- SQL
+- Testing
 rate: 3
 hero_image: "/images/posts/background_post-0090.webp"
 ---

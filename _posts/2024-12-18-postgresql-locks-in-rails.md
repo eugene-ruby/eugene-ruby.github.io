@@ -12,10 +12,13 @@ short_description: Как защитить обновление записи о�
   от advisory locks.
 date: '2024-12-18 11:30:00 +0300'
 categories:
-- orm
-- rails
-- postgres
-tags: PostgreSQL,Ruby on Rails,блокировки,race condition,Sidekiq,конкурентный доступ
+- database
+- development
+tags:
+- Concurrency
+- Locking
+- Race Conditions
+- Transactions
 rate: 4
 hero_image: "/images/posts/background_post-0037.webp"
 ---

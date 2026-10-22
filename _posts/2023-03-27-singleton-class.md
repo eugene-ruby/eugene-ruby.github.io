@@ -10,8 +10,15 @@ short_description: 'Как Ruby хранит методы отдельного �
   class << self, define_singleton_method, extend и цепочку поиска методов.'
 date: '2023-03-27 15:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,Singleton-классы,метапрограммирование,class methods,extend,объекты
+- development
+tags:
+- Class Methods
+- Dynamic Dispatch
+- extend
+- Inheritance
+- Metaprogramming
+- Object Model
+- Singleton Class
 rate: 4
 hero_image: "/images/posts/background_post-0075.webp"
 ---

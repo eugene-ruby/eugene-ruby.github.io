@@ -11,8 +11,16 @@ short_description: 'Разбираем, как работают eval, binding и
   код.'
 date: '2025-04-28 12:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,метапрограммирование,отладка,рефлексия
+- development
+- security
+tags:
+- Application Security
+- Binding
+- Debugging
+- eval
+- Metaprogramming
+- Reflection
+- tap
 rate: 4
 hero_image: "/images/posts/background_post-0044.webp"
 ---

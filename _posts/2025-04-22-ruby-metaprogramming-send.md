@@ -11,8 +11,14 @@ short_description: 'Как вызвать метод Ruby по имени, по�
   разрешённых методов.'
 date: '2025-04-22 12:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,метапрограммирование,рефлексия,динамический-вызов
+- development
+- security
+tags:
+- Application Security
+- Dynamic Dispatch
+- Metaprogramming
+- Method Visibility
+- send
 rate: 4
 hero_image: "/images/posts/background_post-0032.webp"
 ---

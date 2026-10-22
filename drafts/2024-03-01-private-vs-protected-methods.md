@@ -5,9 +5,8 @@ menubar_toc: true
 hero_darken: true
 title: В чем разница private и protected методов в Ruby
 date: '2024-03-01 19:07:13 +0300'
-categories:
-- ruby
-tags: ''
+categories: []
+tags: []
 hero_image: "/images/posts/background_post-0079.webp"
 ---
 ## В двух словах когда нужен protected в Ruby

@@ -10,9 +10,11 @@ short_description: Как работает экранирование в шаб�
   могут привести к XSS и что учитывать при выводе данных в JavaScript, CSS и ссылки.
 date: '2024-09-18 12:00:00 +0300'
 categories:
+- development
 - security
-- rails
-tags: Ruby on Rails, Безопасность, XSS, ERB, PostgreSQL, Веб-разработка
+tags:
+- Contextual Output Encoding
+- XSS
 rate: 2
 hero_image: "/images/posts/background_post-0065.webp"
 ---

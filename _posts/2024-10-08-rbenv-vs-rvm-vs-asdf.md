@@ -10,9 +10,12 @@ short_description: 'Сравниваем RVM, rbenv и chruby: как они п�
   что умеют с gemset’ами и автопереключением и когда менеджер версий не нужен в Docker-образе.'
 date: '2024-09-18 14:00:00 +0300'
 categories:
-- tools
-- ruby
-tags: Ruby,RVM,rbenv,chruby,менеджеры версий,Ubuntu
+- development
+- devops
+tags:
+- Containerization
+- Dependency Management
+- Runtime Version Management
 rate: 3
 hero_image: "/images/posts/background_post-0092.webp"
 ---

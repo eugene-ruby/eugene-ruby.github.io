@@ -11,9 +11,9 @@ short_description: 'Чем отличаются асинхронная и син
   переключение и в каких случаях можно передавать только выбранные таблицы.'
 date: '2025-06-04 12:30:00 +0300'
 categories:
-- architecture
 - database
-tags: PostgreSQL,репликация,асинхронная,синхронная,логическая,production
+tags:
+- Replication
 rate: 5
 hero_image: "/images/posts/background_post-0009.webp"
 ---

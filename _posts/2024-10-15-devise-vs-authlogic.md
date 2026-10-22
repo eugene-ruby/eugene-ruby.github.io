@@ -11,9 +11,13 @@ short_description: 'Сравниваем Devise и Authlogic для аутент
   стоит учитывать.'
 date: '2024-09-18 10:00:00 +0300'
 categories:
-- gems
-- rails
-tags: Ruby on Rails,Authentication,Devise,Authlogic,PostgreSQL,безопасность
+- development
+- security
+tags:
+- Application Security
+- Authentication
+- Performance Optimization
+- Race Conditions
 rate: 2
 hero_image: "/images/posts/background_post-0048.webp"
 ---

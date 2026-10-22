@@ -11,8 +11,14 @@ short_description: 'Чем отличаются define_method и define_singleto
   где появляются созданные методы, как сделать метод класса и каких ошибок избегать.'
 date: '2023-03-09 11:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,метапрограммирование,define_method,define_singleton_method,DRY,Rails
+- development
+tags:
+- Class Methods
+- define_method
+- define_singleton_method
+- DRY
+- Metaprogramming
+- Singleton Class
 rate: 3
 hero_image: "/images/posts/background_post-0013.webp"
 ---

@@ -9,9 +9,10 @@ title: "\U0001F517 Наследование и модули в Ruby: included, e
 short_description: 'Как Ruby ищет методы в цепочке наследования и модулей: разбираем
   superclass, ancestors и хуки included, extended и prepended на примерах.'
 date: '2025-04-26 13:00:00 +0300'
-categories:
-- ruby
-tags: Ruby,наследование,метаклассы,модули,OOP
+categories: []
+tags:
+- Inheritance
+- Object-oriented Programming
 rate: 4
 hero_image: "/images/posts/background_post-0018.webp"
 ---

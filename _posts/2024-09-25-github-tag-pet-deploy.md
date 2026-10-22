@@ -10,9 +10,11 @@ short_description: Как размечать релизы Git-тегами, вы
   деплой через GitHub Actions, не отправляя тестовые и пререлизные теги в прод.
 date: '2024-09-25 12:00:00 +0300'
 categories:
-- pet
 - devops
-tags: Git,DevOps,CI/CD,Pet,GitHub Actions
+tags:
+- CI/CD
+- Deployment
+- Semantic Versioning
 rate: 2
 hero_image: "/images/posts/background_post-0074.webp"
 ---

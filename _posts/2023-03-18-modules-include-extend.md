@@ -10,8 +10,14 @@ short_description: Как include, extend и prepend добавляют мето
   локальное уточнение refine и как эти механизмы влияют на поиск методов.
 date: '2023-03-18 12:30:00 +0300'
 categories:
-- ruby
-tags: Ruby,модули,include,extend,prepend,refine
+- development
+tags:
+- Dynamic Dispatch
+- extend
+- include
+- Metaprogramming
+- prepend
+- refine
 rate: 3
 hero_image: "/images/posts/background_post-0019.webp"
 ---

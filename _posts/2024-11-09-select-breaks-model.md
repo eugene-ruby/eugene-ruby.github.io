@@ -11,8 +11,12 @@ short_description: Почему после select в Rails чтение атри
   pluck.
 date: '2024-11-09 11:00:00 +0300'
 categories:
-- rails
-tags: Ruby,PostgreSQL,Rails,DevOps,оптимизация запросов,автоматизация
+- database
+- development
+tags:
+- Debugging
+- pluck
+- select
 rate: 3
 hero_image: "/images/posts/background_post-0099.webp"
 ---

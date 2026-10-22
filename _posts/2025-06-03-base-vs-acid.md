@@ -8,9 +8,16 @@ hero_darken: true
 title: 'ACID и BASE: разные подходы к работе с данными'
 date: '2025-06-03 11:00:00 +0300'
 categories:
-- database
 - architecture
-tags: ACID,BASE,NoSQL,PostgreSQL,MongoDB,Rails
+- database
+tags:
+- ACID
+- BASE
+- Consistency
+- Data Integrity
+- Distributed Systems
+- Replication
+- Transactions
 rate: 4
 hero_image: "/images/posts/background_post-0001.webp"
 ---

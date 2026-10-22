@@ -11,9 +11,11 @@ short_description: 'Как настроить деплой pet-проекта ч
   Разбираем настройку secrets и ограничения примера.'
 date: '2024-09-23 12:00:00 +0300'
 categories:
-- pet
 - devops
-tags: GitHub Actions, CI/CD, Docker, SSH, DevOps
+tags:
+- CI/CD
+- Deployment
+- Secrets Management
 rate: 2
 hero_image: "/images/posts/background_post-0101.webp"
 ---

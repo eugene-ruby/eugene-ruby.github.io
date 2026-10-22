@@ -11,8 +11,13 @@ short_description: 'Как читать план EXPLAIN (ANALYZE, BUFFERS) в P
   мешает запросу.'
 date: '2025-01-12 11:00:00 +0300'
 categories:
-- postgres
-tags: PostgreSQL,SQL,производительность,EXPLAIN ANALYZE,BUFFERS,Rails
+- database
+tags:
+- BUFFERS
+- EXPLAIN ANALYZE
+- Indexing
+- Query Optimization
+- SQL
 rate: 4
 hero_image: "/images/posts/background_post-0030.webp"
 ---

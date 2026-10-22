@@ -10,9 +10,15 @@ short_description: Как развернуть небольшое Flask-прил
   и настроить GitHub Actions, чтобы проверять код перед выкаткой на сервер.
 date: '2025-04-21 14:00:00 +0300'
 categories:
-- pet
-- docker
-tags: Docker CI/CD Pet Python
+- devops
+tags:
+- CI/CD
+- Containerization
+- Dependency Management
+- Deployment
+- Migrations
+- Secrets Management
+- Testing
 rate: 1
 hero_image: "/images/posts/background_post-0059.webp"
 ---

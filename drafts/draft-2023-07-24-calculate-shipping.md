@@ -5,9 +5,8 @@ menubar_toc: true
 hero_darken: true
 title: Паттерн Адаптер для расчета доставки
 date: '2023-07-24 08:52:48 +0300'
-categories:
-- singleton
-tags: ''
+categories: []
+tags: []
 hero_image: "/images/posts/background_post-0099.webp"
 ---
 <img alt="ded" src="/images/sleep.jpeg" width="40%"/>

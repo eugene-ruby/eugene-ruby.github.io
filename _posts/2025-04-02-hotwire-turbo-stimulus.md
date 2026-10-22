@@ -11,9 +11,13 @@ short_description: 'Как использовать Turbo и Stimulus в Rails-�
   и сохранять работу форм без JavaScript.'
 date: '2024-09-20 12:00:00 +0300'
 categories:
+- development
 - frontend
-- rails
-tags: Ruby on Rails, Hotwire, Turbo, Stimulus, архитектура, JS, frontend, javascript
+tags:
+- Progressive Enhancement
+- Server-side Rendering
+- Software Architecture
+- Testing
 rate: 2
 hero_image: "/images/posts/background_post-0073.webp"
 ---

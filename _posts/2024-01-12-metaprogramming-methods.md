@@ -11,8 +11,15 @@ short_description: 'Как динамически создавать метод�
   undef_method, send и public_send.'
 date: '2024-01-12 10:00:00 +0300'
 categories:
-- ruby
-tags: метапрограммирование,Ruby,define_method,alias_method,const_get,send
+- development
+tags:
+- alias_method
+- const_get
+- define_method
+- Dynamic Dispatch
+- Metaprogramming
+- Method Visibility
+- send
 rate: 4
 hero_image: "/images/posts/background_post-0022.webp"
 ---

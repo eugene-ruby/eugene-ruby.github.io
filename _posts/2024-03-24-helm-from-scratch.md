@@ -11,8 +11,10 @@ short_description: Как устроен Helm-чарт, где задавать 
 date: '2024-03-24 12:00:00 +0300'
 categories:
 - devops
-- architecture
-tags: Kubernetes, Helm, DevOps, Deployment, CI/CD
+tags:
+- CI/CD
+- Deployment
+- Testing
 rate: 4
 hero_image: "/images/posts/background_post-0065.webp"
 ---

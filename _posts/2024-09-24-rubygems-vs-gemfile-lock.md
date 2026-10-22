@@ -11,9 +11,11 @@ short_description: Как ограничения версий в Gemfile и фа
   и как обновляться осторожнее.
 date: '2024-09-18 12:00:00 +0300'
 categories:
-- gems
-- ruby
-tags: Ruby, bundle update, Gemfile.lock, зависимости, ошибки, Rubygems
+- development
+tags:
+- bundle update
+- Dependency Management
+- Gemfile.lock
 rate: 3
 hero_image: "/images/posts/background_post-0011.webp"
 ---

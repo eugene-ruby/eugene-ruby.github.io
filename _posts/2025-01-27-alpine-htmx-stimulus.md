@@ -12,9 +12,7 @@ short_description: 'Как выбрать Alpine.js, htmx или Stimulus для
 date: '2025-01-27 12:00:00 +0300'
 categories:
 - frontend
-- rails
-tags: Ruby on Rails, JavaScript, Frontend, Alpine.js, htmx, Stimulus, javascript,
-  JS
+tags: []
 rate: 2
 hero_image: "/images/posts/background_post-0068.webp"
 ---

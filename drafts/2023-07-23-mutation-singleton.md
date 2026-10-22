@@ -5,9 +5,8 @@ menubar_toc: true
 hero_darken: true
 title: Меням класс через паттерн singleton
 date: '2023-07-23 14:52:48 +0300'
-categories:
-- ruby
-tags: ''
+categories: []
+tags: []
 hero_image: "/images/posts/background_post-0090.webp"
 ---
 <img alt="ded" src="/images/define_singleton.jpeg" width="40%"/>

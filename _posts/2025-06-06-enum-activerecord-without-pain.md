@@ -10,9 +10,13 @@ short_description: Как выбирать значения enum в ActiveRecord
   проверять их в тестах и не размазывать логику переходов по приложению.
 date: '2024-09-18 12:00:00 +0300'
 categories:
-- pattern
-- rails
-tags: Ruby,Rails,Enum,PostgreSQL,ActiveRecord,Бизнес-логика
+- database
+- development
+tags:
+- Business Logic
+- Data Integrity
+- enum
+- Testing
 rate: 3
 hero_image: "/images/posts/background_post-0006.webp"
 ---

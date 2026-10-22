@@ -10,8 +10,12 @@ short_description: Что меняется в Rails 7.2 при работе с R
   обратить внимание при обновлении существующего приложения.
 date: '2024-12-04 12:00:00 +0300'
 categories:
-- rails
-tags: Ruby on Rails,Rails 7.2,YJIT,Hotwire,Active Record,DevOps
+- development
+tags:
+- Autoloading
+- Dependency Management
+- JIT Compilation
+- Performance Optimization
 rate: 4
 hero_image: "/images/posts/background_post-0044.webp"
 ---

@@ -11,8 +11,12 @@ short_description: Как отложить обход коллекции с Enum
   и большим CSV-файлом.
 date: '2023-04-05 13:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,итераторы,Enumerator,Lazy,Fiber,ленивые вычисления
+- development
+tags:
+- Enumeration
+- Fiber
+- Iteration
+- Lazy Evaluation
 rate: 5
 hero_image: "/images/posts/background_post-0021.webp"
 ---

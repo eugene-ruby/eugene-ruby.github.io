@@ -11,8 +11,12 @@ short_description: 'Как в Ruby ограничить вызов методо�
   и приватный initialize.'
 date: '2022-09-21 17:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,безопасность,приватные методы,защита данных,методы объектов,продакшен
+- development
+tags:
+- Class Methods
+- Method Visibility
+- Object Freezing
+- send
 rate: 3
 hero_image: "/images/posts/background_post-0094.webp"
 ---

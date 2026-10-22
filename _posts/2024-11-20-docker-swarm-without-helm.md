@@ -11,9 +11,16 @@ short_description: 'Как развернуть Rails-приложение и Po
   тестирования.'
 date: '2024-11-20 14:00:00 +0300'
 categories:
+- database
 - devops
-- architecture
-tags: Docker, DevOps, Swarm, PostgreSQL, оркестрация
+tags:
+- Containerization
+- Deployment
+- Orchestration
+- Replication
+- Scalability
+- Secrets Management
+- Testing
 rate: 4
 hero_image: "/images/posts/background_post-0054.webp"
 ---

@@ -11,10 +11,14 @@ short_description: 'Как добавить индекс к большой та�
   ограничения этого подхода.'
 date: '2025-01-30 10:00:00 +0300'
 categories:
-- migration
-- postgres
-- rails
-tags: PostgreSQL,индексы,Rails,миграции,CONCURRENTLY,блокировки
+- database
+- development
+tags:
+- CONCURRENTLY
+- Indexing
+- Locking
+- Migrations
+- Transactions
 rate: 4
 hero_image: "/images/posts/background_post-0019.webp"
 ---

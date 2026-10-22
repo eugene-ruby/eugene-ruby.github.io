@@ -5,9 +5,8 @@ menubar_toc: true
 hero_darken: true
 title: 'Дед учит Английский (часть III: Существительное и причастие)'
 date: '2023-11-19 22:32:03 +0300'
-categories:
-- english
-tags: ''
+categories: []
+tags: []
 hero_image: "/images/posts/background_post-0035.webp"
 ---
 # Существительное и причастие

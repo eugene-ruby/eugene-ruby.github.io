@@ -11,9 +11,13 @@ short_description: Как сохранить зависимости Bundler в v
   с нативными расширениями.
 date: '2024-09-18 12:00:00 +0300'
 categories:
+- development
 - devops
-- ruby
-tags: Ruby,gems,vendoring,CI,dependencies,network errors
+tags:
+- Containerization
+- Continuous Integration
+- Dependency Management
+- Dependency Vendoring
 rate: 3
 hero_image: "/images/posts/background_post-0078.webp"
 ---

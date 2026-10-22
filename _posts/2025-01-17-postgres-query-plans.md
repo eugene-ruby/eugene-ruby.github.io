@@ -11,9 +11,12 @@ short_description: 'Как читать план PostgreSQL: чем различ
   Join и Merge Join, когда используются Seq Scan, Index Scan и Bitmap Scan и на что
   смотреть в EXPLAIN ANALYZE при поиске медленного запроса.'
 date: '2025-01-17 10:30:00 +0300'
-categories:
-- postgres
-tags: PostgreSQL,JOIN-операции,оптимизация запросов,EXPLAIN ANALYZE,Rails,индексы
+categories: []
+tags:
+- EXPLAIN ANALYZE
+- Indexing
+- Query Optimization
+- SQL Joins
 rate: 5
 hero_image: "/images/posts/background_post-0076.webp"
 ---

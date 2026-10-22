@@ -10,9 +10,11 @@ short_description: Как Zeitwerk загружает Ruby-константы п
   чем он отличается от ручного require и где автозагрузка требует дополнительной настройки.
 date: '2024-09-18 10:00:00 +0300'
 categories:
-- gems
-- ruby
-tags: Ruby,Zeitwerk,автозагрузка,require,классы,архитектура
+- development
+tags:
+- Autoloading
+- require
+- Testing
 rate: 3
 hero_image: "/images/posts/background_post-0003.webp"
 ---

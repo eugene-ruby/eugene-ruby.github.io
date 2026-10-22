@@ -11,9 +11,12 @@ short_description: Когда YJIT может ускорить Ruby-прилож
   с ним и без него.
 date: '2024-09-20 12:00:00 +0300'
 categories:
-- performance
-- ruby
-tags: Ruby,YJIT,оптимизация,производительность,JIT-компиляция,продакшен
+- development
+tags:
+- Benchmark
+- JIT Compilation
+- N+1 Queries
+- Performance Optimization
 rate: 3
 hero_image: "/images/posts/background_post-0087.webp"
 ---

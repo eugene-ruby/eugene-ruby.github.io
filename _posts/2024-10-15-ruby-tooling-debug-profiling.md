@@ -10,9 +10,12 @@ short_description: Как отлаживать Ruby-код с debug, измер�
   узкие места с помощью StackProf — и какие выводы нельзя делать по таким замерам.
 date: '2024-09-18 12:00:00 +0300'
 categories:
-- performance
-- ruby
-tags: Ruby,Debug,Benchmark,StackProf,отладка,производительность
+- development
+tags:
+- Benchmark
+- Debugging
+- Performance Optimization
+- Profiling
 rate: 3
 hero_image: "/images/posts/background_post-0030.webp"
 ---

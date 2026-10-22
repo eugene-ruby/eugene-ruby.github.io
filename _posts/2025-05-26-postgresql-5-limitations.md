@@ -11,9 +11,13 @@ short_description: 'Пять особенностей PostgreSQL, которые
   обновление materialized views.'
 date: '2025-05-26 10:00:00 +0300'
 categories:
-- postgres
 - database
-tags: PostgreSQL,Ruby on Rails,СУБД,производительность,DevOps,настройка
+tags:
+- Connection Pooling
+- Materialized Views
+- MVCC
+- Performance Optimization
+- Query Optimization
 rate: 3
 hero_image: "/images/posts/background_post-0076.webp"
 ---

@@ -11,9 +11,14 @@ short_description: Как оценить число соединений от Pu
   в Rails.
 date: '2025-03-22 18:00:00 +0300'
 categories:
-- postgres
-- rails
-tags: Ruby,PostgreSQL,Rails,DevOps,Puma,PgBouncer
+- database
+- development
+- devops
+tags:
+- Concurrency
+- Connection Pooling
+- prepared statements
+- transaction mode
 rate: 4
 hero_image: "/images/posts/background_post-0073.webp"
 ---

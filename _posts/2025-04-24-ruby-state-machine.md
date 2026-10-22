@@ -10,9 +10,9 @@ short_description: Как понять, что статусов Rails enum уж�
   через AASM и не потерять из виду колбэки, тесты и конкурентные изменения.
 date: '2024-09-18 12:00:00 +0300'
 categories:
-- pattern
-- rails
-tags: Ruby,enum,методы,условия,проверки,состояния
+- architecture
+tags:
+- enum
 rate: 3
 hero_image: "/images/posts/background_post-0082.webp"
 ---

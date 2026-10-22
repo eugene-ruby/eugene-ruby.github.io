@@ -12,10 +12,15 @@ short_description: 'Когда для фоновых задач и событи�
 date: '2024-09-20 12:00:00 +0300'
 categories:
 - architecture
-- rails
-- performance
-tags: Ruby on Rails,Kafka,RabbitMQ,архитектура,PostgreSQL,брокеры сообщений,message
-  brokers
+- development
+tags:
+- Background Jobs
+- Distributed Systems
+- Event Streaming
+- Idempotency
+- Message Brokers
+- Publish/Subscribe
+- Testing
 rate: 3
 hero_image: "/images/posts/background_post-0063.webp"
 ---

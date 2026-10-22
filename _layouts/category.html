@@ -7,16 +7,22 @@ layout: default
 
 <section id="posts" class="section">
     <div class="container categories">
-        <h1 class="title is-3">📂 Категория: {{ page.category }}</h1>
+        <h1 class="title is-3">{{ page.description }}</h1>
 
-        <div class="columns is-multiline">
-            {% assign category_name = page.category %}
-            {% assign posts = site.categories[category_name] | sort: 'date' | reverse %}
+        {% for technology in page.technology_groups %}
+        <section class="category-technology">
+            <h2 class="title is-4">{{ technology.name }} {{ technology.description }}</h2>
 
-            {% for post in posts %}
-            {% include post_card.html post=post %}
-            {% endfor %}
-        </div>
+            <div class="columns is-multiline">
+                {% for post_path in technology.posts %}
+                {% assign post = site.posts | where: 'path', post_path | first %}
+                {% if post %}
+                {% include post_card.html post=post %}
+                {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
     </div>
 </section>
 

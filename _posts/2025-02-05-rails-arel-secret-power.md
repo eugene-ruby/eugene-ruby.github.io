@@ -11,9 +11,11 @@ short_description: Как строить условия и выражения CA
   учитывать.
 date: '2025-02-05 10:30:00 +0300'
 categories:
-- orm
-- rails
-tags: Arel,Ruby on Rails,SQL,ActiveRecord,запросы,ORM
+- database
+- development
+tags:
+- SQL
+- SQL Injection
 rate: 3
 hero_image: "/images/posts/background_post-0074.webp"
 ---

@@ -10,8 +10,17 @@ short_description: 'Что означают GVL, MJIT, YJIT, Ractor и Fiber Sch
   как они связаны с выполнением кода, параллельностью и неблокирующим вводом-выводом.'
 date: '2025-01-30 10:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,GVL,YJIT,Ractors,Fiber Scheduler,CRuby
+- development
+tags:
+- Asynchronous Programming
+- Concurrency
+- Fiber
+- Fiber Scheduler
+- Global VM Lock
+- JIT Compilation
+- Multithreading
+- Parallelism
+- Ractor
 rate: 3
 hero_image: "/images/posts/background_post-0004.webp"
 ---

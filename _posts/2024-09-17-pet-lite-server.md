@@ -11,8 +11,13 @@ short_description: 'Как выбрать первый VPS для Ruby-прил�
   ресурсы.'
 date: '2024-09-17 12:00:00 +0300'
 categories:
-- pet
-tags: VPS Server pet
+- devops
+tags:
+- Capacity Planning
+- Deployment
+- Monitoring
+- Performance Optimization
+- Scalability
 rate: 1
 hero_image: "/images/posts/background_post-0003.webp"
 ---

@@ -12,10 +12,11 @@ short_description: Обзор 10 Ruby-гемов для работы с HTTP и 
   подходят и где важно учитывать ограничения.
 date: '2024-09-06 10:00:00 +0300'
 categories:
-- gems
-- ruby
-tags: ruby gems faraday addressable multi_json thor public_suffix rspec aws-sdk-s3
-  aws-sdk-kms ffi mime-types
+- development
+tags:
+- DSL
+- Ruby Gems
+- Testing
 rate: 2
 hero_image: "/images/posts/background_post-0073.webp"
 ---

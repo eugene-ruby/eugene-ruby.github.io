@@ -5,9 +5,8 @@ menubar_toc: true
 hero_darken: true
 title: 'Дед учит Английский (часть VI: Паттерны)'
 date: '2023-11-24 21:22:09 +0300'
-categories:
-- english
-tags: ''
+categories: []
+tags: []
 hero_image: "/images/posts/background_post-0023.webp"
 ---
 # Паттерны

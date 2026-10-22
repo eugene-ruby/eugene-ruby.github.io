@@ -11,9 +11,18 @@ short_description: 'Подборка статей для подготовки к
   архитектурные подходы.'
 date: '2024-11-10 09:00:00 +0300'
 categories:
-- rails
 - architecture
-tags: Ruby,PostgreSQL,Rails,ORM,метапрограммирование,оптимизация запросов
+- database
+- development
+tags:
+- Event-driven Architecture
+- Indexing
+- Locking
+- Metaprogramming
+- ORM
+- Query Optimization
+- SQL Joins
+- Transactions
 rate: 5
 hero_image: "/images/posts/background_post-0009.webp"
 ---

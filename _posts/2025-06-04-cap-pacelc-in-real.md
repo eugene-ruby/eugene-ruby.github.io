@@ -12,7 +12,12 @@ date: '2025-06-04 12:00:00 +0300'
 categories:
 - architecture
 - database
-tags: PostgreSQL,CAP-теорема,PACELC,NoSQL,репликация,кластер
+tags:
+- CAP Theorem
+- Consistency
+- Distributed Systems
+- PACELC
+- Replication
 rate: 4
 hero_image: "/images/posts/background_post-0057.webp"
 ---

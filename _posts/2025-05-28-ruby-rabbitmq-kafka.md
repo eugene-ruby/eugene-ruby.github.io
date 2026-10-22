@@ -10,9 +10,15 @@ short_description: 'Сравниваем RabbitMQ и Kafka для Ruby-серв�
 date: '2025-05-28 12:00:00 +0300'
 categories:
 - architecture
-- rails
-- performance
-tags: Ruby, RabbitMQ,Kafka,message brokers,event streaming,брокеры сообщений
+- development
+tags:
+- Background Jobs
+- Distributed Systems
+- Event Streaming
+- Idempotency
+- Message Brokers
+- Publish/Subscribe
+- Scalability
 hero_image: "/images/posts/background_post-0047.webp"
 ---
 RabbitMQ и Kafka позволяют вынести часть работы из синхронного запроса Ruby-сервиса, но используют разные модели. Сравним очереди с подтверждением обработки и потоки событий с возможностью повторного чтения, чтобы понять, какой вариант подходит задаче.

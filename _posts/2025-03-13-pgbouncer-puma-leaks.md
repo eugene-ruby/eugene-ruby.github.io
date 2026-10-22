@@ -11,9 +11,13 @@ short_description: 'Почему PgBouncer не устраняет ожидан�
   и собственных потоках.'
 date: '2025-03-13 15:00:00 +0300'
 categories:
-- postgres
-- rails
-tags: PgBouncer,PostgreSQL,Rails,соединения,утечки,CPU
+- database
+- development
+tags:
+- Background Jobs
+- Concurrency
+- Connection Pooling
+- Transactions
 rate: 3
 hero_image: "/images/posts/background_post-0084.webp"
 ---

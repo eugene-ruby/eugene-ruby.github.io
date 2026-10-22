@@ -11,8 +11,14 @@ short_description: 'Как читать EXPLAIN (ANALYZE, BUFFERS) в PostgreSQL
   или индексов.'
 date: '2025-01-22 11:00:00 +0300'
 categories:
-- postgres
-tags: PostgreSQL,SQL,оптимизация запросов,EXPLAIN ANALYZE,индексы,JOIN
+- database
+tags:
+- BUFFERS
+- EXPLAIN ANALYZE
+- Indexing
+- Query Optimization
+- SQL
+- SQL Joins
 rate: 4
 hero_image: "/images/posts/background_post-0083.webp"
 ---

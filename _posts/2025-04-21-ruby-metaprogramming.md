@@ -11,8 +11,12 @@ short_description: 'Обзор инструментов метапрограмм
   на подробные разборы и оговорками о применении.'
 date: '2025-04-21 12:00:00 +0300'
 categories:
-- ruby
-tags: Ruby, метапрограммирование, ООП, рефлексия
+- development
+tags:
+- Dynamic Dispatch
+- Hooks
+- Metaprogramming
+- Reflection
 rate: 4
 hero_image: "/images/posts/background_post-0051.webp"
 ---

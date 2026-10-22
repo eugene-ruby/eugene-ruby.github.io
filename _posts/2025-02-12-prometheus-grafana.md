@@ -10,9 +10,12 @@ short_description: Как собирать HTTP-метрики и время SQL
   показывать их в Grafana и не перегружать дашборды и алерты.
 date: '2024-09-18 12:00:00 +0300'
 categories:
+- development
 - devops
-- performance
-tags: Ruby on Rails,Monitoring,DevOps,PostgreSQL,Prometheus,Grafana
+tags:
+- Alerting
+- Metric Cardinality
+- Monitoring
 rate: 4
 hero_image: "/images/posts/background_post-0043.webp"
 ---

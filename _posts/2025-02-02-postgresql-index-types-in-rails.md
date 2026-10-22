@@ -10,9 +10,16 @@ short_description: Как выбрать B-tree, GIN, GiST или BRIN под з
   добавить индекс в миграции Rails и проверить план выполнения через EXPLAIN ANALYZE.
 date: '2025-02-02 10:30:00 +0300'
 categories:
-- postgres
-- rails
-tags: PostgreSQL,индексы,Rails,B-tree,GIN,BRIN
+- database
+- development
+tags:
+- B-tree
+- BRIN
+- EXPLAIN ANALYZE
+- GIN
+- GiST
+- Indexing
+- Migrations
 rate: 3
 hero_image: "/images/posts/background_post-0017.webp"
 ---

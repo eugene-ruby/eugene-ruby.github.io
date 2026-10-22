@@ -11,10 +11,12 @@ short_description: 'Как Rails управляет транзакциями в 
   отдельную транзакцию.'
 date: '2024-12-10 14:00:00 +0300'
 categories:
-- orm
-- rails
-- postgres
-tags: PostgreSQL,Rails,транзакции,ActiveRecord,savepoints,целостность данных
+- database
+- development
+tags:
+- Data Integrity
+- Savepoints
+- Transactions
 rate: 3
 hero_image: "/images/posts/background_post-0045.webp"
 ---

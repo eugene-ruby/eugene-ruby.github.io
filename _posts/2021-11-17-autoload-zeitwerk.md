@@ -11,8 +11,12 @@ short_description: 'Как Ruby загружает файлы и находит 
   классов в Rails.'
 date: '2021-11-17 10:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,автозагрузка,require,load,Rails,Zeitwerk
+- development
+tags:
+- Autoloading
+- const_missing
+- load
+- require
 rate: 3
 hero_image: "/images/posts/background_post-0074.webp"
 ---

@@ -11,8 +11,11 @@ short_description: 'Как ускорить сборку Docker-образа и 
 date: '2024-09-21 12:00:00 +0300'
 categories:
 - devops
-- pet
-tags: Docker,CI/CD,оптимизация,DevOps,контейнеризация
+tags:
+- Build Cache
+- CI/CD
+- Containerization
+- Performance Optimization
 rate: 2
 hero_image: "/images/posts/background_post-0096.webp"
 ---

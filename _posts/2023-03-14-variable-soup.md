@@ -11,8 +11,11 @@ short_description: Чем отличаются переменные экземп
   @.
 date: '2023-03-14 13:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,переменные,область видимости,экземпляр,класс,глобальные
+- development
+tags:
+- Inheritance
+- Object Model
+- Variable Scope
 rate: 3
 hero_image: "/images/posts/background_post-0079.webp"
 ---

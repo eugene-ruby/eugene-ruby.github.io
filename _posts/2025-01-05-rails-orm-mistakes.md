@@ -11,9 +11,13 @@ short_description: 'Десять типичных ошибок ActiveRecord в R
   предварительная загрузка, подзапросы и измерение запросов.'
 date: '2025-01-05 11:00:00 +0300'
 categories:
-- orm
-- rails
-tags: ActiveRecord,Ruby on Rails,ORM,PostgreSQL,N+1,scope
+- database
+- development
+tags:
+- ActiveRecord Scopes
+- N+1 Queries
+- Query Optimization
+- SQL Joins
 rate: 3
 hero_image: "/images/posts/background_post-0079.webp"
 ---

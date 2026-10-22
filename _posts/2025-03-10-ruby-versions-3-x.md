@@ -11,9 +11,14 @@ short_description: 'Шпаргалка по изменениям Ruby с 3.0 п�
   том, что важно проверить при обновлении.'
 date: '2025-03-10 11:30:00 +0300'
 categories:
-- performance
-- ruby
-tags: Ruby,Rails,PostgreSQL,DevOps,Ractor,Pattern Matching
+- development
+tags:
+- Dependency Management
+- Fiber Scheduler
+- JIT Compilation
+- Performance Optimization
+- Ractor
+- Runtime Upgrades
 rate: 3
 hero_image: "/images/posts/background_post-0009.webp"
 ---

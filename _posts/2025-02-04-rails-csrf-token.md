@@ -10,9 +10,11 @@ short_description: Как Rails защищает запросы с сессио�
   authenticity_token и что учитывать в формах, тестах и JavaScript-запросах.
 date: '2024-09-18 12:00:00 +0300'
 categories:
+- development
 - security
-- rails
-tags: Ruby on Rails,безопасность,CSRF,веб-разработка
+tags:
+- Application Security
+- CSRF
 rate: 2
 hero_image: "/images/posts/background_post-0101.webp"
 ---

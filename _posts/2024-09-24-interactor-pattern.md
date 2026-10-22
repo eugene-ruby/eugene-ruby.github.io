@@ -10,9 +10,14 @@ short_description: Как Interactor передаёт данные через к
   от `.call` и когда откат шагов в Organizer не заменяет транзакцию.
 date: '2024-09-24 12:00:00 +0300'
 categories:
-- pattern
-- ruby
-tags: Interactor,Ruby,Rails,бизнес-логика,Service-объекты,ошибки
+- architecture
+- development
+tags:
+- Business Logic
+- Interactor Pattern
+- Orchestration
+- Service Object
+- Transactions
 rate: 3
 hero_image: "/images/posts/background_post-0055.webp"
 ---

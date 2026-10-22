@@ -11,9 +11,16 @@ short_description: 'Как обойти ограничение на паралл
   I/O и потоками в других реализациях Ruby.'
 date: '2023-10-10 13:00:00 +0300'
 categories:
-- performance
-- ruby
-tags: Ruby,параллельность,GIL,процессы,асинхронность,Ractor
+- development
+tags:
+- Asynchronous Programming
+- Concurrency
+- Global VM Lock
+- Multiprocessing
+- Multithreading
+- Parallelism
+- Performance Optimization
+- Ractor
 rate: 3
 hero_image: "/images/posts/background_post-0041.webp"
 ---

@@ -12,9 +12,15 @@ short_description: 'Первые шаги на VPS с Ubuntu 24.04: как со�
   и доступ по SSH.'
 date: '2024-09-18 12:00:00 +0300'
 categories:
-- pet
 - devops
-tags: Ubuntu, Docker, VPS, pet
+- security
+tags:
+- Authentication
+- Containerization
+- Deployment
+- Log Rotation
+- Reverse Proxy
+- Server Hardening
 rate: 1
 hero_image: "/images/posts/background_post-0006.webp"
 ---

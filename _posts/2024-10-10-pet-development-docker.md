@@ -11,9 +11,15 @@ short_description: 'Как запустить Rails-проект с PostgreSQL �
   типичные ошибки и границы примера для локальной разработки.'
 date: '2024-10-10 12:00:00 +0300'
 categories:
-- pet
-- ruby
-tags: Docker,Ruby on Rails,Pet
+- database
+- development
+- devops
+tags:
+- Containerization
+- Debugging
+- Dependency Management
+- Orchestration
+- Persistent Storage
 rate: 2
 hero_image: "/images/posts/background_post-0063.webp"
 ---

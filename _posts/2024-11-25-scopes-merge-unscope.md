@@ -11,9 +11,12 @@ short_description: 'Как в Rails сочетать scope, merge, default_scope
   SQL.'
 date: '2024-11-25 10:30:00 +0300'
 categories:
-- orm
-- rails
-tags: Ruby,Rails,Scopes,SQL,PostgreSQL,DevOps
+- database
+- development
+tags:
+- ActiveRecord Scopes
+- default_scope
+- SQL
 rate: 3
 hero_image: "/images/posts/background_post-0093.webp"
 ---

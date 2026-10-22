@@ -10,8 +10,11 @@ short_description: 'Как вести небольшой pet-проект в о�
   и push, понимать, когда нужен pull, и не отправлять секреты в репозиторий.'
 date: '2024-09-18 10:00:00 +0300'
 categories:
-- pet
-tags: GitHub pet
+- development
+- security
+tags:
+- Secrets Management
+- Version Control
 rate: 1
 hero_image: "/images/posts/background_post-0054.webp"
 ---

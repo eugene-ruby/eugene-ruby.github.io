@@ -11,9 +11,15 @@ short_description: 'Разбираем ловушки сложных запро�
   через merge.'
 date: '2024-11-16 14:00:00 +0300'
 categories:
-- orm
-- rails
-tags: ActiveRecord,PostgreSQL,SQL,Rails,group,having
+- database
+- development
+tags:
+- ActiveRecord Scopes
+- group
+- having
+- select
+- SQL
+- SQL Joins
 rate: 5
 hero_image: "/images/posts/background_post-0073.webp"
 ---

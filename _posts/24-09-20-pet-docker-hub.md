@@ -11,8 +11,11 @@ short_description: Как собрать и отправить образ pet-п
   ограничения бесплатного плана и частые ошибки при работе с образами.
 date: '2024-09-20 14:00:00 +0300'
 categories:
-- pet
-tags: Docker, CI/CD, контейнеризация, pet
+- devops
+tags:
+- CI/CD
+- Containerization
+- Deployment
 rate: 1
 hero_image: "/images/posts/background_post-0057.webp"
 ---

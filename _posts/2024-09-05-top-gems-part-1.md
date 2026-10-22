@@ -10,10 +10,14 @@ short_description: 'Разбираем назначение десяти Ruby-г
   до библиотек AWS SDK. Узнаете, какие задачи они решают и когда встречаются в проекте.'
 date: '2024-09-05 10:00:00 +0300'
 categories:
-- gems
-- ruby
-tags: ruby gems bundler aws-sdk-core aws-sigv4 jmespath aws-partitions i18n activesupport
-  rack aws-eventstream rake
+- development
+tags:
+- Automation
+- Cloud Service Integration
+- Dependency Management
+- Internationalization
+- Request Signing
+- Ruby Gems
 rate: 2
 hero_image: "/images/posts/background_post-0100.webp"
 ---

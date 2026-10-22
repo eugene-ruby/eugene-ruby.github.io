@@ -11,9 +11,13 @@ short_description: Как получать значения и агрегаты 
   атрибутам.
 date: '2024-12-01 11:15:00 +0300'
 categories:
-- orm
-- rails
-tags: Ruby,Rails,PostgreSQL,pluck,count,select
+- database
+- development
+tags:
+- count
+- Performance Optimization
+- pluck
+- select
 rate: 3
 hero_image: "/images/posts/background_post-0077.webp"
 ---

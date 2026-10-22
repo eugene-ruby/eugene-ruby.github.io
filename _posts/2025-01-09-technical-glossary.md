@@ -11,7 +11,20 @@ short_description: 'Краткие объяснения терминов из Ru
 date: '2025-01-09 12:30:00 +0300'
 categories:
 - architecture
-tags: Ruby,PostgreSQL,Rails,DevOps,веб-приложения,оптимизация
+- database
+- development
+- devops
+tags:
+- Abstraction
+- Callbacks
+- Concurrency
+- Consistency
+- Distributed Systems
+- Hooks
+- Idempotency
+- Latency
+- Load Balancing
+- Throughput
 rate: 3
 hero_image: "/images/posts/background_post-0021.webp"
 ---

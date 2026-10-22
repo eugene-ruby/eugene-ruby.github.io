@@ -10,10 +10,8 @@ short_description: Как создать SSH-ключ, добавить публ
   без ввода пароля учётной записи. Разбираем права на файлы, парольную фразу и типичные
   ошибки настройки.
 date: '2024-10-18 12:00:00 +0300'
-categories:
-- pet
-- ruby
-tags: SSH, Pet, VPS
+categories: []
+tags: []
 rate: 1
 hero_image: "/images/posts/background_post-0061.webp"
 ---

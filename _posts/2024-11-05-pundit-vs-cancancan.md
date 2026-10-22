@@ -10,9 +10,11 @@ short_description: 'Сравниваем Pundit и CanCanCan для автори
   правила доступа, как проверить их в контроллере и тестах и что учесть при выборе.'
 date: '2024-09-18 12:00:00 +0300'
 categories:
-- gems
-- rails
-tags: Ruby on Rails,Авторизация,Безопасность,PostgreSQL,Архитектура
+- development
+- security
+tags:
+- Authorization
+- Testing
 rate: 2
 hero_image: "/images/posts/background_post-0078.webp"
 ---

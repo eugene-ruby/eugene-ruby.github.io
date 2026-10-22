@@ -10,8 +10,12 @@ short_description: Почему `false` не равен `nil`, как ведут
   у разных объектов и чем отличаются контексты `eval`, `class_eval` и `instance_eval`.
 date: '2023-07-14 14:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,подводные камни,сравнение false и nil,object_id,замороженные объекты,собеседования
+- development
+tags:
+- eval
+- Metaprogramming
+- Object Freezing
+- object_id
 rate: 3
 hero_image: "/images/posts/background_post-0076.webp"
 ---

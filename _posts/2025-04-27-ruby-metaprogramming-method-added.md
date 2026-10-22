@@ -11,8 +11,11 @@ short_description: Как отследить добавление, удален�
   запретить.
 date: '2025-04-27 10:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,метапрограммирование,рефлексия,методы
+- development
+tags:
+- Hooks
+- Metaprogramming
+- Reflection
 rate: 4
 hero_image: "/images/posts/background_post-0088.webp"
 ---

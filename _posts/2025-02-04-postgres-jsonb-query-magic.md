@@ -10,9 +10,14 @@ short_description: Как фильтровать JSONB-данные операт
   выбирать вложенные значения и подбирать GIN-индекс под запросы.
 date: '2025-02-04 11:00:00 +0300'
 categories:
-- postgres
-- rails
-tags: JSONB,PostgreSQL,Rails,индексация,фильтрация,вложенные объекты
+- database
+- development
+tags:
+- GIN
+- Indexing
+- JSONB
+- Query Optimization
+- SQL
 rate: 3
 hero_image: "/images/posts/background_post-0007.webp"
 ---

@@ -12,8 +12,17 @@ short_description: 'Как заменить прямые вызовы обраб
 date: '2025-05-11 12:00:00 +0300'
 categories:
 - architecture
-- rails
-tags: Ruby,событийная архитектура,pub/sub,Wisper,RailsEventStore,PostgreSQL
+- development
+tags:
+- Asynchronous Programming
+- Consistency
+- Distributed Systems
+- Event-driven Architecture
+- Idempotency
+- Message Brokers
+- Publish/Subscribe
+- Transactional Outbox
+- Transactions
 rate: 5
 hero_image: "/images/posts/background_post-0067.webp"
 ---

@@ -5,9 +5,8 @@ menubar_toc: true
 hero_darken: true
 title: 'Дед учит Английский (часть V: Passive Voice)'
 date: '2023-11-22 09:35:23 +0300'
-categories:
-- english
-tags: ''
+categories: []
+tags: []
 hero_image: "/images/posts/background_post-0027.webp"
 ---
 # Passive Voice (страдательный залог)

@@ -12,8 +12,13 @@ short_description: Почему current_user недоступен за пред�
 date: '2025-04-27 12:00:00 +0300'
 categories:
 - architecture
-- rails
-tags: Ruby on Rails,current_user,фоновые задачи,сериализация,PostgreSQL,DevOps
+- development
+tags:
+- Background Jobs
+- current_user
+- Dependency Injection
+- Serialization
+- Service Object
 rate: 3
 hero_image: "/images/posts/background_post-0090.webp"
 ---

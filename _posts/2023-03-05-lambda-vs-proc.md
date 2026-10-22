@@ -11,8 +11,12 @@ short_description: 'Чем различаются lambda, proc и yield в Ruby:
   &block.'
 date: '2023-03-05 14:00:00 +0300'
 categories:
-- ruby
-tags: lambda,proc,yield,Ruby,блоки кода,разница
+- development
+tags:
+- Blocks
+- lambda
+- proc
+- yield
 rate: 3
 hero_image: "/images/posts/background_post-0099.webp"
 ---

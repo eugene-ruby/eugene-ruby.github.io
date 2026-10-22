@@ -12,8 +12,16 @@ short_description: 'Как выбрать обработчик фоновых з
 date: '2024-09-18 12:00:00 +0300'
 categories:
 - architecture
-- rails
-tags: Ruby on Rails,Background Jobs,Redis,PostgreSQL,Performance
+- database
+- development
+tags:
+- Asynchronous Programming
+- Background Jobs
+- Concurrency
+- Idempotency
+- Locking
+- Monitoring
+- Retry Handling
 rate: 3
 hero_image: "/images/posts/background_post-0096.webp"
 ---

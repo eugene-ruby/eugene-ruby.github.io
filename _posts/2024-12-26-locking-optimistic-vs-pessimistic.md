@@ -11,11 +11,15 @@ short_description: 'Как защитить записи от конфликту
   как обрабатывать конфликты.'
 date: '2024-12-26 10:30:00 +0300'
 categories:
-- orm
-- rails
-- postgres
-tags: Ruby on Rails,PostgreSQL,блокировки,оптимистичная блокировка,пессимистичная
-  блокировка,DevOps
+- database
+- development
+tags:
+- Concurrency
+- Locking
+- Optimistic Locking
+- Pessimistic Locking
+- Race Conditions
+- Transactions
 rate: 3
 hero_image: "/images/posts/background_post-0057.webp"
 ---

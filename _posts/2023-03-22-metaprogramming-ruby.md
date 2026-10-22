@@ -10,9 +10,12 @@ short_description: Как создавать методы в Ruby через def
   методы и константы и выбирать между send, public_send и eval. Разбираем рабочие
   примеры и ловушку с return.
 date: '2023-03-22 16:00:00 +0300'
-categories:
-- ruby
-tags: Ruby,метапрограммирование,method_missing,define_method,eval,Rails
+categories: []
+tags:
+- define_method
+- eval
+- Metaprogramming
+- method_missing
 rate: 4
 hero_image: "/images/posts/background_post-0099.webp"
 ---

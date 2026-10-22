@@ -11,9 +11,13 @@ short_description: Почему Rails может получать ошибки p
   запросов, настройка PgBouncer или session pooling.
 date: '2025-04-01 16:00:00 +0300'
 categories:
-- postgres
-- rails
-tags: Ruby on Rails,PostgreSQL,PgBouncer,prepared statements,transaction mode,performance
+- database
+- development
+- devops
+tags:
+- Connection Pooling
+- prepared statements
+- transaction mode
 rate: 3
 hero_image: "/images/posts/background_post-0011.webp"
 ---

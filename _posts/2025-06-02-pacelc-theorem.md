@@ -8,9 +8,14 @@ hero_darken: true
 title: 'PACELC — дополнение к CAP: а если разделения сети нет?'
 date: '2025-06-02 10:00:00 +0300'
 categories:
-- database
 - architecture
-tags: CAP-теорема,PACELC,распределённые системы,PostgreSQL,репликация,консистентность
+- database
+tags:
+- CAP Theorem
+- Consistency
+- Distributed Systems
+- PACELC
+- Replication
 rate: 3
 hero_image: "/images/posts/background_post-0101.webp"
 ---

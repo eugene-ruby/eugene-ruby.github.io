@@ -5,9 +5,8 @@ menubar_toc: true
 hero_darken: true
 title: 'Дед учит Английский (часть II: Герундий)'
 date: '2023-11-15 17:55:34 +0300'
-categories:
-- english
-tags: ''
+categories: []
+tags: []
 hero_image: "/images/posts/background_post-0013.webp"
 ---
 # Герундий

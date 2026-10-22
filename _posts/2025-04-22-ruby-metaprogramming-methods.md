@@ -12,8 +12,14 @@ short_description: Как создавать методы в Ruby, удалят�
   и undef_method на примерах.
 date: '2025-04-22 12:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,метапрограммирование,рефлексия,методы
+- development
+tags:
+- alias_method
+- define_method
+- Inheritance
+- Metaprogramming
+- remove_method
+- undef_method
 rate: 4
 hero_image: "/images/posts/background_post-0026.webp"
 ---

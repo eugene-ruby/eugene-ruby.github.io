@@ -10,10 +10,18 @@ short_description: 'Восемь гемов для тестирования, р�
   и данными: что они делают и на какие ограничения стоит обратить внимание.'
 date: '2024-09-05 10:00:00 +0300'
 categories:
-- gems
-- ruby
-tags: ruby gems tzinfo concurrent-ruby json diff-lcs rspec-expectations rspec-core
-  rspec-mocks rspec-support minitest nokogiri
+- development
+tags:
+- Asynchronous Programming
+- Concurrency
+- HTML/XML Parsing
+- Localization
+- Race Conditions
+- Ruby Gems
+- Sequence Diffing
+- Serialization
+- Testing
+- Time Zone Handling
 rate: 2
 hero_image: "/images/posts/background_post-0030.webp"
 ---

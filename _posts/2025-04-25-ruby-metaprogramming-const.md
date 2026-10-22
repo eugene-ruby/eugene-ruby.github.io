@@ -12,8 +12,11 @@ short_description: Как читать, создавать и удалять к�
   классов.
 date: '2025-04-25 12:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,метапрограммирование,константы,переменные,рефлексия
+- development
+tags:
+- Metaprogramming
+- Object Model
+- Reflection
 rate: 4
 hero_image: "/images/posts/background_post-0012.webp"
 ---

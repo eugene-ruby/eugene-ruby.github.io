@@ -11,9 +11,11 @@ short_description: Где в запросах Active Record возникает �
   ввод.
 date: '2024-09-18 12:00:00 +0300'
 categories:
+- database
+- development
 - security
-- rails
-tags: Ruby on Rails, PostgreSQL, Security, SQL Injection, Web Development
+tags:
+- SQL Injection
 rate: 2
 hero_image: "/images/posts/background_post-0082.webp"
 ---

@@ -12,8 +12,14 @@ short_description: 'Сравниваем Service Object, gem interactor и Comma
 date: '2025-05-07 11:00:00 +0300'
 categories:
 - architecture
-- rails
-tags: Ruby on Rails,Service Object,Interactor,Command,бизнес-логика,сервисный слой
+- development
+tags:
+- Business Logic
+- Command
+- Error Handling
+- Interactor Pattern
+- Service Layer
+- Service Object
 rate: 4
 hero_image: "/images/posts/background_post-0065.webp"
 ---

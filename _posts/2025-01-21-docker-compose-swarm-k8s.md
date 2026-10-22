@@ -11,8 +11,13 @@ short_description: 'Как связаны Docker, Compose, Swarm и Kubernetes �
 date: '2024-09-18 12:00:00 +0300'
 categories:
 - devops
-- architecture
-tags: Docker,DevOps,Ruby on Rails,PostgreSQL,масштабируемость
+tags:
+- Containerization
+- Deployment
+- Migrations
+- Orchestration
+- Scalability
+- Secrets Management
 rate: 3
 hero_image: "/images/posts/background_post-0087.webp"
 ---

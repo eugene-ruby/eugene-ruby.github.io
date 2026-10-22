@@ -11,8 +11,16 @@ short_description: Как проверить, какие методы досту
   respond_to?, method_defined?, instance_methods и singleton_methods.
 date: '2025-04-23 12:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,метапрограммирование,рефлексия,объектная-модель
+- development
+tags:
+- Dynamic Dispatch
+- Metaprogramming
+- Method Visibility
+- method_missing
+- Object Model
+- Reflection
+- respond_to_missing?
+- Singleton Class
 rate: 4
 hero_image: "/images/posts/background_post-0055.webp"
 ---

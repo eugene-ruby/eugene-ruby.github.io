@@ -11,7 +11,16 @@ short_description: Как Kafka распределяет записи и чте�
 date: '2026-10-21 09:33:02 +0300'
 categories:
 - architecture
-tags: Kafka
+tags:
+- Distributed Systems
+- Event Streaming
+- Idempotency
+- Message Brokers
+- Monitoring
+- Parallelism
+- Publish/Subscribe
+- Replication
+- Transactions
 rate: 5
 hero_image: "/images/posts/background_post-0084.webp"
 ---

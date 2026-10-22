@@ -8,8 +8,13 @@ menubar_toc: true
 title: "\U0001FA84 Магия хуков в Ruby: method_missing и define_singleton_method"
 date: '2025-04-24 10:00:00 +0300'
 categories:
-- ruby
-tags: Ruby,метапрограммирование,методы,хуки,рефлексия
+- development
+tags:
+- define_singleton_method
+- Dynamic Dispatch
+- Metaprogramming
+- method_missing
+- Singleton Class
 rate: 4
 hero_image: "/images/posts/background_post-0034.webp"
 ---

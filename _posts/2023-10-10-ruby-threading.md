@@ -10,9 +10,15 @@ short_description: 'Как работают потоки в MRI Ruby: почем
   I/O, но обычно не ускоряют вычисления, и когда нужны Mutex, Queue или процессы.'
 date: '2023-10-10 10:00:00 +0300'
 categories:
-- performance
-- ruby
-tags: Ruby,потоки,GIL,MRI,многопоточность,параллелизм
+- development
+tags:
+- Concurrency
+- Global VM Lock
+- Locking
+- Multiprocessing
+- Multithreading
+- Parallelism
+- Race Conditions
 rate: 3
 hero_image: "/images/posts/background_post-0024.webp"
 ---

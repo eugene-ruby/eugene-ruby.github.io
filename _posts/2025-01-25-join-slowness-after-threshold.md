@@ -11,8 +11,12 @@ short_description: 'Почему JOIN в PostgreSQL может замедлит�
   запрос.'
 date: '2025-01-25 14:00:00 +0300'
 categories:
-- postgres
-tags: Ruby,PostgreSQL,Rails,базы данных,производительность,DevOps
+- database
+tags:
+- EXPLAIN ANALYZE
+- Indexing
+- Query Optimization
+- SQL Joins
 rate: 3
 hero_image: "/images/posts/background_post-0052.webp"
 ---
