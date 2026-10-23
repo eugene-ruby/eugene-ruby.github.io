@@ -7,5 +7,6 @@ classifier_name: GitHub
 classifier_slug: github
 classifier_initial: G
 article_paths:
+- _posts/2026-10-23-first-github-actions.md
 - _posts/2024-09-18-pet-github-lite.md
 ---

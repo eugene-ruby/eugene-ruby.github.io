@@ -7,6 +7,7 @@ classifier_name: Containerization
 classifier_slug: containerization
 classifier_initial: C
 article_paths:
+- _posts/2026-10-23-first-github-actions.md
 - _posts/2025-04-21-deploy-first-pet.md
 - _posts/2024-11-20-docker-swarm-without-helm.md
 - _posts/2024-10-10-pet-development-docker.md
