@@ -12,6 +12,12 @@
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
+.mc-category-page {
+  --mc-background: rgba(21, 23, 25, 0.76);
+  --mc-panel: rgba(32, 39, 41, 0.88);
+  background: transparent;
+}
+
 body:has(.mc-collection-page) {
   background: #151719;
   color: #d6e4dc;
@@ -162,6 +168,7 @@ body:has(.mc-collection-page) footer.footer a {
 .mc-technology-alpha {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
   gap: 0.08rem;
   overflow-x: auto;
   padding: 0.45rem 0.55rem;
@@ -245,6 +252,53 @@ body:has(.mc-collection-page) footer.footer a {
 
 .mc-classifier .mc-path {
   color: var(--mc-link);
+}
+
+.mc-classifier-directory {
+  margin-bottom: 1rem;
+  border: 1px solid var(--mc-border);
+  background: var(--mc-panel);
+}
+
+.mc-classifier-directory-title {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--mc-text);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.mc-classifier-directory-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  margin: 0;
+  padding: 0.35rem;
+  border-top: 1px solid var(--mc-border);
+  list-style: none;
+}
+
+.mc-classifier-directory-list a {
+  display: block;
+  min-height: 2.2rem;
+  padding: 0.4rem 0.55rem;
+  color: var(--mc-link);
+  line-height: 1.4;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  overflow-wrap: anywhere;
+}
+
+.mc-classifier-directory-list a:hover,
+.mc-classifier-directory-list a:focus-visible,
+.mc-classifier-directory-list a[aria-current="page"] {
+  background: var(--mc-hover);
+  color: #fff;
+}
+
+.mc-classifier-directory-list a:focus-visible {
+  outline: 2px solid #e8fff4;
+  outline-offset: -2px;
 }
 
 .mc-classifier-list {
@@ -389,6 +443,10 @@ body:has(.mc-collection-page) footer.footer a {
 
   .mc-topic-grid {
     columns: 9rem;
+  }
+
+  .mc-technology-alpha {
+    justify-content: flex-start;
   }
 
   .mc-classifier-row {

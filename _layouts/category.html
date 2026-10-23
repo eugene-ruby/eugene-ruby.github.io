@@ -5,8 +5,50 @@ layout: default
 {% include search.html %}
 {% include category_terminal.html %}
 
-<section id="posts" class="section mc-knowledge mc-classifier" aria-labelledby="category-title">
+<style>
+    body {
+        background-color: #151719;
+        {% if page.hero_image %}
+        background-image: linear-gradient(rgba(21, 23, 25, 0.82), rgba(21, 23, 25, 0.82)), url({{ page.hero_image | relative_url | jsonify }});
+        background-attachment: fixed, fixed;
+        background-position: center, center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: cover, cover;
+        {% endif %}
+    }
+
+    section.hero {
+        display: none;
+    }
+
+    footer.footer {
+        background: rgba(21, 23, 25, 0.82);
+        color: #9ca7a9;
+    }
+
+    footer.footer a {
+        color: #9ca7a9;
+    }
+</style>
+
+<section id="posts" class="section mc-knowledge mc-classifier mc-category-page" aria-labelledby="category-title">
     <div class="container categories">
+        <nav class="mc-classifier-directory" aria-labelledby="category-directory-title">
+            <div class="mc-panel-heading">
+                <span class="mc-path" aria-hidden="true">~/knowledge/domains</span>
+                <span id="category-directory-title" class="mc-classifier-directory-title">Предметные области</span>
+            </div>
+            <ul class="mc-classifier-directory-list">
+                {% assign domains = site.products | sort: "category" %}
+                {% for domain in domains %}
+                    {% assign domain_name = domain.category | replace: "-", " " | capitalize %}
+                    <li>
+                        <a href="{{ domain.url | relative_url }}"{% if domain.url == page.url %} aria-current="page"{% endif %}>{{ domain_name }}/</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
         <header class="mc-heading">
             <h1 id="category-title">{{ page.description }}</h1>
         </header>

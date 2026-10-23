@@ -30,8 +30,18 @@
           <span class="mc-path" aria-hidden="true">~/knowledge/technologies</span>
           <h3 id="mc-technologies-title">Технологии</h3>
         </div>
-        <p class="mc-list-caption" data-technology-popular-label>Популярные технологии</p>
         {% assign technologies_all = site.technologies | sort: "classifier_name" %}
+        {% assign technology_initials = "" %}
+        {% for technology in technologies_all %}
+          {% assign technology_initials = technology_initials | append: technology.classifier_initial | append: "||" %}
+        {% endfor %}
+        {% assign technology_initials = technology_initials | split: "||" | uniq | sort %}
+        <div class="mc-technology-alpha" data-technology-alpha aria-label="Выбрать первую букву технологии" hidden>
+          {% for initial in technology_initials %}
+          {% if initial != "" %}<button type="button" data-technology-letter="{{ initial | escape }}" aria-pressed="false">{{ initial }}</button>{% endif %}
+          {% endfor %}
+        </div>
+        <p class="mc-list-caption" data-technology-popular-label>Популярные технологии</p>
         {% assign technology_names = "" %}
         {% for domain in site.products %}
           {% for technology in domain.technology_groups %}
@@ -54,16 +64,6 @@
           {% endif %}
           {% endfor %}
         </ul>
-        {% assign technology_initials = "" %}
-        {% for technology in technologies_all %}
-          {% assign technology_initials = technology_initials | append: technology.classifier_initial | append: "||" %}
-        {% endfor %}
-        {% assign technology_initials = technology_initials | split: "||" | uniq | sort %}
-        <div class="mc-technology-alpha" data-technology-alpha aria-label="Выбрать первую букву технологии" hidden>
-          {% for initial in technology_initials %}
-          {% if initial != "" %}<button type="button" data-technology-letter="{{ initial | escape }}" aria-pressed="false">{{ initial }}</button>{% endif %}
-          {% endfor %}
-        </div>
         <ul class="mc-list mc-technology-results" data-technology-results hidden>
           {% for technology in technologies_all %}
           <li data-technology-item data-technology-initial="{{ technology.classifier_initial | escape }}">
